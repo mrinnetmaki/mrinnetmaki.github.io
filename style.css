@@ -1,16 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville:ital@1&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
+@font-face {
+  font-family: 'Hyphen';
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf"), local(Arial);
+  unicode-range: U+2010;
+}
 
 :root {
   --offset-white: #f1f1f1;
-  --election-blue: #00426c;
+  --text-color: black;
+  --blue-text: #0A4797;
   --body-margin: 2em;
+  --img-width: 50vw;
   --img-max-width: 800px;
   --text-max-width: 65rem;
+  --highlight-background: #A8C0DD;
 }
 
 html {
   background-color: white;
   background-color: var(--offset-white);
+  color: black;
+  color: var(--text-color);
 }
 
 body {
@@ -30,18 +41,17 @@ body {
 main {
   position: relative;
   padding: var(--body-margin);
-  min-height: calc(100vh - 14em);
   max-width: var(--text-max-width);
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Bree Serif', Georgia, serif;
-  color: rgb(17, 86, 254);
+h1, h2, h3, h4, dl dt, blockquote {
+  font-family: Hyphen, 'Bree Serif', Georgia, serif;
+  color: var(--blue-text);
 }
 
 h1 {
-  margin: 1em 0 0.5em;
-  font-size: 3.5em;
+  margin: 1em 0 0;
+  font-size: 3.75em;
 }
 
 h2 {
@@ -49,65 +59,103 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  margin-top: 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  letter-spacing: 2.8px;
 }
 
-main img {
+em {
+  font-style: normal;
+  background-color: var(--highlight-background);
+}
+
+picture img {
   width: calc(100% + var(--body-margin));
   max-width: var(--img-max-width);
   float: right;
   margin: 0 calc(0px - var(--body-margin)) 2em;
 }
 
-main img + * {
+picture + * {
   clear: right;
 }
 
-@media screen and (min-width: 960px) {
-  body {
-    background-image: url('./MikaelRinnetmaki.jpg');
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: initial;
-    background-size: 700px auto;
-  }
+dl {
+  margin: 8em 0 5em;
+}
+
+dl dt {
+  margin: 1em 0 0.25em;
+  font-size: 2.5em;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+  font-size: 0.75em;
+}
+
+dd a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+blockquote {
+  margin: 1.5em 0;
+  font-family: Lobster, serif;
+  font-size: 4em;
+}
+
+
+main ul {
+  list-style: none;
+  margin: 3em 0;
+  padding: 0;
+  font-size: 2.5em;
+}
+
+@media only screen and (min-width: 960px) {
   main {
     max-width: inherit;
+    position: relative;
   }
-  main > img {
-    float: none;
-    display: none;
+  picture img {
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: calc(0px - var(--body-margin));
+    right: 0px;
+    width: var(--img-width);
+    max-width: var(--img-max-width);
   }
-  main > img ~ * {
-    margin-right: var(--img-max-width);
+  picture ~ * {
+    margin-right: var(--img-width);
   }
 }
 
-@media screen and (min-width: calc(1660px)) {
-  body {
-    background-size: 900px auto;
-  }
+@media only screen and (min-width: calc(1820px)) {
   main {
     max-width: 40em;
-    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2));
+    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px);
   }
-  main > img ~ * {
+  picture ~ * {
     margin-right: 0;
   }
 }
 
-@media screen and (min-width: calc(1820px)) {
-  main {
-    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 300px);
+@media only screen and (min-width: 960px) and (max-height: calc(1070px)) {
+  picture img {
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: calc(0px - var(--body-margin));
+    right: 0px;
+    z-index: 5;
+    width: auto;
+    max-width: unset;
+    max-height: 62vh;
+  }
+  picture ~ * {
+    margin-right: calc();
   }
 }
-
-
-/*
-@media screen and (min-width: calc(1200px)) {
-  main {
-    margin-left: calc(110vw - var(--text-max-width) - var(--img-max-width));
-  }
-}
-*/
-

@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  font-size: 16pt;
+  font-size: 12pt;
 }
 
 @media print {
@@ -39,9 +39,9 @@ body {
 }
 
 header p {
-  font-size: 1.75em;
+  font-size: 1em;
   font-weight: normal;
-  letter-spacing: 2.8px;
+  letter-spacing: 1px;
   margin-top: 0;
 }
 
@@ -58,11 +58,11 @@ h1, h2, h3, h4, dl dt, blockquote, header {
 
 h1 {
   margin: 1em 0 0;
-  font-size: 3.75em;
+  font-size: 2.1em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-top: 1.7em;
   margin-bottom: 0.3em;
 }
@@ -71,12 +71,14 @@ h2 + p {
   margin-top: 0;
 }
 
-
 em {
   font-style: normal;
   background-color: var(--highlight-background);
 }
 
+picture {
+  float: right;
+}
 picture img {
   width: calc(100% + var(--body-margin));
   max-width: var(--img-max-width);
@@ -92,15 +94,14 @@ dl {
   margin: 8em 0 5em;
 }
 
-dl dt {
+dt {
   margin: 1em 0 0.25em;
-  font-size: 2.5em;
+  font-size: 1.25em;
 }
 
-dl dd {
+dd {
   margin: 0;
   padding: 0;
-  font-size: 0.75em;
 }
 
 dd a {
@@ -108,13 +109,21 @@ dd a {
   text-decoration: none;
 }
 
-
 blockquote {
   margin: 1.5em 0;
+  position: relative;
+  text-align: center;
   font-family: Lobster, serif;
-  font-size: 4em;
+  font-size: 1.75em;
 }
 
+blockquote p {
+  display: inline-block;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: white;
+}
 
 main ul {
   list-style: none;
@@ -124,28 +133,57 @@ main ul {
 }
 
 footer {
+  margin: var(--body-margin);
+  margin-bottom: 0;
   text-align: center;
+  background-color: var(--blue-text);
+  border-radius: 8px 8px 0 0;
+  padding: 0;
 }
 
 footer a {
   font-size: 0.8em;
   font-weight: 500;
-  margin: 5px;
-  color: var(--blue-text);
+  margin: 3px;
+  color: white;
   text-decoration: none;
 }
 
 footer img {
   width: 1.5em;
+  vertical-align: middle;
 }
 
 address {
   display: inline-block;
+  margin: 0.3em 0;
 }
 
-@media only screen and (min-width: 960px) {
+address:first-child {
+  margin-top: 1em;
+}
+
+address:last-child {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 960px) {
+  body {
+    font-size: 16pt;
+  }
   header, main, footer {
     max-width: inherit;
+  }
+  header p {
+    font-size: 1.75em;
+    letter-spacing: 2.8px;
+  }
+  h1 {
+    margin: 1em 0 0;
+    font-size: 3.75em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
   picture img {
     position: fixed;
@@ -158,12 +196,14 @@ address {
   picture ~ *, footer {
     margin-right: var(--img-width);
   }
-  footer address:first-child {
-    float: left;
+  dt {
+    font-size: 1.5em;
   }
-  
-  footer address:last-child {
-    float: right;
+  dd {
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 2em;
   }
 }
 
@@ -174,6 +214,35 @@ address {
   }
   picture ~ *, footer {
     margin-right: 0;
+  }
+  dt {
+    font-size: 2.5em;
+  }
+  dd {
+    font-size: 0.75em;
+  }
+  blockquote {
+    font-size: 4em;
+  }
+  blockquote p {
+    padding: 1.5rem;
+  }
+  footer {
+    position: relative;
+    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px + var(--body-margin));
+  }
+  footer address {
+    box-sizing: border-box;
+    margin: 0;
+    width: 48%;
+  }
+  footer address:first-child {
+    text-align: left;
+    padding-left: 1em;
+  }
+  footer address:last-child {
+    text-align: right;
+    padding-right: 1em;
   }
 }
 

@@ -38,13 +38,20 @@ body {
   }
 }
 
-main {
+header p {
+  font-size: 1.75em;
+  font-weight: normal;
+  letter-spacing: 2.8px;
+  margin-top: 0;
+}
+
+header, main, footer {
   position: relative;
   padding: var(--body-margin);
   max-width: var(--text-max-width);
 }
 
-h1, h2, h3, h4, dl dt, blockquote {
+h1, h2, h3, h4, dl dt, blockquote, header {
   font-family: Hyphen, 'Bree Serif', Georgia, serif;
   color: var(--blue-text);
 }
@@ -58,12 +65,6 @@ h2 {
   font-size: 2.75em;
 }
 
-h3 {
-  margin-top: 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  letter-spacing: 2.8px;
-}
 
 em {
   font-style: normal;
@@ -116,10 +117,29 @@ main ul {
   font-size: 2.5em;
 }
 
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 5px;
+  color: var(--blue-text);
+  text-decoration: none;
+}
+
+footer img {
+  width: 1.5em;
+}
+
+address {
+  display: inline-block;
+}
+
 @media only screen and (min-width: 960px) {
-  main {
+  header, main, footer {
     max-width: inherit;
-    position: relative;
   }
   picture img {
     position: fixed;
@@ -129,17 +149,24 @@ main ul {
     width: var(--img-width);
     max-width: var(--img-max-width);
   }
-  picture ~ * {
+  picture ~ *, footer {
     margin-right: var(--img-width);
+  }
+  footer address:first-child {
+    float: left;
+  }
+  
+  footer address:last-child {
+    float: right;
   }
 }
 
 @media only screen and (min-width: calc(1820px)) {
-  main {
+  header, main, footer {
     max-width: 40em;
     margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px);
   }
-  picture ~ * {
+  picture ~ *, footer {
     margin-right: 0;
   }
 }
@@ -154,8 +181,5 @@ main ul {
     width: auto;
     max-width: unset;
     max-height: 62vh;
-  }
-  picture ~ * {
-    margin-right: calc();
   }
 }

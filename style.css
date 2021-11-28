@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Baskerville:ital@1&family=Lobster&display=swap');
+
+:root {
+  --offset-white: #f1f1f1;
+  --election-blue: #00426c;
+  --body-margin: 2em;
+  --img-max-width: 800px;
+  --text-max-width: 65rem;
+}
+
+html {
+  background-color: white;
+  background-color: var(--offset-white);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: lato, sans-serif;
+  font-size: 16pt;
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+}
+
+main {
+  position: relative;
+  padding: var(--body-margin);
+  min-height: calc(100vh - 14em);
+  max-width: var(--text-max-width);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bree Serif', Georgia, serif;
+  color: rgb(17, 86, 254);
+}
+
+h1 {
+  margin: 1em 0 0.5em;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.75em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+main img {
+  width: calc(100% + var(--body-margin));
+  max-width: var(--img-max-width);
+  float: right;
+  margin: 0 calc(0px - var(--body-margin)) 2em;
+}
+
+main img + * {
+  clear: right;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background-image: url('./MikaelRinnetmaki.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-size: 700px auto;
+  }
+  main {
+    max-width: inherit;
+  }
+  main > img {
+    float: none;
+    display: none;
+  }
+  main > img ~ * {
+    margin-right: var(--img-max-width);
+  }
+}
+
+@media screen and (min-width: calc(1660px)) {
+  body {
+    background-size: 900px auto;
+  }
+  main {
+    max-width: 40em;
+    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2));
+  }
+  main > img ~ * {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: calc(1820px)) {
+  main {
+    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 300px);
+  }
+}
+
+
+/*
+@media screen and (min-width: calc(1200px)) {
+  main {
+    margin-left: calc(110vw - var(--text-max-width) - var(--img-max-width));
+  }
+}
+*/
+

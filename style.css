@@ -73,7 +73,9 @@ h2 + p {
 
 em {
   font-style: normal;
+  /*
   background-color: var(--highlight-background);
+  */
 }
 
 picture {
@@ -196,6 +198,10 @@ address:last-child {
   picture ~ *, footer {
     margin-right: var(--img-width);
   }
+  dl {
+    margin-top: 1em;
+    margin-bottom: 6em;
+  }
   dt {
     font-size: 1.5em;
   }
@@ -204,6 +210,9 @@ address:last-child {
   }
   blockquote {
     font-size: 2em;
+  }
+  blockquote p {
+    padding: 4.5vw;
   }
 }
 
@@ -222,10 +231,18 @@ address:last-child {
     font-size: 0.75em;
   }
   blockquote {
-    font-size: 4em;
+    font-size: 3em;
+  }
+  blockquote {
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+    box-sizing: border-box;
   }
   blockquote p {
-    padding: 1.5rem;
+    display: inline-block;
   }
   footer {
     position: relative;

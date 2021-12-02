@@ -243,6 +243,7 @@ address:last-child {
   }
   blockquote p {
     display: inline-block;
+    padding: 1em;
   }
   footer {
     position: relative;

@@ -144,11 +144,10 @@ footer {
 }
 
 footer a {
-  font-size: 0.8em;
-  font-weight: 500;
   margin: 3px;
   color: white;
   text-decoration: none;
+  letter-spacing: 0.7px;
 }
 
 footer img {
@@ -159,6 +158,7 @@ footer img {
 address {
   display: inline-block;
   margin: 0.3em 0;
+  font-style: normal;
 }
 
 address:first-child {

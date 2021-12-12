@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
 
+/*
 @font-face {
   font-family: 'Hyphen';
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf"), local(Arial);
+  src: local(ui-sans-serif), 
+  local(system-ui), 
+  local(-system-ui), 
+  local(-apple-system),
+  local(BlinkMacSystemFont),
+  local(Arial);
+  unicode-range: U+2010;
+}
+*/
+
+@font-face {
+  font-family: 'Hyphen';
+  src: local(Arial);
   unicode-range: U+2010;
 }
 
@@ -70,7 +83,7 @@ h1, h2, h3, h4, dl dt, blockquote, header {
 }
 
 h1 {
-  margin: 1em 0 0;
+  margin: 0;
   font-size: 2.1em;
 }
 
@@ -97,7 +110,9 @@ picture {
 picture img {
   width: calc(100% + var(--body-margin));
   max-width: var(--img-max-width);
+  /*
   max-height: 100vh;
+  */
   float: right;
   margin: 0 calc(0px - var(--body-margin)) 2em;
 }
@@ -106,8 +121,13 @@ picture + * {
   clear: right;
 }
 
+/*
 dl {
   margin: 8em 0 5em;
+}
+*/
+dl {
+  margin: 0 0 5em;
 }
 
 dt {
@@ -183,7 +203,25 @@ address:last-child {
   margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 960px) and (min-aspect-ratio: 1/1) {
+/*
+@media (max-width: 960px) and (min-aspect-ratio: 1/1) {
+  h1 {
+    font-size: 10vw;
+  }
+  header p {
+    font-size: 5vw;
+  }
+}
+*/
+
+@media (max-width: 300px) {
+  footer {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 959px) and (max-aspect-ratio: 3/2),
+(min-width: 760px) and (max-aspect-ratio: 1/1) {
   h1 {
     font-size: 10vw;
   }
@@ -192,23 +230,9 @@ address:last-child {
   }
 }
 
-@media (min-width: 960px) {
-  body {
-    font-size: 16pt;
-  }
+@media (min-width: 960px), (min-aspect-ratio: 3/2) {
   header, main, footer {
     max-width: inherit;
-  }
-  header p {
-    font-size: 1.75em;
-    letter-spacing: 2.8px;
-  }
-  h1 {
-    margin: 1em 0 0;
-    font-size: 3.75em;
-  }
-  h2 {
-    font-size: 1.5em;
   }
   picture img {
     position: fixed;
@@ -220,6 +244,23 @@ address:last-child {
   }
   picture ~ *, footer {
     margin-right: var(--img-width);
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    font-size: 16pt;
+  }
+  header p {
+    font-size: 1.75em;
+    letter-spacing: 2.8px;
+  }
+  h1 {
+    margin: 0.3em 0 0;
+    font-size: 3.75em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
   dl {
     margin-top: 1em;
@@ -239,7 +280,8 @@ address:last-child {
   }
 }
 
-@media only screen and (min-width: calc(1820px)) {
+
+@media (min-width: 1820px) {
   header, main, footer {
     max-width: 40em;
     margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px);
@@ -287,7 +329,7 @@ address:last-child {
   }
 }
 
-@media only screen and (min-width: 960px) and (max-height: calc(1070px)) {
+@media (min-width: 960px) and (max-height: calc(1070px)) {
   picture img {
     position: fixed;
     bottom: 0px;

@@ -187,7 +187,7 @@ address:last-child {
     text-align: left;
     margin-left: calc((100vw - var(--img-width) - var(--text-max-width)) / 2);
   }
-  h1 {
+  header h1 {
     font-size: 3.75em;
   }
   header p {

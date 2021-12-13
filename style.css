@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Hyphen';
-  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf"), local(Arial);
+  src: local(Arial);
   unicode-range: U+2010;
 }
 
@@ -11,9 +11,8 @@
   --text-color: black;
   --blue-text: #0A4797;
   --body-margin: 2em;
-  --img-width: 50vw;
-  --img-max-width: 800px;
-  --text-max-width: 65rem;
+  --img-width: 30vw;
+  --text-max-width: 30rem;
   --highlight-background: #A8C0DD;
 }
 
@@ -22,6 +21,7 @@ html {
   background-color: var(--offset-white);
   color: black;
   color: var(--text-color);
+  font-size: 12pt;
 }
 
 body {
@@ -29,39 +29,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: lato, sans-serif;
-  font-size: 12pt;
-}
-
-@media print {
-  body {
-    font-size: 12pt;
-    position: relative;
-  }
-}
-
-header p {
-  font-size: 1em;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-top: 0;
-}
-
-header, main, footer {
-  position: relative;
-  padding: var(--body-margin);
-  max-width: var(--text-max-width);
-}
-
-header {
-  z-index: 10;
-}
-
-main, main > * {
-  z-index: 5;
-}
-
-picture {
-  z-index: 1;
 }
 
 h1, h2, h3, h4, dl dt, blockquote, header {
@@ -69,9 +36,8 @@ h1, h2, h3, h4, dl dt, blockquote, header {
   color: var(--blue-text);
 }
 
-h1 {
-  margin: 1em 0 0;
-  font-size: 2.1em;
+em {
+  font-style: normal;
 }
 
 h2 {
@@ -84,30 +50,39 @@ h2 + p {
   margin-top: 0;
 }
 
-em {
-  font-style: normal;
-  /*
-  background-color: var(--highlight-background);
-  */
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 10.5vw;
+}
+
+header p {
+  font-size: 5.44vw;
+  letter-spacing: 0.1vw;
+  margin-top: 0;
+}
+
+main, footer {
+  max-width: var(--text-max-width);
+  margin: 0 var(--body-margin);
 }
 
 picture {
-  float: right;
-}
-picture img {
-  width: calc(100% + var(--body-margin));
-  max-width: var(--img-max-width);
-  max-height: 100vh;
-  float: right;
-  margin: 0 calc(0px - var(--body-margin)) 2em;
+  display: block;
+  width: 100vw;
+  text-align: right;
 }
 
-picture + * {
-  clear: right;
+picture img {
+  width: 100%;
+  max-width: 75vh;
 }
 
 dl {
-  margin: 8em 0 5em;
+  margin: 0 0 5em;
 }
 
 dt {
@@ -141,20 +116,13 @@ blockquote p {
   background-color: white;
 }
 
-main ul {
-  list-style: none;
-  margin: 3em 0;
-  padding: 0;
-  font-size: 2.5em;
-}
-
 footer {
-  margin: var(--body-margin);
+  margin-top: 3em;
   margin-bottom: 0;
   text-align: center;
   background-color: var(--blue-text);
   border-radius: 8px 8px 0 0;
-  padding: 0;
+  padding: 0 1em;
 }
 
 footer a {
@@ -183,119 +151,105 @@ address:last-child {
   margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 960px) and (min-aspect-ratio: 1/1) {
-  h1 {
-    font-size: 10vw;
-  }
-  header p {
-    font-size: 5vw;
+@media (max-width: 360px) {
+  footer {
+    font-size: 80%;
   }
 }
 
-@media (min-width: 960px) {
-  body {
-    font-size: 16pt;
+@media (min-width: 30rem) { /* --text-max-width */
+  main, footer {
+    margin-left: calc((100vw - var(--text-max-width)) / 2);
   }
-  header, main, footer {
-    max-width: inherit;
+}
+
+@media (min-width: 60rem) { /* break point */
+  main, footer {
+    margin-left: calc((100vw - var(--img-width) - var(--text-max-width)) / 2);
+  }
+  picture {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: var(--img-width);
+    text-align: right;
+  }
+  picture img {
+    max-width: 60vh;
+    max-height: 90vh;
+  }
+}
+
+@media (min-width: 60rem) and (max-height: 80vw) {
+  /* Drop the header text size */
+  header {
+    margin-top: 5vw;
+    text-align: left;
+    margin-left: calc((100vw - var(--img-width) - var(--text-max-width)) / 2);
+  }
+  header h1 {
+    font-size: 3.75em;
   }
   header p {
     font-size: 1.75em;
-    letter-spacing: 2.8px;
+    letter-spacing: 0.075em;
   }
-  h1 {
-    margin: 1em 0 0;
-    font-size: 3.75em;
+  main {
+    margin-top: 8em;
   }
-  h2 {
-    font-size: 1.5em;
+}
+
+@media (min-width: 1600px) and (min-height: 800px) {
+  html {
+    font-size: 16pt;
   }
   picture img {
-    position: fixed;
-    bottom: 0px;
-    margin-bottom: calc(0px - var(--body-margin));
-    right: 0px;
-    width: var(--img-width);
-    max-width: var(--img-max-width);
+    max-width: 50vh;
+    max-height: 75vh;
   }
-  picture ~ *, footer {
-    margin-right: var(--img-width);
+}
+
+@media (min-width: 2000px) and (min-height: 800px) {
+  html {
+    font-size: 1.2vw;
+  }
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+  }
+  picture {
+    text-align: center;
+  }
+  footer a {
+    color: var(--blue-text);
+  }
+  footer img {
+    display: none;
   }
   dl {
-    margin-top: 1em;
-    margin-bottom: 6em;
-  }
-  dt {
-    font-size: 1.5em;
-  }
-  dd {
-    font-size: 1em;
-  }
-  blockquote {
-    font-size: 2em;
+    break-before: page;
   }
   blockquote p {
-    padding: 4.5vw;
+    margin: 0.5em 0;
+    border: 1px dashed var(--blue-text);
   }
 }
 
-@media only screen and (min-width: calc(1820px)) {
-  header, main, footer {
-    max-width: 40em;
-    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px);
-  }
-  picture ~ *, footer {
-    margin-right: 0;
-  }
-  dt {
-    font-size: 2.5em;
-  }
-  dd {
-    font-size: 0.75em;
-  }
+@media print and (min-aspect-ratio: 1/1) {
   blockquote {
-    font-size: 3em;
+    break-before: page;
   }
-  blockquote {
-    margin: 0;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: white;
-    box-sizing: border-box;
-  }
-  blockquote p {
-    display: inline-block;
-    padding: 1em;
-  }
-  footer {
-    position: relative;
-    margin-left: calc(((100vw - var(--text-max-width) - var(--img-max-width)) / 2) + 150px + var(--body-margin));
-  }
-  footer address {
-    box-sizing: border-box;
-    margin: 0;
-    width: 48%;
-  }
-  footer address:first-child {
-    text-align: left;
-    padding-left: 1em;
-  }
-  footer address:last-child {
-    text-align: right;
-    padding-right: 1em;
+  picture {
+    width: 30vw;
+    margin-left: 35vw;
   }
 }
 
-@media only screen and (min-width: 960px) and (max-height: calc(1070px)) {
-  picture img {
-    position: fixed;
-    bottom: 0px;
-    margin-bottom: calc(0px - var(--body-margin));
-    right: 0px;
-    z-index: 5;
-    width: auto;
-    max-width: unset;
-    max-height: 75vh;
+@media print and (max-aspect-ratio: 1/1) {
+  picture {
+    width: 85vw;
+    margin-left: 7.5vw;
   }
 }

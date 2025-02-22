@@ -128,27 +128,41 @@ header {
   text-align: center;
 }
 
-header > section {
+header#cover > section, header#cover2 > section {
   vertical-align: text-top;
   display: inline-block;
   width: 35%;
   margin: 200px 3%;
 }
 
-header > section:last-child {
+header#cover > section:last-child {
   width: 45%;
 }
 
-header#cover {
+header#cover2 > section {
+  width: 50%;
+}
+
+
+header#cover2 > section:last-child {
+  width: 35%;
+}
+
+header#cover, header#cover2 {
   margin-left: 3%;
 }
 
-header#cover h2 {
+header#cover h2, header#cover2 h2 {
   margin: 1rem 0 0.5em;
   font-size: 52px;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
+
+header#cover2 h2 {
+  font-size: 34px;
+}
+
 
 header h1 {
   margin: 0;

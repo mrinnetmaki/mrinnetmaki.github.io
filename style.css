@@ -143,7 +143,6 @@ header#cover2 > section {
   width: 50%;
 }
 
-
 header#cover2 > section:last-child {
   width: 35%;
 }
@@ -162,7 +161,6 @@ header#cover h2, header#cover2 h2 {
 header#cover2 h2 {
   font-size: 34px;
 }
-
 
 header h1 {
   margin: 0;
@@ -187,10 +185,7 @@ header p:last-child {
   margin-top: 2em;
   font-size: 4rem;
   text-align: center;
-  padding: 0.1em;
-  /*
-  padding: 0.5em 1em 1em;
-  */
+  padding: 0.1em 0.1em 1em;
 }
 
 #numero data {
@@ -225,7 +220,7 @@ picture {
 picture img {
   width: 100%;
   max-width: 75vh;
-  border-bottom: 15px solid var(--blue-text);  
+  border-bottom: 15px solid var(--blue-text);
 }
 
 dl {
@@ -270,7 +265,7 @@ details a {
   color: var(--blue-text);
 }
 
-aside {
+#jarjestot {
   margin-top: 4em;
 }
 
@@ -293,7 +288,7 @@ aside img.badge {
   height: 10em;
 }
 
-aside > section {
+#jarjestot > section {
   margin: 10em 0 4em;
 }
 

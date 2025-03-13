@@ -183,23 +183,32 @@ header p:last-child {
 }
 
 #numero {
-  font-size: 10.5vw;
+  background-color: #C49DE0;
+  margin-top: 2em;
+  font-size: 4rem;
   text-align: center;
+  padding: 0.1em;
+  /*
+  padding: 0.5em 1em 1em;
+  */
 }
 
-main section data {
+#numero data {
   display: inline-block;
-  background-color: var(--blue-text);
-  color: white;
+  background-color: white;
+  color: black;
+  /*
   border-color: transparent;
+  */
+  border: 1px solid black;
   border-radius: 50%;
-  font-size: 6rem;
+  line-height: 12rem;
   width: 12rem;
   height: 12rem;
   margin: 0.2em;
   text-align: center;
+  vertical-align: middle;
   box-sizing: border-box;
-  padding-top: 0.25em;
 }
 
 main, aside, footer {
@@ -216,6 +225,7 @@ picture {
 picture img {
   width: 100%;
   max-width: 75vh;
+  border-bottom: 15px solid var(--blue-text);  
 }
 
 dl {
@@ -343,7 +353,7 @@ address:last-child {
   margin-bottom: 1em;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
   footer {
     font-size: 80%;
   }
@@ -352,6 +362,9 @@ address:last-child {
 @media (min-width: 32rem) { /* --text-max-width */
   main, aside, footer {
     margin-left: calc((100vw - var(--text-max-width)) / 2);
+  }
+  #numero {
+    padding-bottom: 1em;
   }
   #yhdistykset img {
     height: 1.5em;
@@ -375,6 +388,7 @@ address:last-child {
   picture img {
     max-width: 60vh;
     max-height: 90vh;
+    border-bottom: none;
   }
   #yhdistykset img {
     height: calc(0.8em + 1vw);

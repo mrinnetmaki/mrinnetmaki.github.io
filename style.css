@@ -181,6 +181,31 @@ header p:last-child {
 }
 
 #numero {
+  margin-top: 1em;
+  background-color: #C49DE0;
+  font-size: 150%;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  line-height: 4em;
+  font-weight: 900;
+  margin-left: calc(50% - 3em);
+}
+
+#numero data {
+  display: inline-block;
+  margin: auto;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#lappu {
   background-color: #C49DE0;
   margin-top: 2em;
   font-size: 4rem;
@@ -188,7 +213,7 @@ header p:last-child {
   padding: 0.1em 0.1em 1em;
 }
 
-#numero data {
+#lappu data {
   display: inline-block;
   background-color: white;
   color: black;
@@ -358,7 +383,7 @@ address:last-child {
   main, aside, footer {
     margin-left: calc((100vw - var(--text-max-width)) / 2);
   }
-  #numero {
+  #lappu {
     padding-bottom: 1em;
   }
   #yhdistykset img {
@@ -372,6 +397,9 @@ address:last-child {
 @media (min-width: 60rem) { /* break point */
   header, main, aside, footer {
     margin-left: calc((100vw - var(--img-width) - var(--text-max-width)) / 2);
+  }
+  #numero {
+    margin-left: calc((var(--text-max-width) / 2) - 3em);
   }
   picture {
     position: fixed;

@@ -267,7 +267,7 @@ dd a {
   text-decoration: none;
 }
 
-blockquote, section > h2:first-child, header > section > h2 {
+section > h2:first-child, header > section > h2 {
   margin: 1.5em 0;
   position: relative;
   border-radius: 8px;
@@ -278,10 +278,23 @@ blockquote, section > h2:first-child, header > section > h2 {
   font-weight: bold;
 }
 
-blockquote h1, section > h2:first-child, header > section > h2 {
+section > h2:first-child, header > section > h2 {
   color: white;
   font-size: 219%;
   line-height: 150%;
+}
+
+blockquote {
+  border-radius: 8px;
+  border: 2px solid var(--blue-text);
+  margin: 1em 0;
+  padding: 1em;
+  font-style: italic;
+}
+
+blockquote .signature {
+  font-size: 80%;
+  text-align: right;
 }
 
 details a {

@@ -1,0 +1,2357 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "IpsBundleforMikael",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"]
+  },
+  "identifier" : {
+    "system" : "https://sensotrend.com/ig/ips/mikael",
+    "value" : "ips-for-mikael"
+  },
+  "type" : "document",
+  "timestamp" : "2023-12-24T19:28:00+02:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:c69a5242-339d-4101-adc7-96728f2f517f",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "c69a5242-339d-4101-adc7-96728f2f517f",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">IPS Summary</div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "60591-5",
+          "display" : "Patient summary Document"
+        }],
+        "text" : "Patient summary"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "date" : "2023-12-24",
+      "author" : [{
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      }],
+      "title" : "International Patient Summary",
+      "section" : [{
+        "title" : "Medication Summary section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "10160-0",
+            "display" : "History of Medication use Narrative"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of medications here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "priority",
+            "display" : "Sorted by Priority"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:bb2d0be6-24fd-4e1f-8fa4-10e058ed2775"
+        }]
+      },
+      {
+        "title" : "Allergies and Intolerances Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "48765-2",
+            "display" : "Allergies and adverse reactions Document"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of allergies here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "priority",
+            "display" : "Sorted by Priority"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef"
+        },
+        {
+          "reference" : "urn:uuid:6728beb7-b028-4976-9ea8-ccc29336756f"
+        },
+        {
+          "reference" : "urn:uuid:cdbc0f23-524a-423b-9114-ee0f06a815b3"
+        }]
+      },
+      {
+        "title" : "Problems Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11450-4",
+            "display" : "Problem list - Reported"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of problems here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "priority",
+            "display" : "Sorted by Priority"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7"
+        }]
+      },
+      {
+        "title" : "History of Procedures Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "47519-4",
+            "display" : "History of Procedures Document"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of procedures here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "priority",
+            "display" : "Sorted by Priority"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:f134bd3a-755a-444a-9364-0e4e1cef2520"
+        }]
+      },
+      {
+        "title" : "Immunizations Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "11369-6",
+            "display" : "History of Immunization Narrative"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of immunizations here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "event-date",
+            "display" : "Sorted by Event Date"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:5a3c0871-af41-4f63-9615-d98308d9e794"
+        },
+        {
+          "reference" : "urn:uuid:244fb199-b9b2-49ef-85cd-09e5cdbc83af"
+        },
+        {
+          "reference" : "urn:uuid:97345cda-49d9-453c-8c9c-01edc6607cc7"
+        },
+        {
+          "reference" : "urn:uuid:6cfe08b7-55a1-40d9-9010-484f59b13ff2"
+        },
+        {
+          "reference" : "urn:uuid:cf4545bb-604d-45de-a7da-95baf181286b"
+        },
+        {
+          "reference" : "urn:uuid:a0ca2399-1f86-487b-ad6c-3e64081ae945"
+        },
+        {
+          "reference" : "urn:uuid:d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2"
+        },
+        {
+          "reference" : "urn:uuid:f871751d-14fe-4672-bc2f-6a6e83e6ac73"
+        },
+        {
+          "reference" : "urn:uuid:f1649cba-fde7-4d54-8fcd-37b6240017ac"
+        },
+        {
+          "reference" : "urn:uuid:6b8e54e6-6023-4911-9a43-91b73066dc08"
+        },
+        {
+          "reference" : "urn:uuid:cae0ed26-c654-403c-8c85-ff4432949786"
+        },
+        {
+          "reference" : "urn:uuid:bd632ca0-6661-4b9d-bbf6-7ffd3154e700"
+        },
+        {
+          "reference" : "urn:uuid:b54184da-87e6-4c0f-a85a-9546a5cc9783"
+        },
+        {
+          "reference" : "urn:uuid:04dfd1be-9483-485d-8030-a9ce3a264363"
+        },
+        {
+          "reference" : "urn:uuid:d9828658-c9dd-478c-8573-c514cd834f5f"
+        },
+        {
+          "reference" : "urn:uuid:f3fff46d-7755-4af3-a334-a3d3899d8a58"
+        },
+        {
+          "reference" : "urn:uuid:aac217a5-cd2f-4217-b5ff-c55e9f7c3378"
+        },
+        {
+          "reference" : "urn:uuid:5906618a-e76b-44b5-b670-7a0820075bae"
+        },
+        {
+          "reference" : "urn:uuid:9c0744c0-9b0a-4796-b653-452a0098625f"
+        },
+        {
+          "reference" : "urn:uuid:bfe1d5a4-be0e-403a-a27c-16ef74aca3b3"
+        }]
+      },
+      {
+        "title" : "Medical Devices Section",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "46264-8",
+            "display" : "History of medical device use"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Summary of device use here?</div>"
+        },
+        "mode" : "working",
+        "orderedBy" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/list-order",
+            "code" : "event-date",
+            "display" : "Sorted by Event Date"
+          }]
+        },
+        "entry" : [{
+          "reference" : "urn:uuid:905180fb-dc21-4b81-95d8-e2918657ce22"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_b4ac89c5-6589-417f-beef-d3fb1ef9c70f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient b4ac89c5-6589-417f-beef-d3fb1ef9c70f</b></p><a name=\"b4ac89c5-6589-417f-beef-d3fb1ef9c70f\"> </a><a name=\"hcb4ac89c5-6589-417f-beef-d3fb1ef9c70f\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsPatient.html\">FiIpsPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Mikael Rinnetmäki Male, DoB: 1976-02-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">2</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+358503855511\">+358503855511</a></li><li><a href=\"mailto:mikael.rinnetmaki@gmail.com\">mikael.rinnetmaki@gmail.com</a></li><li>Tampellan esplanadi 19 A 55 33180 Tampere (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Languages:</td><td colspan=\"3\"><ul><li><span title=\"Codes:{urn:ietf:bcp:47 fi}\">Finnish</span> (preferred)</li><li><span title=\"Codes:{urn:ietf:bcp:47 en}\">English</span></li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "NNFIN"
+          }]
+        },
+        "system" : "urn:oid:1.2.246.21",
+        "value" : "010276-115K"
+      }],
+      "active" : true,
+      "name" : [{
+        "text" : "Mikael Rinnetmäki",
+        "family" : "Rinnetmäki",
+        "given" : ["Mikael",
+        "Juhana"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+358503855511"
+      },
+      {
+        "system" : "email",
+        "value" : "mikael.rinnetmaki@gmail.com"
+      }],
+      "gender" : "male",
+      "birthDate" : "1976-02-01",
+      "address" : [{
+        "use" : "home",
+        "line" : ["Tampellan esplanadi 19 A 55",
+        "33180 Tampere"]
+      }],
+      "maritalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "M",
+          "display" : "Married"
+        }]
+      },
+      "multipleBirthInteger" : 2,
+      "communication" : [{
+        "language" : {
+          "coding" : [{
+            "system" : "urn:ietf:bcp:47",
+            "code" : "fi",
+            "display" : "Finnish"
+          }]
+        },
+        "preferred" : true
+      },
+      {
+        "language" : {
+          "coding" : [{
+            "system" : "urn:ietf:bcp:47",
+            "code" : "en",
+            "display" : "English"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsAllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef</b></p><a name=\"61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef\"> </a><a name=\"hc61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsAllergyIntolerance.html\">IpaIpsAllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 860604008}\">Allergy to apple</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>onset</b>: 23 yr<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>note</b>: </p><blockquote><div><p>Related to birch pollen and nut allergies.</p>\n</div></blockquote><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 263731006}\">Coughing</span></td><td>Only present when combined with birch pollen or nuts</td><td>Mild</td></tr></table></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "unconfirmed",
+          "display" : "Unconfirmed"
+        }],
+        "text" : "Unconfirmed"
+      },
+      "type" : "allergy",
+      "category" : ["food"],
+      "criticality" : "low",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "860604008",
+          "display" : "Allergy to apple"
+        }],
+        "text" : "Allergy to apple"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "onsetAge" : {
+        "value" : 23,
+        "unit" : "yr",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "note" : [{
+        "text" : "Related to birch pollen and nut allergies."
+      }],
+      "reaction" : [{
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "263731006",
+            "display" : "Coughing"
+          }],
+          "text" : "Coughing"
+        }],
+        "description" : "Only present when combined with birch pollen or nuts",
+        "severity" : "mild"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6728beb7-b028-4976-9ea8-ccc29336756f",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "6728beb7-b028-4976-9ea8-ccc29336756f",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsAllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_6728beb7-b028-4976-9ea8-ccc29336756f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 6728beb7-b028-4976-9ea8-ccc29336756f</b></p><a name=\"6728beb7-b028-4976-9ea8-ccc29336756f\"> </a><a name=\"hc6728beb7-b028-4976-9ea8-ccc29336756f\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsAllergyIntolerance.html\">IpaIpsAllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 91934008}\">Allergy to nut</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>onset</b>: 23 yr<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>note</b>: </p><blockquote><div><p>Related to birch pollen and apple allergies.</p>\n</div></blockquote><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 263731006}\">Coughing</span></td><td>Only present when combined with birch pollen or eating apple</td><td>Mild</td></tr></table></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "unconfirmed",
+          "display" : "Unconfirmed"
+        }],
+        "text" : "Unconfirmed"
+      },
+      "type" : "allergy",
+      "category" : ["food"],
+      "criticality" : "low",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "91934008",
+          "display" : "Allergy to nut"
+        }],
+        "text" : "Allergy to nut"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "onsetAge" : {
+        "value" : 23,
+        "unit" : "yr",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "note" : [{
+        "text" : "Related to birch pollen and apple allergies."
+      }],
+      "reaction" : [{
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "263731006",
+            "display" : "Coughing"
+          }],
+          "text" : "Coughing"
+        }],
+        "description" : "Only present when combined with birch pollen or eating apple",
+        "severity" : "mild"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:cdbc0f23-524a-423b-9114-ee0f06a815b3",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "id" : "cdbc0f23-524a-423b-9114-ee0f06a815b3",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsAllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_cdbc0f23-524a-423b-9114-ee0f06a815b3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance cdbc0f23-524a-423b-9114-ee0f06a815b3</b></p><a name=\"cdbc0f23-524a-423b-9114-ee0f06a815b3\"> </a><a name=\"hccdbc0f23-524a-423b-9114-ee0f06a815b3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsAllergyIntolerance.html\">IpaIpsAllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Environment</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 419263009}\">Allergy to tree pollen</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>onset</b>: 23 yr<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codea = 'a')</span></p><p><b>note</b>: </p><blockquote><div><p>Symptoms amplified by apple and nut allergies.</p>\n</div></blockquote><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Manifestation</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 162290004}\">Dry eyes</span></td><td>Mild</td></tr></table></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code" : "unconfirmed",
+          "display" : "Unconfirmed"
+        }],
+        "text" : "Unconfirmed"
+      },
+      "type" : "allergy",
+      "category" : ["environment"],
+      "criticality" : "low",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419263009",
+          "display" : "Allergy to tree pollen"
+        }],
+        "text" : "Allergy to tree pollen"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "onsetAge" : {
+        "value" : 23,
+        "unit" : "yr",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      },
+      "note" : [{
+        "text" : "Symptoms amplified by apple and nut allergies."
+      }],
+      "reaction" : [{
+        "manifestation" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "162290004",
+            "display" : "Dry eyes"
+          }],
+          "text" : "Dry eyes"
+        }],
+        "severity" : "mild"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "1558c456-efa1-4b3d-abe2-1522c6048bc7",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsCondition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_1558c456-efa1-4b3d-abe2-1522c6048bc7\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 1558c456-efa1-4b3d-abe2-1522c6048bc7</b></p><a name=\"1558c456-efa1-4b3d-abe2-1522c6048bc7\"> </a><a name=\"hc1558c456-efa1-4b3d-abe2-1522c6048bc7\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsCondition.html\">FiIpsCondition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 24484000}\">Severe</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 46635009}\">T1DM - type 1 diabetes mellitus</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>onset</b>: 1999-04</p></div>"
+      },
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active",
+          "display" : "Active"
+        }],
+        "text" : "Active"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "Confirmed"
+        }],
+        "text" : "Confirmed"
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "problem-list-item",
+          "display" : "Problem List Item"
+        }],
+        "text" : "Problem List Item"
+      }],
+      "severity" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24484000",
+          "display" : "Severe"
+        }],
+        "text" : "Severe"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "46635009",
+          "display" : "Type 1 diabetes mellitus"
+        }],
+        "text" : "T1DM - type 1 diabetes mellitus"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "onsetDateTime" : "1999-04"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a88f7ff5-7803-43f5-a6bb-3c542736ce5e",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "a88f7ff5-7803-43f5-a6bb-3c542736ce5e",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_a88f7ff5-7803-43f5-a6bb-3c542736ce5e\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device a88f7ff5-7803-43f5-a6bb-3c542736ce5e</b></p><a name=\"a88f7ff5-7803-43f5-a6bb-3c542736ce5e\"> </a><a name=\"hca88f7ff5-7803-43f5-a6bb-3c542736ce5e\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/ips/2024Sep/StructureDefinition-Device-uv-ips.html\">Device (IPS)</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Ypsomed AG</p><p><b>serialNumber</b>: 07613117023867</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>mylife YpsoPump</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 69805005}\">Insulin pump</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>parent</b>: <a href=\"Device-DeviceMylifeLoop.html\">Device: status = active; manufacturer = Ypsomed AG; type = Invasive interstitial fluid glucose monitoring/insulin infusion system</a></p></div>"
+      },
+      "status" : "active",
+      "manufacturer" : "Ypsomed AG",
+      "serialNumber" : "07613117023867",
+      "deviceName" : [{
+        "name" : "mylife YpsoPump",
+        "type" : "manufacturer-name"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "69805005",
+          "display" : "Insulin pump"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "parent" : {
+        "reference" : "Device/DeviceMylifeLoop"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:876781b9-0db0-429a-877b-23e17e4d8443",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "876781b9-0db0-429a-877b-23e17e4d8443",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_876781b9-0db0-429a-877b-23e17e4d8443\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device 876781b9-0db0-429a-877b-23e17e4d8443</b></p><a name=\"876781b9-0db0-429a-877b-23e17e4d8443\"> </a><a name=\"hc876781b9-0db0-429a-877b-23e17e4d8443\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/ips/2024Sep/StructureDefinition-Device-uv-ips.html\">Device (IPS)</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Dexcom</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dexcom G6</td><td>Manufacturer name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 700585005}\">Invasive interstitial-fluid glucose monitoring system</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>parent</b>: <a href=\"Device-DeviceMylifeLoop.html\">Device: status = active; manufacturer = Ypsomed AG; type = Invasive interstitial fluid glucose monitoring/insulin infusion system</a></p></div>"
+      },
+      "status" : "active",
+      "manufacturer" : "Dexcom",
+      "deviceName" : [{
+        "name" : "Dexcom G6",
+        "type" : "manufacturer-name"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "700585005",
+          "display" : "Invasive interstitial-fluid glucose monitoring system"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "parent" : {
+        "reference" : "Device/DeviceMylifeLoop"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:9c49dff9-84b0-45f6-9e52-e8fa4b186473",
+    "resource" : {
+      "resourceType" : "Device",
+      "id" : "9c49dff9-84b0-45f6-9e52-e8fa4b186473",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Device_9c49dff9-84b0-45f6-9e52-e8fa4b186473\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Device 9c49dff9-84b0-45f6-9e52-e8fa4b186473</b></p><a name=\"9c49dff9-84b0-45f6-9e52-e8fa4b186473\"> </a><a name=\"hc9c49dff9-84b0-45f6-9e52-e8fa4b186473\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/ips/2024Sep/StructureDefinition-Device-uv-ips.html\">Device (IPS)</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: CamDiab Ltd</p><blockquote><p><b>deviceName</b></p><p><b>name</b>: CamAPS FX</p><p><b>type</b>: Manufacturer name</p></blockquote><blockquote><p><b>deviceName</b></p><p><b>name</b>: mylife Loop</p><p><b>type</b>: Manufacturer name</p></blockquote><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 462674008}\">Infusion pump medication-dosage application software</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>parent</b>: <a href=\"Device-DeviceMylifeLoop.html\">Device: status = active; manufacturer = Ypsomed AG; type = Invasive interstitial fluid glucose monitoring/insulin infusion system</a></p></div>"
+      },
+      "status" : "active",
+      "manufacturer" : "CamDiab Ltd",
+      "deviceName" : [{
+        "name" : "CamAPS FX",
+        "type" : "manufacturer-name"
+      },
+      {
+        "name" : "mylife Loop",
+        "type" : "manufacturer-name"
+      }],
+      "type" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "462674008",
+          "display" : "Infusion pump medication-dosage application software"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "parent" : {
+        "reference" : "Device/DeviceMylifeLoop"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:905180fb-dc21-4b81-95d8-e2918657ce22",
+    "resource" : {
+      "resourceType" : "DeviceUseStatement",
+      "id" : "905180fb-dc21-4b81-95d8-e2918657ce22",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DeviceUseStatement_905180fb-dc21-4b81-95d8-e2918657ce22\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DeviceUseStatement 905180fb-dc21-4b81-95d8-e2918657ce22</b></p><a name=\"905180fb-dc21-4b81-95d8-e2918657ce22\"> </a><a name=\"hc905180fb-dc21-4b81-95d8-e2918657ce22\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/ips/2024Sep/StructureDefinition-DeviceUseStatement-uv-ips.html\">Device Use Statement (IPS)</a></p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>timing</b>: 2023-10-06 --&gt; (ongoing)</p><p><b>recordedOn</b>: 2023-12-27</p><p><b>source</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>device</b>: <a href=\"Device-DeviceMylifeLoop.html\">Device: status = active; manufacturer = Ypsomed AG; type = Invasive interstitial fluid glucose monitoring/insulin infusion system</a></p><p><b>reasonReference</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-1558c456-efa1-4b3d-abe2-1522c6048bc7\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p></div>"
+      },
+      "status" : "active",
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "timingPeriod" : {
+        "start" : "2023-10-06"
+      },
+      "recordedOn" : "2023-12-27",
+      "source" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "device" : {
+        "reference" : "Device/DeviceMylifeLoop"
+      },
+      "reasonReference" : [{
+        "reference" : "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:5a3c0871-af41-4f63-9615-d98308d9e794",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "5a3c0871-af41-4f63-9615-d98308d9e794",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_5a3c0871-af41-4f63-9615-d98308d9e794\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 5a3c0871-af41-4f63-9615-d98308d9e794</b></p><a name=\"5a3c0871-af41-4f63-9615-d98308d9e794\"> </a><a name=\"hc5a3c0871-af41-4f63-9615-d98308d9e794\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07AM}, {http://snomed.info/sct 863911006}, {urn:oid:1.2.246.537.6.610 76}\">Tetanus vaccines</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2003-10-02</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 76902006}, {urn:oid:1.2.246.537.6.609 7}\">Tetanus</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07AM",
+          "display" : "Tetanus vaccines"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "863911006",
+          "display" : "Vaccine product containing Clostridium tetani antigen (medicinal product)"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "76",
+          "display" : "Jäykkäkouristusrokote"
+        }]
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2003-10-02",
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "76902006",
+            "display" : "Tetanus"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "7",
+            "display" : "Jäykkäkouristus"
+          }],
+          "text" : "Tetanus"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:244fb199-b9b2-49ef-85cd-09e5cdbc83af",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "244fb199-b9b2-49ef-85cd-09e5cdbc83af",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_244fb199-b9b2-49ef-85cd-09e5cdbc83af\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 244fb199-b9b2-49ef-85cd-09e5cdbc83af</b></p><a name=\"244fb199-b9b2-49ef-85cd-09e5cdbc83af\"> </a><a name=\"hc244fb199-b9b2-49ef-85cd-09e5cdbc83af\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BC02}, {http://snomed.info/sct 871751006}, {urn:oid:1.2.246.537.6.610 50}, {urn:oid:1.2.246.537.6.611 13}\">Havrix for hepatitis A</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2004-11-02</p><p><b>manufacturer</b>: GlaxoSmithCline (GSK)</p><p><b>doseQuantity</b>: 1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 40468003}, {urn:oid:1.2.246.537.6.609 13}\">Hepatitis A</span></td><td>1</td><td>2</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BC02",
+          "display" : "hepatitis A, inactivated, whole virus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871751006",
+          "display" : "Hepatitis A vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "50",
+          "display" : "Hepatiitti A -rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "13",
+          "display" : "Havrix"
+        }],
+        "text" : "Havrix for hepatitis A"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2004-11-02",
+      "manufacturer" : {
+        "display" : "GlaxoSmithCline (GSK)"
+      },
+      "doseQuantity" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "40468003",
+            "display" : "Viral hepatitis, type A"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "13",
+            "display" : "Hepatiitti A -viruksen aiheuttama maksatulehdus"
+          }],
+          "text" : "Hepatitis A"
+        }],
+        "doseNumberPositiveInt" : 1,
+        "seriesDosesPositiveInt" : 2
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:97345cda-49d9-453c-8c9c-01edc6607cc7",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "97345cda-49d9-453c-8c9c-01edc6607cc7",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_97345cda-49d9-453c-8c9c-01edc6607cc7\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 97345cda-49d9-453c-8c9c-01edc6607cc7</b></p><a name=\"97345cda-49d9-453c-8c9c-01edc6607cc7\"> </a><a name=\"hc97345cda-49d9-453c-8c9c-01edc6607cc7\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BC02}, {http://snomed.info/sct 871751006}, {urn:oid:1.2.246.537.6.610 50}, {urn:oid:1.2.246.537.6.611 13}\">Havrix for hepatitis A</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2005-11-18</p><p><b>manufacturer</b>: GlaxoSmithCline (GSK)</p><p><b>doseQuantity</b>: 1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 40468003}, {urn:oid:1.2.246.537.6.609 13}\">Hepatitis A</span></td><td>2</td><td>2</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BC02",
+          "display" : "hepatitis A, inactivated, whole virus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871751006",
+          "display" : "Hepatitis A vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "50",
+          "display" : "Hepatiitti A -rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "13",
+          "display" : "Havrix"
+        }],
+        "text" : "Havrix for hepatitis A"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2005-11-18",
+      "manufacturer" : {
+        "display" : "GlaxoSmithCline (GSK)"
+      },
+      "doseQuantity" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "40468003",
+            "display" : "Viral hepatitis, type A"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "13",
+            "display" : "Hepatiitti A -viruksen aiheuttama maksatulehdus"
+          }],
+          "text" : "Hepatitis A"
+        }],
+        "doseNumberPositiveInt" : 2,
+        "seriesDosesPositiveInt" : 2
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6cfe08b7-55a1-40d9-9010-484f59b13ff2",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "6cfe08b7-55a1-40d9-9010-484f59b13ff2",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_6cfe08b7-55a1-40d9-9010-484f59b13ff2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 6cfe08b7-55a1-40d9-9010-484f59b13ff2</b></p><a name=\"6cfe08b7-55a1-40d9-9010-484f59b13ff2\"> </a><a name=\"hc6cfe08b7-55a1-40d9-9010-484f59b13ff2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BL01}, {http://snomed.info/sct 1121000221106}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 47}\">Stamaril vaccine for yellow fever</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2007-03-19</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>lotNumber</b>: A5284-3</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 16541001}, {urn:oid:1.2.246.537.6.609 22}\">Yellow fever</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BL01",
+          "display" : "yellow fever, live attenuated"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1121000221106",
+          "display" : "Live attenuated yellow fever vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "59",
+          "display" : "Keltakuumerokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "47",
+          "display" : "Stamaril"
+        }],
+        "text" : "Stamaril vaccine for yellow fever"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2007-03-19",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "lotNumber" : "A5284-3",
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "16541001",
+            "display" : "Yellow fever"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "22",
+            "display" : "Keltakuume"
+          }],
+          "text" : "Yellow fever"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:cf4545bb-604d-45de-a7da-95baf181286b",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "cf4545bb-604d-45de-a7da-95baf181286b",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_cf4545bb-604d-45de-a7da-95baf181286b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization cf4545bb-604d-45de-a7da-95baf181286b</b></p><a name=\"cf4545bb-604d-45de-a7da-95baf181286b\"> </a><a name=\"hccf4545bb-604d-45de-a7da-95baf181286b\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07AH03}, {http://snomed.info/sct 871871008}, {http://hl7.org/fhir/sid/cvx 192}, {urn:oid:1.2.246.537.6.610 71}, {urn:oid:1.2.246.537.6.611 29}\">MeningoVac A+C meningococcal vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2007-04-02</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 7180009}, {urn:oid:1.2.246.537.6.609 4}\">Meningitis</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07AH03",
+          "display" : "meningococcus A,C, bivalent purified polysaccharides antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871871008",
+          "display" : "Meningitis A and C vaccine"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "192",
+          "display" : "meningococcal AC polysaccharide vaccine (non-US)"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "71",
+          "display" : "Meningokokkirokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "29",
+          "display" : "Meningovac AC"
+        }],
+        "text" : "MeningoVac A+C meningococcal vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2007-04-02",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "7180009",
+            "display" : "Meningitis"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "4",
+            "display" : "Meningokokin aiheuttama infektio"
+          }],
+          "text" : "Meningitis"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a0ca2399-1f86-487b-ad6c-3e64081ae945",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "a0ca2399-1f86-487b-ad6c-3e64081ae945",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_a0ca2399-1f86-487b-ad6c-3e64081ae945\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization a0ca2399-1f86-487b-ad6c-3e64081ae945</b></p><a name=\"a0ca2399-1f86-487b-ad6c-3e64081ae945\"> </a><a name=\"hca0ca2399-1f86-487b-ad6c-3e64081ae945\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BC01}, {http://snomed.info/sct 871822003}, {urn:oid:1.2.246.537.6.610 49}, {urn:oid:1.2.246.537.6.611 10}\">Engerix-B for hepatitis B</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2010-10-25</p><p><b>manufacturer</b>: GlaxoSmithKline Biologicals s.a. (GSK)</p><p><b>lotNumber</b>: AHBVB649AG</p><p><b>doseQuantity</b>: 1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}, {urn:oid:1.2.246.537.6.609 14}\">Hepatitis B</span></td><td>1</td><td>3</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BC01",
+          "display" : "hepatitis B, purified antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871822003",
+          "display" : "Hepatitis B vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "49",
+          "display" : "Hepatiitti B -rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "10",
+          "display" : "Engerix-B"
+        }],
+        "text" : "Engerix-B for hepatitis B"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2010-10-25",
+      "manufacturer" : {
+        "display" : "GlaxoSmithKline Biologicals s.a. (GSK)"
+      },
+      "lotNumber" : "AHBVB649AG",
+      "doseQuantity" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "66071002",
+            "display" : "Type B viral hepatitis"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "14",
+            "display" : "Hepatiitti B -viruksen aiheuttama maksatulehdus"
+          }],
+          "text" : "Hepatitis B"
+        }],
+        "doseNumberPositiveInt" : 1,
+        "seriesDosesPositiveInt" : 3
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2</b></p><a name=\"d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2\"> </a><a name=\"hcd33a6a70-9c27-4b4b-a3bb-731fc2e43fb2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BC01}, {http://snomed.info/sct 871822003}, {urn:oid:1.2.246.537.6.610 49}, {urn:oid:1.2.246.537.6.611 10}\">Engerix-B for hepatitis B</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2010-11-25</p><p><b>manufacturer</b>: GlaxoSmithKline Biologicals s.a. (GSK)</p><p><b>lotNumber</b>: AHBVB649AG</p><p><b>doseQuantity</b>: 1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}, {urn:oid:1.2.246.537.6.609 14}\">Hepatitis B</span></td><td>2</td><td>3</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BC01",
+          "display" : "hepatitis B, purified antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871822003",
+          "display" : "Hepatitis B vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "49",
+          "display" : "Hepatiitti B -rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "10",
+          "display" : "Engerix-B"
+        }],
+        "text" : "Engerix-B for hepatitis B"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2010-11-25",
+      "manufacturer" : {
+        "display" : "GlaxoSmithKline Biologicals s.a. (GSK)"
+      },
+      "lotNumber" : "AHBVB649AG",
+      "doseQuantity" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "66071002",
+            "display" : "Type B viral hepatitis"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "14",
+            "display" : "Hepatiitti B -viruksen aiheuttama maksatulehdus"
+          }],
+          "text" : "Hepatitis B"
+        }],
+        "doseNumberPositiveInt" : 2,
+        "seriesDosesPositiveInt" : 3
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f871751d-14fe-4672-bc2f-6a6e83e6ac73",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "f871751d-14fe-4672-bc2f-6a6e83e6ac73",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_f871751d-14fe-4672-bc2f-6a6e83e6ac73\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization f871751d-14fe-4672-bc2f-6a6e83e6ac73</b></p><a name=\"f871751d-14fe-4672-bc2f-6a6e83e6ac73\"> </a><a name=\"hcf871751d-14fe-4672-bc2f-6a6e83e6ac73\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BC01}, {http://snomed.info/sct 871822003}, {urn:oid:1.2.246.537.6.610 49}, {urn:oid:1.2.246.537.6.611 10}\">Engerix-B for hepatitis B</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2011-04-20</p><p><b>manufacturer</b>: GlaxoSmithKline Biologicals s.a. (GSK)</p><p><b>lotNumber</b>: AHBVB649AG</p><p><b>doseQuantity</b>: 1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}, {urn:oid:1.2.246.537.6.609 14}\">Hepatitis B</span></td><td>3</td><td>3</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BC01",
+          "display" : "hepatitis B, purified antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871822003",
+          "display" : "Hepatitis B vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "49",
+          "display" : "Hepatiitti B -rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "10",
+          "display" : "Engerix-B"
+        }],
+        "text" : "Engerix-B for hepatitis B"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2011-04-20",
+      "manufacturer" : {
+        "display" : "GlaxoSmithKline Biologicals s.a. (GSK)"
+      },
+      "lotNumber" : "AHBVB649AG",
+      "doseQuantity" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "66071002",
+            "display" : "Type B viral hepatitis"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "14",
+            "display" : "Hepatiitti B -viruksen aiheuttama maksatulehdus"
+          }],
+          "text" : "Hepatitis B"
+        }],
+        "doseNumberPositiveInt" : 3,
+        "seriesDosesPositiveInt" : 3
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f1649cba-fde7-4d54-8fcd-37b6240017ac",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "f1649cba-fde7-4d54-8fcd-37b6240017ac",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_f1649cba-fde7-4d54-8fcd-37b6240017ac\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization f1649cba-fde7-4d54-8fcd-37b6240017ac</b></p><a name=\"f1649cba-fde7-4d54-8fcd-37b6240017ac\"> </a><a name=\"hcf1649cba-fde7-4d54-8fcd-37b6240017ac\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BF03}, {http://snomed.info/sct 871740006}, {urn:oid:1.2.246.537.6.610 53}, {urn:oid:1.2.246.537.6.611 19}\">Imovax Polio vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2011-05-12</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 398102009}, {urn:oid:1.2.246.537.6.609 17}\">Polio</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BF03",
+          "display" : "poliomyelitis, trivalent, inactivated, whole virus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "871740006",
+          "display" : "Inactivated polio vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "53",
+          "display" : "Poliorokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "19",
+          "display" : "Imovax Polio"
+        }],
+        "text" : "Imovax Polio vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2011-05-12",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "398102009",
+            "display" : "Poliomyelitis"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "17",
+            "display" : "Polio"
+          }],
+          "text" : "Polio"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6b8e54e6-6023-4911-9a43-91b73066dc08",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "6b8e54e6-6023-4911-9a43-91b73066dc08",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_6b8e54e6-6023-4911-9a43-91b73066dc08\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 6b8e54e6-6023-4911-9a43-91b73066dc08</b></p><a name=\"6b8e54e6-6023-4911-9a43-91b73066dc08\"> </a><a name=\"hc6b8e54e6-6023-4911-9a43-91b73066dc08\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07AP03}, {http://snomed.info/sct 961000221100}, {urn:oid:1.2.246.537.6.610 44}, {urn:oid:1.2.246.537.6.611 44}\">Typherix typhoid fever vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2011-05-12</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>lotNumber</b>: ATYPB084BC</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 4834000}, {urn:oid:1.2.246.537.6.609 9}\">Typhoid fever</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07AP03",
+          "display" : "typhoid, purified polysaccharide antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "961000221100",
+          "display" : "Typhoid vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "44",
+          "display" : "Lavantautirokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "44",
+          "display" : "Typherix"
+        }],
+        "text" : "Typherix typhoid fever vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2011-05-12",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "lotNumber" : "ATYPB084BC",
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281657000",
+          "display" : "Travel vaccinations"
+        }]
+      }],
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "4834000",
+            "display" : "Typhoid fever"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "9",
+            "display" : "Lavantauti"
+          }],
+          "text" : "Typhoid fever"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:cae0ed26-c654-403c-8c85-ff4432949786",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "cae0ed26-c654-403c-8c85-ff4432949786",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_cae0ed26-c654-403c-8c85-ff4432949786\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization cae0ed26-c654-403c-8c85-ff4432949786</b></p><a name=\"cae0ed26-c654-403c-8c85-ff4432949786\"> </a><a name=\"hccae0ed26-c654-403c-8c85-ff4432949786\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BB02}, {http://snomed.info/sct 1181000221105}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 24}\">Vaxigrip vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2014-01-03</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BB02",
+          "display" : "influenza, inactivated, split virus or surface antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1181000221105",
+          "display" : "Influenza vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "48",
+          "display" : "Influenssarokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "24",
+          "display" : "Vaxigrip"
+        }],
+        "text" : "Vaxigrip vaccine for influenza"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2014-01-03",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "6142004",
+            "display" : "Influenza"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "12",
+            "display" : "Influenssa"
+          }],
+          "text" : "Influenza"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bd632ca0-6661-4b9d-bbf6-7ffd3154e700",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "bd632ca0-6661-4b9d-bbf6-7ffd3154e700",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_bd632ca0-6661-4b9d-bbf6-7ffd3154e700\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization bd632ca0-6661-4b9d-bbf6-7ffd3154e700</b></p><a name=\"bd632ca0-6661-4b9d-bbf6-7ffd3154e700\"> </a><a name=\"hcbd632ca0-6661-4b9d-bbf6-7ffd3154e700\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07AM51}, {http://snomed.info/sct 863911006}, {urn:oid:1.2.246.537.6.610 42}, {urn:oid:1.2.246.537.6.611 66}\">Imovax dT Adult for tetanus</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2015-05-04</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 76902006}, {urn:oid:1.2.246.537.6.609 7}\">Tetanus (disorder)</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07AM51",
+          "display" : "tetanus toxoid, combinations with diphtheria toxoid"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "863911006",
+          "display" : "Vaccine product containing Clostridium tetani antigen (medicinal product)"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "42",
+          "display" : "Kurkkumätä-jäykkäkouristustehosterokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "66",
+          "display" : "Imovax dT Adult"
+        }],
+        "text" : "Imovax dT Adult for tetanus"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2015-05-04",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "76902006",
+            "display" : "Tetanus (disorder)"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "7",
+            "display" : "Jäykkäkouristus"
+          }]
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b54184da-87e6-4c0f-a85a-9546a5cc9783",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "b54184da-87e6-4c0f-a85a-9546a5cc9783",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_b54184da-87e6-4c0f-a85a-9546a5cc9783\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization b54184da-87e6-4c0f-a85a-9546a5cc9783</b></p><a name=\"b54184da-87e6-4c0f-a85a-9546a5cc9783\"> </a><a name=\"hcb54184da-87e6-4c0f-a85a-9546a5cc9783\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BB02}, {http://snomed.info/sct 1181000221105}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 24}\">Vaxigrip vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2015-10-22</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BB02",
+          "display" : "influenza, inactivated, split virus or surface antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1181000221105",
+          "display" : "Influenza vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "48",
+          "display" : "Influenssarokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "24",
+          "display" : "Vaxigrip"
+        }],
+        "text" : "Vaxigrip vaccine for influenza"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2015-10-22",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "6142004",
+            "display" : "Influenza"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "12",
+            "display" : "Influenssa"
+          }],
+          "text" : "Influenza"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:04dfd1be-9483-485d-8030-a9ce3a264363",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "04dfd1be-9483-485d-8030-a9ce3a264363",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_04dfd1be-9483-485d-8030-a9ce3a264363\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 04dfd1be-9483-485d-8030-a9ce3a264363</b></p><a name=\"04dfd1be-9483-485d-8030-a9ce3a264363\"> </a><a name=\"hc04dfd1be-9483-485d-8030-a9ce3a264363\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BB02}, {http://snomed.info/sct 1181000221105}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 122}\">VaxigripTetra vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2019-01-02</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BB02",
+          "display" : "influenza, inactivated, split virus or surface antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1181000221105",
+          "display" : "Influenza vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "48",
+          "display" : "Influenssarokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "122",
+          "display" : "VaxigripTetra"
+        }],
+        "text" : "VaxigripTetra vaccine for influenza"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2019-01-02",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "6142004",
+            "display" : "Influenza"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "12",
+            "display" : "Influenssa"
+          }],
+          "text" : "Influenza"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d9828658-c9dd-478c-8573-c514cd834f5f",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "d9828658-c9dd-478c-8573-c514cd834f5f",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_d9828658-c9dd-478c-8573-c514cd834f5f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization d9828658-c9dd-478c-8573-c514cd834f5f</b></p><a name=\"d9828658-c9dd-478c-8573-c514cd834f5f\"> </a><a name=\"hcd9828658-c9dd-478c-8573-c514cd834f5f\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BN01}, {http://snomed.info/sct 1119349007}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 128}\">Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2021-04-22</p><p><b>manufacturer</b>: Pfizer-BioNTech</p><p><b>doseQuantity</b>: 0.3 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 186747009}, {urn:oid:1.2.246.537.6.609 29}\">Covid-19</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BN01",
+          "display" : "covid-19, RNA-based vaccine"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1119349007",
+          "display" : "COVID-19 mRNA vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "59",
+          "display" : "COVID-19-rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "128",
+          "display" : "Comirnaty"
+        }],
+        "text" : "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2021-04-22",
+      "manufacturer" : {
+        "display" : "Pfizer-BioNTech"
+      },
+      "doseQuantity" : {
+        "value" : 0.3,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "186747009",
+            "display" : "Coronavirus infection"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "29",
+            "display" : "COVID-19-tauti"
+          }],
+          "text" : "Covid-19"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f3fff46d-7755-4af3-a334-a3d3899d8a58",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "f3fff46d-7755-4af3-a334-a3d3899d8a58",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_f3fff46d-7755-4af3-a334-a3d3899d8a58\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization f3fff46d-7755-4af3-a334-a3d3899d8a58</b></p><a name=\"f3fff46d-7755-4af3-a334-a3d3899d8a58\"> </a><a name=\"hcf3fff46d-7755-4af3-a334-a3d3899d8a58\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BN01}, {http://snomed.info/sct 1119349007}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 128}\">Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2021-07-15</p><p><b>manufacturer</b>: Pfizer-BioNTech</p><p><b>lotNumber</b>: ET6956</p><p><b>doseQuantity</b>: 0.3 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 186747009}, {urn:oid:1.2.246.537.6.609 29}\">Covid-19</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BN01",
+          "display" : "covid-19, RNA-based vaccine"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1119349007",
+          "display" : "COVID-19 mRNA vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "59",
+          "display" : "COVID-19-rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "128",
+          "display" : "Comirnaty"
+        }],
+        "text" : "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2021-07-15",
+      "manufacturer" : {
+        "display" : "Pfizer-BioNTech"
+      },
+      "lotNumber" : "ET6956",
+      "doseQuantity" : {
+        "value" : 0.3,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "186747009",
+            "display" : "Coronavirus infection"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "29",
+            "display" : "COVID-19-tauti"
+          }],
+          "text" : "Covid-19"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:aac217a5-cd2f-4217-b5ff-c55e9f7c3378",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "aac217a5-cd2f-4217-b5ff-c55e9f7c3378",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_aac217a5-cd2f-4217-b5ff-c55e9f7c3378\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization aac217a5-cd2f-4217-b5ff-c55e9f7c3378</b></p><a name=\"aac217a5-cd2f-4217-b5ff-c55e9f7c3378\"> </a><a name=\"hcaac217a5-cd2f-4217-b5ff-c55e9f7c3378\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BN01}, {http://snomed.info/sct 1119349007}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 142}\">Moderna Spikevax covid-19 mRNA vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2022-01-17</p><p><b>manufacturer</b>: Moderna</p><p><b>doseQuantity</b>: 0.25 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 186747009}, {urn:oid:1.2.246.537.6.609 29}\">Covid-19</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BN01",
+          "display" : "covid-19, RNA-based vaccine"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1119349007",
+          "display" : "COVID-19 mRNA vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "59",
+          "display" : "COVID-19-rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "142",
+          "display" : "Spikevax"
+        }],
+        "text" : "Moderna Spikevax covid-19 mRNA vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2022-01-17",
+      "manufacturer" : {
+        "display" : "Moderna"
+      },
+      "doseQuantity" : {
+        "value" : 0.25,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "186747009",
+            "display" : "Coronavirus infection"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "29",
+            "display" : "COVID-19-tauti"
+          }],
+          "text" : "Covid-19"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:5906618a-e76b-44b5-b670-7a0820075bae",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "5906618a-e76b-44b5-b670-7a0820075bae",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_5906618a-e76b-44b5-b670-7a0820075bae\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 5906618a-e76b-44b5-b670-7a0820075bae</b></p><a name=\"5906618a-e76b-44b5-b670-7a0820075bae\"> </a><a name=\"hc5906618a-e76b-44b5-b670-7a0820075bae\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BB02}, {http://snomed.info/sct 1181000221105}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 122}\">VaxigripTetra vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2022-11-02</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BB02",
+          "display" : "influenza, inactivated, split virus or surface antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1181000221105",
+          "display" : "Influenza vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "48",
+          "display" : "Influenssarokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "122",
+          "display" : "VaxigripTetra"
+        }],
+        "text" : "VaxigripTetra vaccine for influenza"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2022-11-02",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "6142004",
+            "display" : "Influenza"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "12",
+            "display" : "Influenssa"
+          }],
+          "text" : "Influenza"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:9c0744c0-9b0a-4796-b653-452a0098625f",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "9c0744c0-9b0a-4796-b653-452a0098625f",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_9c0744c0-9b0a-4796-b653-452a0098625f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 9c0744c0-9b0a-4796-b653-452a0098625f</b></p><a name=\"9c0744c0-9b0a-4796-b653-452a0098625f\"> </a><a name=\"hc9c0744c0-9b0a-4796-b653-452a0098625f\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BN01}, {http://snomed.info/sct 1119349007}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 128}\">Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2023-12-20</p><p><b>manufacturer</b>: Pfizer-BioNTech</p><p><b>doseQuantity</b>: 0.3 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 186747009}, {urn:oid:1.2.246.537.6.609 29}\">Covid-19</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BN01",
+          "display" : "covid-19, RNA-based vaccine"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1119349007",
+          "display" : "COVID-19 mRNA vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "59",
+          "display" : "COVID-19-rokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "128",
+          "display" : "Comirnaty"
+        }],
+        "text" : "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2023-12-20",
+      "manufacturer" : {
+        "display" : "Pfizer-BioNTech"
+      },
+      "doseQuantity" : {
+        "value" : 0.3,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "186747009",
+            "display" : "Coronavirus infection"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "29",
+            "display" : "COVID-19-tauti"
+          }],
+          "text" : "Covid-19"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bfe1d5a4-be0e-403a-a27c-16ef74aca3b3",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "bfe1d5a4-be0e-403a-a27c-16ef74aca3b3",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/IpaIpsImmunization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_bfe1d5a4-be0e-403a-a27c-16ef74aca3b3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization bfe1d5a4-be0e-403a-a27c-16ef74aca3b3</b></p><a name=\"bfe1d5a4-be0e-403a-a27c-16ef74aca3b3\"> </a><a name=\"hcbfe1d5a4-be0e-403a-a27c-16ef74aca3b3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IpaIpsImmunization.html\">IpaIpsImmunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://www.whocc.no/atc J07BB02}, {http://snomed.info/sct 1181000221105}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 122}\">VaxigripTetra vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>occurrence</b>: 2023-12-20</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "J07BB02",
+          "display" : "influenza, inactivated, split virus or surface antigen"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1181000221105",
+          "display" : "Influenza vaccine"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.610",
+          "code" : "48",
+          "display" : "Influenssarokote"
+        },
+        {
+          "system" : "urn:oid:1.2.246.537.6.611",
+          "code" : "122",
+          "display" : "VaxigripTetra"
+        }],
+        "text" : "VaxigripTetra vaccine for influenza"
+      },
+      "patient" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "occurrenceDateTime" : "2023-12-20",
+      "manufacturer" : {
+        "display" : "Sanofi Pasteur"
+      },
+      "doseQuantity" : {
+        "value" : 0.5,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      },
+      "protocolApplied" : [{
+        "targetDisease" : [{
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "6142004",
+            "display" : "Influenza"
+          },
+          {
+            "system" : "urn:oid:1.2.246.537.6.609",
+            "code" : "12",
+            "display" : "Influenssa"
+          }],
+          "text" : "Influenza"
+        }],
+        "doseNumberPositiveInt" : 1
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:e6f153f4-6188-4dc4-9f19-f4179b9ee720",
+    "resource" : {
+      "resourceType" : "Medication",
+      "id" : "e6f153f4-6188-4dc4-9f19-f4179b9ee720",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsMedication"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_e6f153f4-6188-4dc4-9f19-f4179b9ee720\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication e6f153f4-6188-4dc4-9f19-f4179b9ee720</b></p><a name=\"e6f153f4-6188-4dc4-9f19-f4179b9ee720\"> </a><a name=\"hce6f153f4-6188-4dc4-9f19-f4179b9ee720\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsMedication.html\">FiIpsMedication</a></p></div><p><b>code</b>: <span title=\"Codes:{http://www.whocc.no/atc A10AB05}, {http://snomed.info/sct 325072002}, {https://vnr.fi/ 467931}\">Insulin NovoRapid 100 units/ml</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Novo Nordisk (Identifier: Organization identifier/https://www.novonordisk.com/\u00a0(use:\u00a0official,\u00a0))</p><p><b>form</b>: <span title=\"Codes:{http://snomed.info/sct 385219001}\">Solution for injection</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 325072002}\">Insulin Aspart (substance)</span></td><td>100 U<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU = 'U')</span>/1 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></td></tr></table></div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://www.whocc.no/atc",
+          "code" : "A10AB05",
+          "display" : "Insulin aspart"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "325072002",
+          "display" : "Insulin aspart"
+        },
+        {
+          "system" : "https://vnr.fi/",
+          "code" : "467931",
+          "display" : "NovoRapid PumpCart 100 yksikköä/ml"
+        }],
+        "text" : "Insulin NovoRapid 100 units/ml"
+      },
+      "status" : "active",
+      "manufacturer" : {
+        "identifier" : {
+          "use" : "official",
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "XX"
+            }]
+          },
+          "system" : "urn:ietf:rfc:3986",
+          "value" : "https://www.novonordisk.com/"
+        },
+        "display" : "Novo Nordisk"
+      },
+      "form" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "385219001",
+          "display" : "Solution for injection"
+        }]
+      },
+      "ingredient" : [{
+        "itemCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "325072002",
+            "display" : "Insulin Aspart (substance)"
+          }]
+        },
+        "strength" : {
+          "numerator" : {
+            "value" : 100,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "U"
+          },
+          "denominator" : {
+            "value" : 1,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "mL"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "847b849a-eb83-4387-b60b-46eb8d39ebfd",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsMedicationRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationRequest_847b849a-eb83-4387-b60b-46eb8d39ebfd\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 847b849a-eb83-4387-b60b-46eb8d39ebfd</b></p><a name=\"847b849a-eb83-4387-b60b-46eb8d39ebfd\"> </a><a name=\"hc847b849a-eb83-4387-b60b-46eb8d39ebfd\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsMedicationRequest.html\">FiIpsMedicationRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Instance Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-e6f153f4-6188-4dc4-9f19-f4179b9ee720\">Insulin NovoRapid 100 units/ml</a></p><p><b>subject</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 46635009}\">T1DM - type 1 diabetes mellitus</span></p><p><b>reasonReference</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-1558c456-efa1-4b3d-abe2-1522c6048bc7\">T1DM - type 1 diabetes mellitus</a></p><p><b>courseOfTherapyType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy continuous}\">Continuous long term therapy</span></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI</p><p><b>patientInstruction</b>: 50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50-100</td></tr></table></blockquote></div>"
+      },
+      "status" : "active",
+      "intent" : "instance-order",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+          "code" : "community"
+        }]
+      }],
+      "medicationReference" : {
+        "reference" : "urn:uuid:e6f153f4-6188-4dc4-9f19-f4179b9ee720",
+        "display" : "Insulin NovoRapid 100 units/ml"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "46635009",
+          "display" : "Type 1 diabetes mellitus"
+        }],
+        "text" : "T1DM - type 1 diabetes mellitus"
+      }],
+      "reasonReference" : [{
+        "reference" : "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7",
+        "display" : "T1DM - type 1 diabetes mellitus"
+      }],
+      "courseOfTherapyType" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+          "code" : "continuous",
+          "display" : "Continuous long term therapy"
+        }]
+      },
+      "dosageInstruction" : [{
+        "text" : "50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI",
+        "patientInstruction" : "50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI",
+        "doseAndRate" : [{
+          "rateRange" : {
+            "low" : {
+              "value" : 50,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[iU]/d"
+            },
+            "high" : {
+              "value" : 100,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[iU]/d"
+            }
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bb2d0be6-24fd-4e1f-8fa4-10e058ed2775",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "bb2d0be6-24fd-4e1f-8fa4-10e058ed2775",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsMedicationStatement"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MedicationStatement_bb2d0be6-24fd-4e1f-8fa4-10e058ed2775\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement bb2d0be6-24fd-4e1f-8fa4-10e058ed2775</b></p><a name=\"bb2d0be6-24fd-4e1f-8fa4-10e058ed2775\"> </a><a name=\"hcbb2d0be6-24fd-4e1f-8fa4-10e058ed2775\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsMedicationStatement.html\">FiIpsMedicationStatement</a></p></div><p><b>basedOn</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-847b849a-eb83-4387-b60b-46eb8d39ebfd\">Prescription for Insulin Novorapid</a></p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category community}\">Community</span></p><p><b>medication</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-e6f153f4-6188-4dc4-9f19-f4179b9ee720\">Insulin NovoRapid 100 units/ml</a></p><p><b>subject</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>effective</b>: 2023-10-06 --&gt; (ongoing)</p><p><b>informationSource</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 46635009}\">T1DM - type 1 diabetes mellitus</span></p><p><b>reasonReference</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-1558c456-efa1-4b3d-abe2-1522c6048bc7\">T1DM - type 1 diabetes mellitus</a></p><blockquote><p><b>dosage</b></p><p><b>text</b>: 40-70 iU/d</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>40-70</td></tr></table></blockquote></div>"
+      },
+      "basedOn" : [{
+        "reference" : "urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd",
+        "display" : "Prescription for Insulin Novorapid"
+      }],
+      "status" : "active",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "community"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:uuid:e6f153f4-6188-4dc4-9f19-f4179b9ee720",
+        "display" : "Insulin NovoRapid 100 units/ml"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "effectivePeriod" : {
+        "start" : "2023-10-06"
+      },
+      "informationSource" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "46635009",
+          "display" : "Type 1 diabetes mellitus"
+        }],
+        "text" : "T1DM - type 1 diabetes mellitus"
+      }],
+      "reasonReference" : [{
+        "reference" : "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7",
+        "display" : "T1DM - type 1 diabetes mellitus"
+      }],
+      "dosage" : [{
+        "text" : "40-70 iU/d",
+        "doseAndRate" : [{
+          "rateRange" : {
+            "low" : {
+              "value" : 40,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[iU]/d"
+            },
+            "high" : {
+              "value" : 70,
+              "system" : "http://unitsofmeasure.org",
+              "code" : "[iU]/d"
+            }
+          }
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f134bd3a-755a-444a-9364-0e4e1cef2520",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "f134bd3a-755a-444a-9364-0e4e1cef2520",
+      "meta" : {
+        "profile" : ["https://mikaelrinnetmaki.fi/ips/StructureDefinition/FiIpsProcedure"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_f134bd3a-755a-444a-9364-0e4e1cef2520\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure f134bd3a-755a-444a-9364-0e4e1cef2520</b></p><a name=\"f134bd3a-755a-444a-9364-0e4e1cef2520\"> </a><a name=\"hcf134bd3a-755a-444a-9364-0e4e1cef2520\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FiIpsProcedure.html\">FiIpsProcedure</a></p></div><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 387713003}\">Surgical procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 90609000}\">Operation on bone injury of fingers</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundleforMikael.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Bundle: identifier = https://sensotrend.com/ig/ips/mikael#ips-for-mikael; type = document; timestamp = 2023-12-24 19:28:00+0200</a></p><p><b>performed</b>: 2017-07-25</p><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10 S62.6}, {http://snomed.info/sct 704094001}\">Fracture of left ring finger</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 762842005}\">Bone structure of proximal phalanx of left ring finger (body structure)</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p></div>"
+      },
+      "status" : "completed",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "387713003",
+          "display" : "Surgical procedure"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "90609000",
+          "display" : "Operation for bone injury of phalanges of hand (procedure)"
+        }],
+        "text" : "Operation on bone injury of fingers"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"
+      },
+      "performedDateTime" : "2017-07-25",
+      "reasonCode" : [{
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "S62.6",
+          "display" : "Fracture of other finger"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "704094001",
+          "display" : "Closed fracture of proximal phalanx of ring finger (disorder)"
+        }],
+        "text" : "Fracture of left ring finger"
+      }],
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "762842005",
+          "display" : "Bone structure of proximal phalanx of left ring finger (body structure)"
+        }]
+      }],
+      "outcome" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "385669000",
+          "display" : "Successful"
+        }]
+      }
+    }
+  }]
+}

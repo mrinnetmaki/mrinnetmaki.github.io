@@ -1,0 +1,506 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fuzzy+Bubbles:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Fuzzy+Bubbles:wght@400;700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Capriola&family=Dekko&family=Handlee&family=Indie+Flower&family=Itim&family=Mansalva&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Sniglet:wght@400;800&family=Sue+Ellen+Francisco&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Chivo:ital,wght@0,100..900;1,100..900&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@font-face {
+  font-family: 'Basier Circle';
+  src: url(basiercircle-regular-webfont.woff2) format("woff2"),url(basiercircle-regular-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Basier Circle';
+  src: url(basiercircle-medium-webfont.woff2) format("woff2"),url(basiercircle-medium-webfont.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Basier Circle';
+  src: url(basiercircle-semibold-webfont.woff2) format("woff2"),url(basiercircle-semibold-webfont.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Basier Circle';
+  src: url(basiercircle-bold-webfont.woff2) format("woff2"),url(basiercircle-bold-webfont.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url(archia-bold-webfont.woff2) format("woff2"),url(archia-bold-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Archia';
+  src: url(archia-bold-webfont.woff2) format("woff2"),url(archia-bold-webfont.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal
+}
+
+
+@font-face {
+  font-family: 'Hyphen';
+  src: local(Arial);
+  unicode-range: U+2010;
+}
+
+:root {
+  --offset-white: #f1f1f1;
+  --text-color: black;
+  --blue-text: #0A4797;
+  --body-margin: 2em;
+  --img-width: 30vw;
+  --text-max-width: 32rem;
+  --highlight-background: #A8C0DD;
+}
+
+html {
+  background-color: white;
+  background-color: var(--offset-white);
+  color: black;
+  color: var(--text-color);
+  font-size: 14pt;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Chivo', sans-serif;
+}
+
+h1, h2, h3, h4, dl dt, header {
+  font-family: Hyphen, 'Chivo', sans-serif;
+  color: var(--blue-text);
+}
+
+em {
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-top: 1.7em;
+  margin-bottom: 0.3em;
+}
+
+h2 + p, li > h3 + p:first-of-type {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+h3 + p {
+  margin-top: 0.5rem;
+}
+
+li > h3 {
+  margin-bottom: 0;
+}
+
+li > p {
+  font-size: 80%;
+}
+
+header {
+  text-align: center;
+}
+
+header#cover > section, header#cover2 > section {
+  vertical-align: text-top;
+  display: inline-block;
+  width: 35%;
+  margin: 200px 3%;
+}
+
+header#cover > section:last-child {
+  width: 45%;
+}
+
+header#cover2 > section {
+  width: 50%;
+}
+
+header#cover2 > section:last-child {
+  width: 35%;
+}
+
+header#cover, header#cover2 {
+  margin-left: 3%;
+}
+
+header#cover h2, header#cover2 h2 {
+  margin: 1rem 0 0.5em;
+  font-size: 52px;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+header#cover2 h2 {
+  font-size: 34px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 10.5vw;
+}
+
+header p {
+  font-size: 5.44vw;
+}
+
+header p:first-of-type {
+  letter-spacing: 0.15vw;
+}
+
+header p:last-child {
+  font-size: 1.18em;
+  margin-top: 0;
+}
+
+#numero {
+  margin-top: 1em;
+  background-color: #C49DE0;
+  font-size: 150%;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
+  line-height: 4em;
+  font-weight: 900;
+  margin-left: calc(50% - 3em);
+}
+
+#numero data {
+  display: inline-block;
+  margin: auto;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#lappu {
+  background-color: #C49DE0;
+  margin-top: 2em;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0.1em 0.1em 1em;
+}
+
+#lappu data {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  /*
+  border-color: transparent;
+  */
+  border: 1px solid black;
+  border-radius: 50%;
+  line-height: 12rem;
+  width: 12rem;
+  height: 12rem;
+  margin: 0.2em;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+main, aside, footer {
+  max-width: var(--text-max-width);
+  margin: 0 var(--body-margin);
+}
+
+picture {
+  display: block;
+  width: 100vw;
+  text-align: right;
+}
+
+picture img {
+  width: 100%;
+  max-width: 75vh;
+  border-bottom: 15px solid var(--blue-text);
+}
+
+dl {
+  margin: 0 0 5em;
+}
+
+dt {
+  margin: 1em 0 0.25em;
+  font-size: 1.25em;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dd a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+section > h2:first-child, header > section > h2 {
+  margin: 1.5em 0;
+  position: relative;
+  border-radius: 8px;
+  background-color: var(--blue-text);
+  color: white;
+  padding: 2rem;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+section > h2:first-child, header > section > h2 {
+  color: white;
+  font-size: 219%;
+  line-height: 150%;
+}
+
+blockquote {
+  border-radius: 8px;
+  border: 2px solid var(--blue-text);
+  margin: 1em 0;
+  padding: 1em;
+  font-style: italic;
+}
+
+blockquote .signature {
+  font-size: 80%;
+  text-align: right;
+}
+
+details a {
+  display: block;
+  margin-top: 0.3em;
+  color: var(--blue-text);
+}
+
+#jarjestot {
+  margin-top: 4em;
+}
+
+aside img {
+  height: auto;
+  max-width: 100%;
+}
+
+aside img.badge,
+aside img.logo {
+  display: block;
+  margin: 2em auto;
+}
+
+aside img.logo {
+  height: 3em;
+}
+
+aside img.badge {
+  height: 10em;
+}
+
+#jarjestot > section {
+  margin: 10em 0 4em;
+}
+
+#yrittajat h1, #yrittajat h2, #yrittajat h3 {
+  color: black;
+  font-family: Archia, sans-serif;
+}
+#yrittajat h3, #yrittajat ol {
+  margin: 0;
+}
+#yrittajat ol {
+  font-family: 'Basier Circle', sans-serif;
+  background-color: #F7F7F7;
+  font-size: 70%;
+  padding: 1em 1em 1em 2em;
+}
+#yrittajat h3 {
+  background-color: black;
+  color: white;
+  padding: 0.35em 0.7em;
+  font-size: 90%;
+}
+
+footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-color: var(--blue-text);
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  padding: 0 1em;
+}
+
+footer a {
+  margin: 3px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+}
+
+footer img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+address {
+  display: inline-block;
+  margin: 0.3em 0;
+  font-style: normal;
+}
+
+address:first-child {
+  margin-top: 1em;
+}
+
+address:last-child {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 380px) {
+  footer {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 32rem) { /* --text-max-width */
+  main, aside, footer {
+    margin-left: calc((100vw - var(--text-max-width)) / 2);
+  }
+  #lappu {
+    padding-bottom: 1em;
+  }
+  #yhdistykset img {
+    height: 1.5em;
+  }
+  #yhdistykset img.large {
+    height: 100px;
+  }
+}
+
+@media (min-width: 60rem) { /* break point */
+  header, main, aside, footer {
+    margin-left: calc((100vw - var(--img-width) - var(--text-max-width)) / 2);
+  }
+  #numero {
+    margin-left: calc((var(--text-max-width) / 2) - 3em);
+  }
+  picture {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: var(--img-width);
+    text-align: right;
+  }
+  picture img {
+    max-width: 60vh;
+    max-height: 90vh;
+    border-bottom: none;
+  }
+  #yhdistykset img {
+    height: calc(0.8em + 1vw);
+  }
+}
+
+@media (min-width: 60rem) and (max-height: 80vw) {
+  /* Drop the header text size */
+  header {
+    margin-top: 5vw;
+    text-align: left;
+  }
+  header h1 {
+    font-size: 3.53em;
+  }
+  header p {
+    font-size: 1.63em;
+  }
+  main {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 1600px) and (min-height: 800px) {
+  html {
+    font-size: 12pt;
+  }
+  picture img {
+    max-width: 50vh;
+    max-height: 75vh;
+  }
+}
+
+@media (min-width: 2000px) and (min-height: 800px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media print {
+  html {
+    font-size: 11pt;
+  }
+  picture {
+    text-align: center;
+  }
+  footer a {
+    color: var(--blue-text);
+  }
+  footer img {
+    display: none;
+  }
+  dl {
+    break-before: page;
+  }
+  blockquote p {
+    margin: 0.5em 0;
+    border: 1px dashed var(--blue-text);
+  }
+}
+
+@media print and (min-aspect-ratio: 1/1) {
+  /*
+  blockquote {
+    break-before: page;
+  }
+    */
+  picture {
+    width: 30vw;
+    margin-left: 35vw;
+  }
+}
+
+@media print and (max-aspect-ratio: 1/1) {
+  picture {
+    width: 85vw;
+    margin-left: 7.5vw;
+  }
+}

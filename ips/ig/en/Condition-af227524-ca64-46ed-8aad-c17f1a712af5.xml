@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="af227524-ca64-46ed-8aad-c17f1a712af5"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition af227524-ca64-46ed-8aad-c17f1a712af5</b></p><a name="af227524-ca64-46ed-8aad-c17f1a712af5"> </a><a name="hcaf227524-ca64-46ed-8aad-c17f1a712af5"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html">IPA-Condition</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-condition-eu-core.html">Condition (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html">Condition - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 255604002}">Mild</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 232133000}, {urn:oid:1.2.246.537.6.1 H52.1}, {http://hl7.org/fhir/sid/icd-10 H52.1}">Myopia</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2016-05-13</p><p><b>asserter</b>: Paakkala Liisa</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Encounter Diagnosis"/>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="255604002"/>
+      <display value="Mild"/>
+    </coding>
+    <text value="Mild"/>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="232133000"/>
+      <display value="Simple myopia (disorder)"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.1"/>
+      <code value="H52.1"/>
+      <display value="Likitaittoisuus"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="H52.1"/>
+      <display value="Myopia"/>
+    </coding>
+    <text value="Myopia"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <onsetDateTime value="2016-05-13"/>
+  <asserter>
+    <display value="Paakkala Liisa"/>
+  </asserter>
+</Condition>

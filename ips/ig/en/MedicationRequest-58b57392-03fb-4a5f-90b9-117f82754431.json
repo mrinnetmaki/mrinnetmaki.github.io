@@ -1,0 +1,104 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "58b57392-03fb-4a5f-90b9-117f82754431",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest|1.1.0",
+    "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips",
+    "http://hl7.eu/fhir/base/StructureDefinition/medicationRequest-eu-core",
+    "http://hl7.eu/fhir/eps/StructureDefinition/medicationrequest-obl-eu-eps"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "DEVRPT",
+      "display" : "device reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATRPT",
+      "display" : "patient reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "SYNTAC",
+      "display" : "syntactic transform"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "MAPPED",
+      "display" : "mapped"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATAST",
+      "display" : "patient asserted"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest 58b57392-03fb-4a5f-90b9-117f82754431</b></p><a name=\"58b57392-03fb-4a5f-90b9-117f82754431\"> </a><a name=\"hc58b57392-03fb-4a5f-90b9-117f82754431\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medicationrequest.html\">IPA-MedicationRequest</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-MedicationRequest-uv-ips.html\">MedicationRequest (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationRequest-eu-core.html\">MedicationRequest (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-medicationrequest-obl-eu-eps.html\">MedicationRequest - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Active</p><p><b>intent</b>: Instance Order</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-category community}, {http://snomed.info/sct 360270004}, {http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location community}\">Active ambulatory use</span></p><p><b>medication</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-9a241a9a-d6ee-4361-af90-9aa702499329\">Ezetimibe 10 mg</a></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 13644009}, {http://hl7.org/fhir/sid/icd-10 E78.0}\">Hypercholesterolemia</span></p><p><b>reasonReference</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-c279fd61-c4da-406b-a14b-b6166b956f83\">Diabetes related hypercholesterolemia</a></p><p><b>courseOfTherapyType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy continuous}\">Continuous long term therapy</span></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa.</p><p><b>patientInstruction</b>: 1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa.</p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Rate[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>10 mg/day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/d = 'mg/d')</span></td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "instance-order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "code" : "community",
+      "display" : "Community"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "360270004",
+      "display" : "Therapy - action"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+      "code" : "community",
+      "display" : "Community"
+    }],
+    "text" : "Active ambulatory use"
+  }],
+  "medicationReference" : {
+    "reference" : "urn:uuid:9a241a9a-d6ee-4361-af90-9aa702499329",
+    "display" : "Ezetimibe 10 mg"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael Rinnetmäki"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "13644009",
+      "display" : "Hypercholesterolemia (disorder)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "E78.0",
+      "display" : "Pure hypercholesterolaemia"
+    }],
+    "text" : "Hypercholesterolemia"
+  }],
+  "reasonReference" : [{
+    "reference" : "urn:uuid:c279fd61-c4da-406b-a14b-b6166b956f83",
+    "display" : "Diabetes related hypercholesterolemia"
+  }],
+  "courseOfTherapyType" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "code" : "continuous",
+      "display" : "Continuous long term therapy"
+    }]
+  },
+  "dosageInstruction" : [{
+    "text" : "1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite <1,4, yhdessä statiinin kanssa.",
+    "patientInstruction" : "1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite <1,4, yhdessä statiinin kanssa.",
+    "doseAndRate" : [{
+      "rateQuantity" : {
+        "value" : 10,
+        "unit" : "mg/day",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg/d"
+      }
+    }]
+  }]
+}

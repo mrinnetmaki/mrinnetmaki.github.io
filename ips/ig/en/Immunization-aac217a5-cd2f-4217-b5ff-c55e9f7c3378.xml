@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="aac217a5-cd2f-4217-b5ff-c55e9f7c3378"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization aac217a5-cd2f-4217-b5ff-c55e9f7c3378</b></p><a name="aac217a5-cd2f-4217-b5ff-c55e9f7c3378"> </a><a name="hcaac217a5-cd2f-4217-b5ff-c55e9f7c3378"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-immunization.html">IPA-Immunization</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html">Immunization (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-immunization-obl-eu-eps.html">Immunization - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BN01}, {http://hl7.org/fhir/sid/cvx 519}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 142}">Moderna Spikevax covid-19 mRNA vaccine</span></p><p><b>patient</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>occurrence</b>: 2022-01-17</p><p><b>manufacturer</b>: Moderna</p><p><b>doseQuantity</b>: 0.25 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 840539006}, {http://hl7.org/fhir/sid/icd-10 U07.2}, {urn:oid:1.2.246.537.6.609 29}">Covid-19</span></td><td>1</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1119349007"/>
+      <display value="COVID-19 mRNA vaccine"/>
+    </coding>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="J07BN01"/>
+      <display value="covid-19, RNA-based vaccine"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="519"/>
+      <display value="COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.610"/>
+      <code value="59"/>
+      <display value="COVID-19-rokote"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.611"/>
+      <code value="142"/>
+      <display value="Spikevax"/>
+    </coding>
+    <text value="Moderna Spikevax covid-19 mRNA vaccine"/>
+  </vaccineCode>
+  <patient>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </patient>
+  <occurrenceDateTime value="2022-01-17"/>
+  <manufacturer>
+    <display value="Moderna"/>
+  </manufacturer>
+  <doseQuantity>
+    <value value="0.25"/>
+    <unit value="ml"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="ml"/>
+  </doseQuantity>
+  <protocolApplied>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="840539006"/>
+        <display value="Disease caused by severe acute respiratory syndrome coronavirus 2"/>
+      </coding>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
+        <code value="U07.2"/>
+        <display value="COVID-19, virus not identified"/>
+      </coding>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.609"/>
+        <code value="29"/>
+        <display value="COVID-19-tauti"/>
+      </coding>
+      <text value="Covid-19"/>
+    </targetDisease>
+    <doseNumberPositiveInt value="1"/>
+  </protocolApplied>
+</Immunization>

@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/AllergyIntolerance/6728beb7-b028-4976-9ea8-ccc29336756f> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "6728beb7-b028-4976-9ea8-ccc29336756f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/allergyintolerance-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/allergyintolerance-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 6728beb7-b028-4976-9ea8-ccc29336756f</b></p><a name=\"6728beb7-b028-4976-9ea8-ccc29336756f\"> </a><a name=\"hc6728beb7-b028-4976-9ea8-ccc29336756f\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-allergyintolerance.html\">IPA-AllergyIntolerance</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-AllergyIntolerance-uv-ips.html\">AllergyIntolerance (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-allergyIntolerance-eu-core.html\">AllergyIntolerance (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-allergyintolerance-obl-eu-eps.html\">AllergyIntolerance - Obligations  (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 13577000}, {http://snomed.info/sct 91934008}\">Allergy to nut</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>onset</b>: 1999</p><p><b>note</b>: </p><blockquote><div><p>Related to birch pollen and apple allergies.</p>\n</div></blockquote><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Description</b></td><td><b>Severity</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 256353000}\">Hazelnut</span></td><td><span title=\"Codes:{http://snomed.info/sct 49727002}\">Coughing</span></td><td>Only present when combined with birch pollen or eating apple</td><td>Mild</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-verification>
+       ] ;
+       fhir:code [ fhir:v "unconfirmed" ] ;
+       fhir:display [ fhir:v "Unconfirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Unconfirmed" ]
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "food"] ) ; # 
+  fhir:criticality [ fhir:v "low"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:13577000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "13577000" ] ;
+       fhir:display [ fhir:v "Nut" ]
+     ] [
+       a sct:91934008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "91934008" ] ;
+       fhir:display [ fhir:v "Allergy to nut" ]
+     ] ) ;
+     fhir:text [ fhir:v "Allergy to nut" ]
+  ] ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:DateTime ;
+     fhir:v "1999"^^xsd:gYear
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Related to birch pollen and apple allergies." ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         a sct:256353000 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "256353000" ] ;
+         fhir:display [ fhir:v "Hazelnut" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:49727002 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "49727002" ] ;
+         fhir:display [ fhir:v "Cough" ]
+       ] ) ;
+       fhir:text [ fhir:v "Coughing" ]
+     ] ) ;
+     fhir:description [ fhir:v "Only present when combined with birch pollen or eating apple" ] ;
+     fhir:severity [ fhir:v "mild" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

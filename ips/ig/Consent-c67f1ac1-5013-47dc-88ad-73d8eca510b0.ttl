@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Consent/c67f1ac1-5013-47dc-88ad-73d8eca510b0> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "c67f1ac1-5013-47dc-88ad-73d8eca510b0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "additional" ] ;
+     fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>I don't want my <strong>re-identifiable</strong> data to be used for machine learning training purposes.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+       ] ;
+       fhir:code [ fhir:v "adr" ] ;
+       fhir:display [ fhir:v "Advanced Care Directive" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentscope>
+       ] ;
+       fhir:code [ fhir:v "patient-privacy" ] ;
+       fhir:display [ fhir:v "Privacy Consent" ]
+     ] ) ;
+     fhir:text [ fhir:v "Patient Privacy" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:64292-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "64292-6" ] ;
+       fhir:display [ fhir:v "Release of information consent Document" ]
+     ] ) ;
+     fhir:text [ fhir:v "Release of information consent Document" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
+       ] ;
+       fhir:code [ fhir:v "acd" ] ;
+       fhir:display [ fhir:v "Advance Directive" ]
+     ] ) ;
+     fhir:text [ fhir:v "Advance Directive" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
+       ] ;
+       fhir:code [ fhir:v "rsreid" ] ;
+       fhir:display [ fhir:v "Re-identifiable Information Access" ]
+     ] ) ;
+     fhir:text [ fhir:v "Re-identifiable information" ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2026-02-13T17:59:00+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki, the patient" ]
+  ] ) ; # 
+  fhir:policy ( [
+     fhir:uri [
+       fhir:v "https://eur-lex.europa.eu/eli/reg/2016/679/oj"^^xsd:anyURI ;
+       fhir:l <https://eur-lex.europa.eu/eli/reg/2016/679/oj>
+     ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:purpose ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "MLTRAINING" ] ;
+       fhir:display [ fhir:v "machine learning training" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

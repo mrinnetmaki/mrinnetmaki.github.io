@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="17725642-fd58-4f71-a9e6-1dee30e048bf"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationStatement 17725642-fd58-4f71-a9e6-1dee30e048bf</b></p><a name="17725642-fd58-4f71-a9e6-1dee30e048bf"> </a><a name="hc17725642-fd58-4f71-a9e6-1dee30e048bf"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medicationstatement.html">IPA-MedicationStatement</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-MedicationStatement-uv-ips.html">MedicationStatement (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationStatement-eu-core.html">MedicationStatement (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-MedicationStatement-eu-eps.html">MedicationStatement (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>basedOn</b>: <a href="Bundle-IpsBundle.html#urn-uuid-58b57392-03fb-4a5f-90b9-117f82754431">Prescription for Ezetimibe</a></p><p><b>status</b>: active</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category community}, {http://snomed.info/sct 360270004}">Active ambulatory use</span></p><p><b>medication</b>: <a href="Bundle-IpsBundle.html#urn-uuid-9a241a9a-d6ee-4361-af90-9aa702499329">Ezetimibe 10 mg</a></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2023-12-20 --&gt; (ongoing)</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 13644009}, {http://hl7.org/fhir/sid/icd-10 E78.0}">Hypercholesterolemia</span></p><p><b>reasonReference</b>: <a href="Bundle-IpsBundle.html#urn-uuid-c279fd61-c4da-406b-a14b-b6166b956f83">Diabetes related hypercholesterolemia</a></p><p><b>note</b>: By urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f</p><blockquote><div><p>I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves.</p>
+</div></blockquote><blockquote><p><b>dosage</b></p><p><b>text</b>: 1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa.</p><p><b>patientInstruction</b>: 1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa.</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>10 mg/day<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/d = 'mg/d')</span></td></tr></table></blockquote></div>
+  </text>
+  <basedOn>
+    <reference value="urn:uuid:58b57392-03fb-4a5f-90b9-117f82754431"/>
+    <display value="Prescription for Ezetimibe"/>
+  </basedOn>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+      <code value="community"/>
+      <display value="Community"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="360270004"/>
+      <display value="Therapy - action"/>
+    </coding>
+    <text value="Active ambulatory use"/>
+  </category>
+  <medicationReference>
+    <reference value="urn:uuid:9a241a9a-d6ee-4361-af90-9aa702499329"/>
+    <display value="Ezetimibe 10 mg"/>
+  </medicationReference>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2023-12-20"/>
+  </effectivePeriod>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="13644009"/>
+      <display value="Hypercholesterolemia (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="E78.0"/>
+      <display value="Pure hypercholesterolaemia"/>
+    </coding>
+    <text value="Hypercholesterolemia"/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="urn:uuid:c279fd61-c4da-406b-a14b-b6166b956f83"/>
+    <display value="Diabetes related hypercholesterolemia"/>
+  </reasonReference>
+  <note>
+    <authorReference>
+      <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+      <display value="Mikael Rinnetmäki, the patient"/>
+    </authorReference>
+    <text value="I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves."/>
+  </note>
+  <dosage>
+    <text value="1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa."/>
+    <patientInstruction value="1 tabletti 1 kerran vuorokaudessa suun kautta Kolesterolilääke, ldl-tavoite &lt;1,4, yhdessä statiinin kanssa."/>
+    <doseAndRate>
+      <rateQuantity>
+        <value value="10"/>
+        <unit value="mg/day"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/d"/>
+      </rateQuantity>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

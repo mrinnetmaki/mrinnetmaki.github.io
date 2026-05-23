@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="1f5bd080-2962-4a52-ae9f-d2209abef49b"/>
+  <meta>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="AIAST"/>
+      <display value="Artificial Intelligence asserted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="additional"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">I have crafted this summary myself by hand, utilizing data from various sources.</div>
+  </text>
+  <target>
+    <reference value="urn:uuid:c69a5242-339d-4101-adc7-96728f2f517f"/>
+    <display value="The IPS composition in this patient summary Bundle"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7"/>
+    <display value="Type 1 diabetes"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:c279fd61-c4da-406b-a14b-b6166b956f83"/>
+    <display value="Diabetes related hypercholesterolemia"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:8cb43587-94e6-4520-8b71-bbdab015ce0a"/>
+    <display value="Diabetes related retinopathy"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:e7ba84d4-87f4-4170-805b-c2c516c4fcab"/>
+    <display value="No known medication allergies"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:6728beb7-b028-4976-9ea8-ccc29336756f"/>
+    <display value="Mild allergy to nuts"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef"/>
+    <display value="Mild allergy to apple"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:cdbc0f23-524a-423b-9114-ee0f06a815b3"/>
+    <display value="Mild allergy to birch pollen"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd"/>
+    <display value="Insulin NovoRapid 100 units/ml, 50-100 iU/d"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:bb2d0be6-24fd-4e1f-8fa4-10e058ed2775"/>
+    <display value="Insulin NovoRapid 100 units/ml. My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day."/>
+  </target>
+  <target>
+    <reference value="urn:uuid:83e47f0e-cfb3-4ada-9bdb-7ad7223e0260"/>
+    <display value="Rosuvastatin 10 mg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f3f4ff44-62be-440c-9e79-1a5de2d64016"/>
+    <display value="Rosuvastatin 10 mg. Started with 5mg in 2022, dose set to 10mg late 2024."/>
+  </target>
+  <target>
+    <reference value="urn:uuid:58b57392-03fb-4a5f-90b9-117f82754431"/>
+    <display value="Ezetimibe 10 mg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:17725642-fd58-4f71-a9e6-1dee30e048bf"/>
+    <display value="Ezetimibe 10 mg. I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves."/>
+  </target>
+  <target>
+    <reference value="urn:uuid:5a3c0871-af41-4f63-9615-d98308d9e794"/>
+    <display value="Tetanus vaccine booster"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:244fb199-b9b2-49ef-85cd-09e5cdbc83af"/>
+    <display value="Havrix for hepatitis A (1/2)"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:97345cda-49d9-453c-8c9c-01edc6607cc7"/>
+    <display value="Havrix for hepatitis A (2/2)"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:6cfe08b7-55a1-40d9-9010-484f59b13ff2"/>
+    <display value="Stamaril vaccine for yellow fever"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:cf4545bb-604d-45de-a7da-95baf181286b"/>
+    <display value="MeningoVac A+C meningococcal vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:a0ca2399-1f86-487b-ad6c-3e64081ae945"/>
+    <display value="Engerix-B for hepatitis B (1/3)"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2"/>
+    <display value="Engerix-B for hepatitis B (2/3)"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f871751d-14fe-4672-bc2f-6a6e83e6ac73"/>
+    <display value="Engerix-B for hepatitis B (3/3)"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f1649cba-fde7-4d54-8fcd-37b6240017ac"/>
+    <display value="Imovax Polio vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:6b8e54e6-6023-4911-9a43-91b73066dc08"/>
+    <display value="Typherix typhoid fever vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:cae0ed26-c654-403c-8c85-ff4432949786"/>
+    <display value="Vaxigrip vaccine for influenza"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:bd632ca0-6661-4b9d-bbf6-7ffd3154e700"/>
+    <display value="Imovax dT Adult for tetanus"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:b54184da-87e6-4c0f-a85a-9546a5cc9783"/>
+    <display value="Vaxigrip vaccine for influenza"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:04dfd1be-9483-485d-8030-a9ce3a264363"/>
+    <display value="VaxigripTetra vaccine for influenza"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:d9828658-c9dd-478c-8573-c514cd834f5f"/>
+    <display value="Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f3fff46d-7755-4af3-a334-a3d3899d8a58"/>
+    <display value="Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:aac217a5-cd2f-4217-b5ff-c55e9f7c3378"/>
+    <display value="Moderna Spikevax covid-19 mRNA vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:5906618a-e76b-44b5-b670-7a0820075bae"/>
+    <display value="VaxigripTetra vaccine for influenza"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:9c0744c0-9b0a-4796-b653-452a0098625f"/>
+    <display value="Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:bfe1d5a4-be0e-403a-a27c-16ef74aca3b3"/>
+    <display value="VaxigripTetra vaccine for influenza"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+    <display value="2024-12-17 Albumin [Mass] in 24 hour Urine 4 mg/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74"/>
+    <display value="2024-12-17 Albumin/Creatinine [Ratio] in Urin 0.2 mg/mmol"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a"/>
+    <display value="2024-12-17 Creatinine [Mass/volume] in Urine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:c00df5d3-5bf4-4093-9a1b-b877ff75a1d3"/>
+    <display value="2024-12-17 Calprotectin [Mass/mass] in Stool &lt; 100 ug/g."/>
+  </target>
+  <target>
+    <reference value="urn:uuid:125cef80-fe5c-40db-976f-c6d51e099519"/>
+    <display value="2024-12-13 Normoblasts [#/volume] in Blood 0.00/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:3db4dd0f-789d-492e-baa8-74b3994e89e9"/>
+    <display value="2024-12-13 Erythrocytes [#/volume] in Blood 5.2x10E12/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4"/>
+    <display value="2024-12-13 Hemoglobin [Mass/volume] in Blood 156 g/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6"/>
+    <display value="2024-12-13 Hemoglobin A1c [Percent] - NGSP 49 mmol/mol"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2"/>
+    <display value="2024-12-13 Hematocrit [Ratio] of Blood 0.47 Osuus"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8"/>
+    <display value="2024-12-13 White Blood Cell Count 4.9 x10E9/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4"/>
+    <display value="2024-12-13 Platelets [#/volume] in Blood by Automated count 182 x10E9/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f"/>
+    <display value="2024-12-13 Corpuscular hemoglobin [Entitic mass] 30 pg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b"/>
+    <display value="2024-12-13 Erythrocyte mean corpuscular volume [fL] 91 fl"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+    <display value="2024-12-13 Red Cell Distribution Width [Ratio] 12 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+    <display value="2024-12-13 Potassium [Moles/volume] in Serum or Plasma 4.1 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b"/>
+    <display value="2024-12-13 Cholesterol [Mass/volume] in Serum or Plasma 3 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+    <display value="2024-12-13 Cholesterol in HDL [Mass/volume] in Serum or Plasma 1.28 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+    <display value="2024-12-13 Cholesterol in LDL [Mass/volume] in Serum or Plasma 1.3 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6"/>
+    <display value="2024-12-13 Creatinine [Mass/volume] in Serum or Plasma 79 umol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2"/>
+    <display value="2024-12-13 Sodium [Moles/volume] in Serum or Plasma 140 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"/>
+    <display value="2024-12-13 Triglyceride [Mass/volume] in Serum or Plasma 0.88 mmol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c"/>
+    <display value="2024-12-13 Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Time] 101 ml/min/A-"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+    <display value="2024-03-22 Iron [Moles/volume] in Serum or Plasma 12.1 umol/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+    <display value="2024-03-22 Transferrin [Mass/volume] in Serum or Plasma 2.5 g/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1"/>
+    <display value="2024-03-22 Ferritin [Mass/volume] in Serum or Plasma 82 ug/l"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+    <display value="2024-03-22 Iron saturation [Ratio] 20 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+    <display value="2023-04-27 Antithrombin [Percent] - Functional 96 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61"/>
+    <display value="2023-12-18 Creatinine [Mass/volume] in Urine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:07e4f795-134d-4704-a776-ce30216d988e"/>
+    <display value="2023-12-18 Albumin/Creatinine [Ratio] in Urine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc"/>
+    <display value="2023-12-18 Albumin [Mass/volume] in Urine"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc"/>
+    <display value="2023-12-13 Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+    <display value="2023-04-27 Antibody.beta 2 glycoprotein 1 [Units/volume] in Serum or Plasma 4 U/ml"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+    <display value="2023-04-27 Antibody.beta 2 glycoprotein 1 [Units/volume] in Serum or Plasma 2 U/ml"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+    <display value="2023-04-27 Antibody.cardiolipin [Units/volume] in Serum or Plasma 2 GPL"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+    <display value="2023-04-27 Antibody.cardiolipin [Units/volume] in Serum or Plasma 3 MPL"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+    <display value="2023-04-27 Activated Partial Thromboplastin Time (aPTT) [Ratio] 1.04 Suhde"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5"/>
+    <display value="2023-04-27 Prothrombin time [Ratio] in Plasma by Coagulation assay 0.94 Suhde"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0"/>
+    <display value="2023-04-27 Protein C [Percent] - Functional 77 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+    <display value="2023-04-27 Protein S antigen [Percent] 98 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+    <display value="2023-04-27 INR in Plasma by Coagulation assay 1.1 inr"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8"/>
+    <display value="2023-04-27 Prothrombin time [Percent] in Plasma by Coagulation assay 78 %"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d"/>
+    <display value="2023-04-27 Prothrombin time [Seconds] in Plasma by Coagulation assay 21 s"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:f134bd3a-755a-444a-9364-0e4e1cef2520"/>
+    <display value="Surgical operation to fix a fraccture of the left ring finger"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:905180fb-dc21-4b81-95d8-e2918657ce22"/>
+    <display value="Use of the mylife Loop automated insulin delivery system since October 6, 2023"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:96001cc6-0b17-434e-8405-ed37dfddc76a"/>
+    <display value="Use of the mylife YpsoPump insulin pump since October 6, 2023"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:2ba85ad7-9e3e-4468-a10f-7c7d13114f0f"/>
+    <display value="Use of the CamAPS FX hybrid closed loop insulin delivery system algorithm since October 6, 2023"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:85861b49-a76c-4ecf-a4db-8e9e67b72068"/>
+    <display value="Use of the Dexcom G6 continuous glucose monitoring (CGM) system since October 6, 2023 until November 30, 2024"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:25ba5f1a-90b3-49a8-a251-ac402bb4ccc8"/>
+    <display value="Use of the Abbott Freestyle Libre 3 continuous glucose monitoring (CGM) system since November 30, 2024"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:8d139b91-6567-4372-9329-0a2faf7cae99"/>
+    <display value="Advance directives for treatment"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:fc6ca80d-ce07-47d9-a1c0-49e955ae166b"/>
+    <display value="Deny the use of my data for marketing"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:c67f1ac1-5013-47dc-88ad-73d8eca510b0"/>
+    <display value="Deny the use of my re-identifiable data for machine learning training"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:0b8b4bfe-12e8-4dcc-9299-27fd76e464ce"/>
+    <display value="Consent for the use of my data in healthcare"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:e7fd44af-ae28-4994-a04f-37d8e52864a1"/>
+    <display value="Consent for the use of my de-identified data for research"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:1e591fa2-f118-4ef4-9103-9b9fe5d3da75"/>
+    <display value="2024-11-03 Fractured left collarbone"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:2c4dc13c-2927-4cd7-b86e-1a3b89493d2b"/>
+    <display value="2022-10-23Pulmonary embolism"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:22e07a7b-4d9b-406d-93bc-dc60de933f1f"/>
+    <display value="2020-08-20 Problems with shoulder mobility"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:ead8fa45-4c6b-47b5-876b-6c01090d2c49"/>
+    <display value="2017-11-20 Fractured left ring finger"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:14534413-2ea5-4988-9f2a-a7f6c6059353"/>
+    <display value="2016-06-14 Disputed diagnosis of disease in larynx"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:af227524-ca64-46ed-8aad-c17f1a712af5"/>
+    <display value="2016-05-13 Myopia"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:d621ec37-44d1-455a-9f95-b62ee1e6f7f1"/>
+    <display value="2016-05-06 Dysphonia due to vocal cord problems"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328"/>
+    <display value="Never smoker"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"/>
+    <display value="Drink about once per month, one to three doses per time"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd"/>
+    <display value="Blood pressure 2026-01-04 168/88 mmHg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce"/>
+    <display value="Blood pressure 2025-10-24 150/76 mmHg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"/>
+    <display value="Blood pressure 2026-01-04 116/66 mmHg"/>
+  </target>
+  <target>
+    <reference value="urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a"/>
+    <display value="Blood pressure 2026-01-04 118/68 mmHg"/>
+  </target>
+  <occurredPeriod>
+    <start value="2023-12-23T09:49:00+02:00"/>
+    <end value="2026-05-14T10:12:00+03:00"/>
+  </occurredPeriod>
+  <recorded value="2026-05-14T10:15:00+03:00"/>
+  <reason>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="RECORDMGT"/>
+      <display value="records management"/>
+    </coding>
+  </reason>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+        <display value="Author"/>
+      </coding>
+    </type>
+    <role>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="AUT"/>
+        <display value="author (originator)"/>
+      </coding>
+    </role>
+    <role>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+        <code value="CLASSIFIER"/>
+        <display value="classifier"/>
+      </coding>
+    </role>
+    <role>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/extra-security-role-type"/>
+        <code value="humanuser"/>
+        <display value="human user"/>
+      </coding>
+    </role>
+    <who>
+      <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+      <display value="Mikael Rinnetmäki, the patient"/>
+    </who>
+  </agent>
+</Provenance>

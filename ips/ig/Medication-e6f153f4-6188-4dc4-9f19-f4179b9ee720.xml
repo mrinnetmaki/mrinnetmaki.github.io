@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="e6f153f4-6188-4dc4-9f19-f4179b9ee720"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/medication-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication e6f153f4-6188-4dc4-9f19-f4179b9ee720</b></p><a name="e6f153f4-6188-4dc4-9f19-f4179b9ee720"> </a><a name="hce6f153f4-6188-4dc4-9f19-f4179b9ee720"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medication.html">IPA-Medication</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html">Medication (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-medication-obl-eu-eps.html">Medication - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>code</b>: <span title="Codes:{http://www.whocc.no/atc A10AB05}, {http://snomed.info/sct 781940009}, {https://vnr.fi/ 467931}">Insulin NovoRapid 100 units/ml</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Novo Nordisk (Identifier: Organization identifier/https://www.novonordisk.com/ (use: official, ))</p><p><b>form</b>: <span title="Codes:{http://standardterms.edqm.eu 11201000}, {http://snomed.info/sct 385219001}">Solution for injection</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 325072002}, {https://spor.ema.europa.eu/v2/SubstanceDefinition 100000085441}">Insulin Aspart (substance)</span></td><td>100 units<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeU = 'U')</span>/1 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span></td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="A10AB05"/>
+      <display value="Insulin aspart"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="781940009"/>
+      <display value="Insulin aspart 100 unit/mL solution for injection"/>
+    </coding>
+    <coding>
+      <system value="https://vnr.fi/"/>
+      <code value="467931"/>
+      <display value="NovoRapid PumpCart 100 yksikköä/ml"/>
+    </coding>
+    <text value="Insulin NovoRapid 100 units/ml"/>
+  </code>
+  <status value="active"/>
+  <manufacturer>
+    <identifier>
+      <use value="official"/>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="XX"/>
+        </coding>
+      </type>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="https://www.novonordisk.com/"/>
+    </identifier>
+    <display value="Novo Nordisk"/>
+  </manufacturer>
+  <form>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="11201000"/>
+      <display value="Solution for injection"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385219001"/>
+      <display value="Solution for injection"/>
+    </coding>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="325072002"/>
+        <display value="Insulin Aspart (substance)"/>
+      </coding>
+      <coding>
+        <system value="https://spor.ema.europa.eu/v2/SubstanceDefinition"/>
+        <code value="100000085441"/>
+        <display value="Insulin aspart"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="100"/>
+        <unit value="units"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="U"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <unit value="ml"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mL"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

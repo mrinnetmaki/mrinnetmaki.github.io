@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="cdbc0f23-524a-423b-9114-ee0f06a815b3"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/allergyintolerance-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance cdbc0f23-524a-423b-9114-ee0f06a815b3</b></p><a name="cdbc0f23-524a-423b-9114-ee0f06a815b3"> </a><a name="hccdbc0f23-524a-423b-9114-ee0f06a815b3"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-allergyintolerance.html">IPA-AllergyIntolerance</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-AllergyIntolerance-uv-ips.html">AllergyIntolerance (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-allergyIntolerance-eu-core.html">AllergyIntolerance (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-allergyintolerance-obl-eu-eps.html">AllergyIntolerance - Obligations  (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Environment</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 256259004}, {http://snomed.info/sct 256262001}">Allergy to pollen, birch at least.</span></p><p><b>patient</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>onset</b>: 1999</p><p><b>note</b>: </p><blockquote><div><p>Symptoms amplified by apple and nut allergies.</p>
+</div></blockquote><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Substance</b></td><td><b>Manifestation</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 256259004}, {http://snomed.info/sct 782576004}, {http://snomed.info/sct 256262001}">Pollen, at least birch pollen</span></td><td><span title="Codes:{http://snomed.info/sct 162290004}">Dry eyes</span></td><td>Mild</td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="unconfirmed"/>
+      <display value="Unconfirmed"/>
+    </coding>
+    <text value="Unconfirmed"/>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="environment"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="256259004"/>
+      <display value="Pollen"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="256262001"/>
+      <display value="European white birch pollen"/>
+    </coding>
+    <text value="Allergy to pollen, birch at least."/>
+  </code>
+  <patient>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </patient>
+  <onsetDateTime value="1999"/>
+  <note>
+    <text value="Symptoms amplified by apple and nut allergies."/>
+  </note>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="256259004"/>
+        <display value="Pollen"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="782576004"/>
+        <display value="Tree pollen"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="256262001"/>
+        <display value="European white birch pollen"/>
+      </coding>
+      <text value="Pollen, at least birch pollen"/>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="162290004"/>
+        <display value="Dry eyes"/>
+      </coding>
+      <text value="Dry eyes"/>
+    </manifestation>
+    <severity value="mild"/>
+  </reaction>
+</AllergyIntolerance>

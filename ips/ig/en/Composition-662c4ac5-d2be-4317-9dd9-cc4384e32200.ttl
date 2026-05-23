@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Composition/662c4ac5-d2be-4317-9dd9-cc4384e32200> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "662c4ac5-d2be-4317-9dd9-cc4384e32200"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition 662c4ac5-d2be-4317-9dd9-cc4384e32200</b></p><a name=\"662c4ac5-d2be-4317-9dd9-cc4384e32200\"> </a><a name=\"hc662c4ac5-d2be-4317-9dd9-cc4384e32200\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.eu/fhir/laboratory/2.0.0/StructureDefinition-Composition-eu-lab.html\">Composition: Laboratory Report</a></p></div><p><b>Document DiagnosticReport Reference</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-80e14e2e-2b8c-4062-a304-d86c21cbf28b\">Diagnostic Report for 'Laboratory report' for '-&gt;Mikael, the patient'</a></p><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.1.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt #xD;#xA;#xD;#xA;This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: #xD;#xA;#xD;#xA;Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.#xD;#xA;#xD;#xA;This OID may also be used in CD.codeSystem.\">URI</a>/urn:uuid:662c4ac5-d2be-4317-9dd9-cc4384e32200</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 26436-6}\">Laboratory Studies (set)</span></p><p><b>date</b>: 2024-12-17 10:25:00+0300</p><p><b>author</b>: Fimlab</p><p><b>title</b>: Laboratoriotulokset</p><p><b>custodian</b>: Fimlab</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <urn:uuid:80e14e2e-2b8c-4062-a304-d86c21cbf28b> ;
+       fhir:reference [ fhir:v "urn:uuid:80e14e2e-2b8c-4062-a304-d86c21cbf28b" ]
+     ]
+  ] ) ; # 
+  fhir:identifier [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:uuid:662c4ac5-d2be-4317-9dd9-cc4384e32200" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:26436-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "26436-6" ] ;
+       fhir:display [ fhir:v "Laboratory Studies (set)" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael, the patient" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-12-17T10:25:00+03:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:display [ fhir:v "Fimlab" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Laboratoriotulokset"] ; # 
+  fhir:custodian [
+     fhir:display [ fhir:v "Fimlab" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "B -PVK" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:26436-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "26436-6" ] ;
+         fhir:display [ fhir:v "Laboratory Studies (set)" ]
+       ] [
+         a loinc:26436-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "26436-6" ] ;
+         fhir:display [ fhir:v "Laboratory Studies (set)" ]
+       ] ) ;
+       fhir:text [ fhir:v "B -PVK, perusverenkuva" ]
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fi\"><p>Perusverenkuvatutkimusta käytetään tavallisimmin epäiltäessä anemiaa (alhainen hemoglobiini). Tutkimuksen yhteydessä saadaan selville myös useita muita verisolujen määrää ja kokoa kuvaavia markkereita. Perusverenkuva sisältää seuraavat osatutkimukset: B -Leuk (valkosolut), B -Eryt (punasolut), B -Hb (hemoglobiini), B -HKR (hematokriitti), B -Trom (trombosyytit), E -RDW (punasolujen kokojaukauma) ja B -EryBla (erytroblastit).</p><p>Perusverenkuvatutkimus tehdään verinäytteestä. Tutkimus ei vaadi paastoa tai aamunäytteenottoa.</p></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <urn:uuid:019e5085-d68d-7d9f-9f6b-87577d73c0fa> ;
+       fhir:reference [ fhir:v "urn:uuid:019e5085-d68d-7d9f-9f6b-87577d73c0fa" ] ;
+       fhir:display [ fhir:v "B -Erybla 2026-05-22" ]
+     ] [
+       fhir:l <urn:uuid:019e512b-0f31-7156-8950-48681563eb87> ;
+       fhir:reference [ fhir:v "urn:uuid:019e512b-0f31-7156-8950-48681563eb87" ] ;
+       fhir:display [ fhir:v "B -Leuk 2026-05-22" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

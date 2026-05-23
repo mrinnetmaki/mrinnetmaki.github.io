@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips|2.0.0"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation 432d2590-6b3a-4e3f-b38c-6a0cc8dc9243</b></p><a name="432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"> </a><a name="hc432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html">IPA-Observation</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-alcoholuse-uv-ips.html">Observation Social History - Alcohol Use (IPS)</a> version: 2.0.0</p><p style="margin-bottom: 0px">Security Label: patient reported (Details: ObservationValue code PATRPT = 'patient reported')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 74013-4}">Alcoholic drinks per day</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2026-01-11 20:41:00+0200</p><p><b>performer</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki, the patient</a></p><p><b>value</b>: 0.05 alcoholic drinks per day<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/d = '/d')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="74013-4"/>
+      <display value="Alcoholic drinks per day"/>
+    </coding>
+    <text value="Alcoholic drinks per day"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectiveDateTime value="2026-01-11T20:41:00+02:00"/>
+  <performer>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </performer>
+  <valueQuantity>
+    <value value="0.05"/>
+    <unit value="alcoholic drinks per day"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/d"/>
+  </valueQuantity>
+</Observation>

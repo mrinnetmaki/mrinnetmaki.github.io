@@ -1,0 +1,87 @@
+# Deny-data-use-for-ml-training - International Patient Summary for Mikael Rinnetmäki v0.4.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Deny-data-use-for-ml-training**
+
+## Example Consent: Deny-data-use-for-ml-training
+
+I don't want my **re-identifiable** data to be used for machine learning training purposes.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Consent",
+  "id" : "c67f1ac1-5013-47dc-88ad-73d8eca510b0",
+  "meta" : {
+    "profile" : ["http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATRPT",
+      "display" : "patient reported"
+    }]
+  },
+  "status" : "active",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "adr",
+      "display" : "Advanced Care Directive"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "patient-privacy",
+      "display" : "Privacy Consent"
+    }],
+    "text" : "Patient Privacy"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "64292-6",
+      "display" : "Release of information consent Document"
+    }],
+    "text" : "Release of information consent Document"
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "acd",
+      "display" : "Advance Directive"
+    }],
+    "text" : "Advance Directive"
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "rsreid",
+      "display" : "Re-identifiable Information Access"
+    }],
+    "text" : "Re-identifiable information"
+  }],
+  "patient" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael Rinnetmäki"
+  },
+  "dateTime" : "2026-02-13T17:59:00+02:00",
+  "performer" : [{
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael Rinnetmäki, the patient"
+  }],
+  "policy" : [{
+    "uri" : "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+  }],
+  "provision" : {
+    "type" : "deny",
+    "purpose" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "MLTRAINING",
+      "display" : "machine learning training"
+    }]
+  }
+}
+
+```

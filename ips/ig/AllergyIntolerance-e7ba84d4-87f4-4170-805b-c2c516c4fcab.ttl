@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/AllergyIntolerance/e7ba84d4-87f4-4170-805b-c2c516c4fcab> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "e7ba84d4-87f4-4170-805b-c2c516c4fcab"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/allergyIntolerance-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/allergyintolerance-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/allergyintolerance-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance e7ba84d4-87f4-4170-805b-c2c516c4fcab</b></p><a name=\"e7ba84d4-87f4-4170-805b-c2c516c4fcab\"> </a><a name=\"hce7ba84d4-87f4-4170-805b-c2c516c4fcab\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-allergyintolerance.html\">IPA-AllergyIntolerance</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-AllergyIntolerance-uv-ips.html\">AllergyIntolerance (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-allergyIntolerance-eu-core.html\">AllergyIntolerance (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-allergyintolerance-obl-eu-eps.html\">AllergyIntolerance - Obligations  (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification unconfirmed}\">Unconfirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 716186003}\">No known medication allergies</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-verification>
+       ] ;
+       fhir:code [ fhir:v "unconfirmed" ] ;
+       fhir:display [ fhir:v "Unconfirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Unconfirmed" ]
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "medication"] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:716186003 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "716186003" ] ;
+       fhir:display [ fhir:v "No known allergy" ]
+     ] ) ;
+     fhir:text [ fhir:v "No known medication allergies" ]
+  ] ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+#  - International Patient Summary for Mikael Rinnetmäki v0.4.0
+
+## : 
+
+Profiles: [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Observation Results - Laboratory/Pathology (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html), [Observation: Medical Test Result (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html)
+
+Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: B -EryBla (erytroblastit)
+
+**subject**: [Mikael Rinnetmäki](Bundle-IpsBundle.md#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f)
+
+**effective**: 2026-05-22 14:40:00+0300
+
+**performer**: Fimlab
+
+**value**: 0 /l (Details: UCUM code/L = '/L')
+
+**interpretation**: Normal
+
+### ReferenceRanges
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Low** | **High** | **Text** |
+| * | 0 | 200000000 | 0-0.02x10E9/l |
+

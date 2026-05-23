@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="125cef80-fe5c-40db-976f-c6d51e099519"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/medicalTestResult-eu-core"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation 125cef80-fe5c-40db-976f-c6d51e099519</b></p><a name="125cef80-fe5c-40db-976f-c6d51e099519"> </a><a name="hc125cef80-fe5c-40db-976f-c6d51e099519"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html">IPA-Observation</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html">Observation Results - Laboratory/Pathology (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html">Observation: Medical Test Result (EU core)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 715-3}, {https://fimlab.fi/ B%20-EryBla}">B -EryBla (erytroblastit)</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2024-12-13 08:00:00+0200</p><p><b>performer</b>: Fimlab</p><p><b>value</b>: 0 /l<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/L = '/L')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>0</td><td>200000000</td><td>0-0.02x10E9/l</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="715-3"/>
+      <display value="Normoblasts [#/volume] in Blood"/>
+    </coding>
+    <coding>
+      <system value="https://fimlab.fi/"/>
+      <code value="B%20-EryBla"/>
+      <display value="B -EryBla"/>
+    </coding>
+    <text value="B -EryBla (erytroblastit)"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectiveDateTime value="2024-12-13T08:00:00+02:00"/>
+  <performer>
+    <display value="Fimlab"/>
+  </performer>
+  <valueQuantity>
+    <value value="0"/>
+    <unit value="/l"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <referenceRange>
+    <low>
+      <value value="0"/>
+    </low>
+    <high>
+      <value value="200000000"/>
+    </high>
+    <text value="0-0.02x10E9/l"/>
+  </referenceRange>
+</Observation>

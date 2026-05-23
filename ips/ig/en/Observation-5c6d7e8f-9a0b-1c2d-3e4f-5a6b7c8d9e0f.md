@@ -1,0 +1,147 @@
+# Observation-lab-e-mch-1 - International Patient Summary for Mikael Rinnetmäki v0.4.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Observation-lab-e-mch-1**
+
+## Example Observation: Observation-lab-e-mch-1
+
+Profiles: [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Observation Results - Laboratory/Pathology (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html), [Observation: Medical Test Result (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html)
+
+Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted'), Artificial Intelligence asserted (Details: ObservationValue code AIAST = 'Artificial Intelligence asserted')
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: E -MCH, hemoglobiini, keskimassa
+
+**subject**: [Mikael Rinnetmäki](Bundle-IpsBundle.md#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f)
+
+**effective**: 2024-12-13 08:00:00+0200
+
+**performer**: Fimlab
+
+**value**: 30 pg (Details: UCUM codepg = 'pg')
+
+**interpretation**: Normal
+
+### ReferenceRanges
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Low** | **High** | **Text** |
+| * | 27 | 33 | 27-33 pg |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0",
+    "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips",
+    "http://hl7.eu/fhir/base/StructureDefinition/medicalTestResult-eu-core"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "DEVRPT",
+      "display" : "device reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATRPT",
+      "display" : "patient reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "SYNTAC",
+      "display" : "syntactic transform"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "MAPPED",
+      "display" : "mapped"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATAST",
+      "display" : "patient asserted"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "AIAST",
+      "display" : "Artificial Intelligence asserted"
+    }]
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label",
+        "valueCoding" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+          "code" : "AIAST",
+          "display" : "Artificial Intelligence asserted"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label",
+        "valueCoding" : {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+          "code" : "PATAST",
+          "display" : "patient asserted"
+        }
+      }],
+      "system" : "http://loinc.org",
+      "code" : "785-6",
+      "display" : "MCH [Entitic mass] by Automated count"
+    },
+    {
+      "system" : "urn:oid:1.2.246.537.6.3",
+      "code" : "314",
+      "display" : "E -MCH"
+    }],
+    "text" : "E -MCH, hemoglobiini, keskimassa"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael Rinnetmäki"
+  },
+  "effectiveDateTime" : "2024-12-13T08:00:00+02:00",
+  "performer" : [{
+    "display" : "Fimlab"
+  }],
+  "valueQuantity" : {
+    "value" : 30,
+    "unit" : "pg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "pg"
+  },
+  "interpretation" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "code" : "N",
+      "display" : "Normal"
+    }]
+  }],
+  "referenceRange" : [{
+    "low" : {
+      "value" : 27
+    },
+    "high" : {
+      "value" : 33
+    },
+    "text" : "27-33 pg"
+  }]
+}
+
+```

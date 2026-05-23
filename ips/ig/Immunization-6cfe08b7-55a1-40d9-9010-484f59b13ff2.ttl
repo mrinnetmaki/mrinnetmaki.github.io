@@ -1,0 +1,177 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Immunization/6cfe08b7-55a1-40d9-9010-484f59b13ff2> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "6cfe08b7-55a1-40d9-9010-484f59b13ff2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "DEVRPT" ] ;
+       fhir:display [ fhir:v "device reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "SYNTAC" ] ;
+       fhir:display [ fhir:v "syntactic transform" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "MAPPED" ] ;
+       fhir:display [ fhir:v "mapped" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization 6cfe08b7-55a1-40d9-9010-484f59b13ff2</b></p><a name=\"6cfe08b7-55a1-40d9-9010-484f59b13ff2\"> </a><a name=\"hc6cfe08b7-55a1-40d9-9010-484f59b13ff2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-immunization.html\">IPA-Immunization</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Immunization-uv-ips.html\">Immunization (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html\">Immunization (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-immunization-obl-eu-eps.html\">Immunization - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 1121000221106}, {http://www.whocc.no/atc J07BL01}, {http://hl7.org/fhir/sid/cvx 184}, {urn:oid:1.2.246.537.6.610 59}, {urn:oid:1.2.246.537.6.611 47}\">Stamaril vaccine for yellow fever</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>occurrence</b>: 2007-03-19</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>lotNumber</b>: A5284-3</p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 281657000}\">Travel vaccinations</span>, <span title=\"Codes:{http://snomed.info/sct 14747002}\">Elective immunization for international travel</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 16541001}, {http://hl7.org/fhir/sid/icd-10 A95}, {urn:oid:1.2.246.537.6.609 22}\">Yellow fever</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:1121000221106 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "1121000221106" ] ;
+       fhir:display [ fhir:v "Live attenuated yellow fever vaccine" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ;
+         fhir:l <http://www.whocc.no/atc>
+       ] ;
+       fhir:code [ fhir:v "J07BL01" ] ;
+       fhir:display [ fhir:v "yellow fever, live attenuated" ]
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/cvx>
+       ] ;
+       fhir:code [ fhir:v "184" ] ;
+       fhir:display [ fhir:v "Yellow fever, unspecified" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.610"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.610>
+       ] ;
+       fhir:code [ fhir:v "59" ] ;
+       fhir:display [ fhir:v "Keltakuumerokote" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.611"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.611>
+       ] ;
+       fhir:code [ fhir:v "47" ] ;
+       fhir:display [ fhir:v "Stamaril" ]
+     ] ) ;
+     fhir:text [ fhir:v "Stamaril vaccine for yellow fever" ]
+  ] ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2007-03-19"^^xsd:date
+  ] ; # 
+  fhir:manufacturer [
+     fhir:display [ fhir:v "Sanofi Pasteur" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "A5284-3"] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:281657000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "281657000" ] ;
+       fhir:display [ fhir:v "Travel vaccinations" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a sct:14747002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "14747002" ] ;
+       fhir:display [ fhir:v "Elective immunization for international travel" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:16541001 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "16541001" ] ;
+         fhir:display [ fhir:v "Yellow fever" ]
+       ] [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/sid/icd-10>
+         ] ;
+         fhir:code [ fhir:v "A95" ] ;
+         fhir:display [ fhir:v "Yellow fever" ]
+       ] [
+         fhir:system [
+           fhir:v "urn:oid:1.2.246.537.6.609"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.246.537.6.609>
+         ] ;
+         fhir:code [ fhir:v "22" ] ;
+         fhir:display [ fhir:v "Keltakuume" ]
+       ] ) ;
+       fhir:text [ fhir:v "Yellow fever" ]
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:PositiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

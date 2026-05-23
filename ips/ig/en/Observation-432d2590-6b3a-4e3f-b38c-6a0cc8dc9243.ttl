@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Observation/432d2590-6b3a-4e3f-b38c-6a0cc8dc9243> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips|2.0.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips?version=2.0.0>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation 432d2590-6b3a-4e3f-b38c-6a0cc8dc9243</b></p><a name=\"432d2590-6b3a-4e3f-b38c-6a0cc8dc9243\"> </a><a name=\"hc432d2590-6b3a-4e3f-b38c-6a0cc8dc9243\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html\">IPA-Observation</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-alcoholuse-uv-ips.html\">Observation Social History - Alcohol Use (IPS)</a> version: 2.0.0</p><p style=\"margin-bottom: 0px\">Security Label: patient reported (Details: ObservationValue code PATRPT = 'patient reported')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 74013-4}\">Alcoholic drinks per day</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2026-01-11 20:41:00+0200</p><p><b>performer</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki, the patient</a></p><p><b>value</b>: 0.05 alcoholic drinks per day<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/d = '/d')</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:74013-4 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "74013-4" ] ;
+       fhir:display [ fhir:v "Alcoholic drinks per day" ]
+     ] ) ;
+     fhir:text [ fhir:v "Alcoholic drinks per day" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2026-01-11T20:41:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki, the patient" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 0.05 ] ;
+     fhir:unit [ fhir:v "alcoholic drinks per day" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "/d" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

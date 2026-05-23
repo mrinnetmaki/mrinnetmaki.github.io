@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="fc6ca80d-ce07-47d9-a1c0-49e955ae166b"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="additional"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>I don't want my data to be used for marketing purposes.</p></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="adr"/>
+      <display value="Advanced Care Directive"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+      <display value="Privacy Consent"/>
+    </coding>
+    <text value="Patient Privacy Consent"/>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="64292-6"/>
+      <display value="Release of information consent Document"/>
+    </coding>
+    <text value="Release of information consent Document"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="acd"/>
+      <display value="Advance Directive"/>
+    </coding>
+    <text value="Advance Directive"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="rsdid"/>
+      <display value="De-identified Information Access"/>
+    </coding>
+    <text value="De-identified information"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="rsreid"/>
+      <display value="Re-identifiable Information Access"/>
+    </coding>
+    <text value="Re-identifiable information"/>
+  </category>
+  <patient>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </patient>
+  <dateTime value="2026-02-13T17:59:00+02:00"/>
+  <performer>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </performer>
+  <policyRule>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="GDPRCD"/>
+      <display value="GDPR Consent Directive"/>
+    </coding>
+    <text value="GDPR consent"/>
+  </policyRule>
+  <provision>
+    <type value="deny"/>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HMARKT"/>
+      <display value="healthcare marketing"/>
+    </purpose>
+    <data>
+      <meaning value="related"/>
+      <reference>
+        <type value="Bundle"/>
+        <identifier>
+          <value value="ips-for-mikko"/>
+        </identifier>
+        <display value="This patient summary"/>
+      </reference>
+    </data>
+  </provision>
+</Consent>

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "80e14e2e-2b8c-4062-a304-d86c21cbf28b",
+  "meta" : {
+    "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport 80e14e2e-2b8c-4062-a304-d86c21cbf28b</b></p><a name=\"80e14e2e-2b8c-4062-a304-d86c21cbf28b\"> </a><a name=\"hc80e14e2e-2b8c-4062-a304-d86c21cbf28b\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.eu/fhir/laboratory/2.0.0/StructureDefinition-DiagnosticReport-eu-lab.html\">DiagnosticReport: Laboratory Report</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratoriotulokset</span> (<span title=\"Codes:{http://loinc.org 26436-6}\">Laboratory Studies (set)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Mikael Rinnetmäki Male, DoB: 1976-02-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</td></tr><tr><td>When For</td><td>2026-05-22 14:40:00+0300</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Bundle-IpsBundle.html#urn-uuid-019e5085-d68d-7d9f-9f6b-87577d73c0fa\"><span title=\"Codes:{http://loinc.org 715-3}, {https://fimlab.fi/ B%20-EryBla}\">B -EryBla (erytroblastit)</span></a></td><td>0 /l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/L = '/L')</span></td><td>0-0.02x10E9/l</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td/></tr><tr><td><a href=\"Bundle-IpsBundle.html#urn-uuid-019e512b-0f31-7156-8950-48681563eb87\"><span title=\"Codes:{http://loinc.org 6690-2}, {urn:oid:1.2.246.537.6.3 367}\">B -Leuk, leukosyytit eli valkosolut</span></a></td><td>7.3 x10E9/l<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/nL = '/nL')</span></td><td>3.4-8.2x10E9/l</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2024-12-13 08:00:00+0200</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+    "valueReference" : {
+      "reference" : "urn:uuid:662c4ac5-d2be-4317-9dd9-cc4384e32200",
+      "display" : "Composition of laboratory test report B -PVK 2026-05-22"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory Studies (set)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }],
+    "text" : "Laboratoriotulokset"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael, the patient"
+  },
+  "effectiveDateTime" : "2026-05-22T14:40:00+03:00",
+  "result" : [{
+    "reference" : "urn:uuid:019e5085-d68d-7d9f-9f6b-87577d73c0fa",
+    "display" : "B -Erybla 2026-05-22"
+  },
+  {
+    "reference" : "urn:uuid:019e512b-0f31-7156-8950-48681563eb87",
+    "display" : "B -Leuk 2026-05-22"
+  }]
+}

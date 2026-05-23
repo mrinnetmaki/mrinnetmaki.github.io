@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/medicalTestResult-eu-core"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="AIAST"/>
+      <display value="Artificial Intelligence asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e</b></p><a name="b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"> </a><a name="hcb3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html">IPA-Observation</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html">Observation Results - Laboratory/Pathology (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html">Observation: Medical Test Result (EU core)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted'), Artificial Intelligence asserted (Details: ObservationValue code AIAST = 'Artificial Intelligence asserted')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2571-8}, {urn:oid:1.2.246.537.6.3 438}">Triglyseridi</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2024-12-13 08:00:00+0200</p><p><b>performer</b>: Fimlab</p><p><b>value</b>: 0.88 mmol/l<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>High</b></td><td><b>Text</b></td></tr><tr><td style="display: none">*</td><td>2</td><td>-2 mmol/l</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <extension url="http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label">
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+          <code value="AIAST"/>
+          <display value="Artificial Intelligence asserted"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label">
+        <valueCoding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+          <code value="PATAST"/>
+          <display value="patient asserted"/>
+        </valueCoding>
+      </extension>
+      <system value="http://loinc.org"/>
+      <code value="2571-8"/>
+      <display value="Triglyceride [Mass/volume] in Serum or Plasma"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.3"/>
+      <code value="438"/>
+      <display value="P -Trigly"/>
+    </coding>
+    <text value="Triglyseridi"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectiveDateTime value="2024-12-13T08:00:00+02:00"/>
+  <performer>
+    <display value="Fimlab"/>
+  </performer>
+  <valueQuantity>
+    <value value="0.88"/>
+    <unit value="mmol/l"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <referenceRange>
+    <high>
+      <value value="2"/>
+    </high>
+    <text value="-2 mmol/l"/>
+  </referenceRange>
+</Observation>

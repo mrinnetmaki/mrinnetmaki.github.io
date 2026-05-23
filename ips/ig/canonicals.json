@@ -1,0 +1,21 @@
+[{
+  "id" : "ips-client-capability-statement-01",
+  "type" : "CapabilityStatement",
+  "url" : "https://ips.sensotrend.com/ig/CapabilityStatement/ips-client-capability-statement-01",
+  "version" : "0.4.0",
+  "name" : "IpsClientCapabilityStatement"
+},
+{
+  "id" : "ips-server-capability-statement",
+  "type" : "CapabilityStatement",
+  "url" : "https://ips.sensotrend.com/ig/CapabilityStatement/ips-server-capability-statement",
+  "version" : "0.4.0",
+  "name" : "SensotrendIpsServerCapabilityStatement"
+},
+{
+  "id" : "fi.mikaelrinnetmaki.ips",
+  "type" : "ImplementationGuide",
+  "url" : "https://mikaelrinnetmaki.fi/ips/ig/ImplementationGuide/fi.mikaelrinnetmaki.ips",
+  "version" : "0.4.0",
+  "name" : "MikaelsIPS"
+}]

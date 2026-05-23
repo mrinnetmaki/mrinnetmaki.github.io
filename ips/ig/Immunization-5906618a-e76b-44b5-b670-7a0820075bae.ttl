@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Immunization/5906618a-e76b-44b5-b670-7a0820075bae> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5906618a-e76b-44b5-b670-7a0820075bae"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "DEVRPT" ] ;
+       fhir:display [ fhir:v "device reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "SYNTAC" ] ;
+       fhir:display [ fhir:v "syntactic transform" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "MAPPED" ] ;
+       fhir:display [ fhir:v "mapped" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization 5906618a-e76b-44b5-b670-7a0820075bae</b></p><a name=\"5906618a-e76b-44b5-b670-7a0820075bae\"> </a><a name=\"hc5906618a-e76b-44b5-b670-7a0820075bae\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-immunization.html\">IPA-Immunization</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Immunization-uv-ips.html\">Immunization (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html\">Immunization (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-immunization-obl-eu-eps.html\">Immunization - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 1181000221105}, {http://www.whocc.no/atc J07BB02}, {urn:oid:1.2.246.537.6.610 48}, {urn:oid:1.2.246.537.6.611 122}\">VaxigripTetra vaccine for influenza</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>occurrence</b>: 2022-11-02</p><p><b>manufacturer</b>: Sanofi Pasteur</p><p><b>doseQuantity</b>: 0.5 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeml = 'ml')</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 6142004}, {http://hl7.org/fhir/sid/icd-10 J11}, {urn:oid:1.2.246.537.6.609 12}\">Influenza</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:1181000221105 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "1181000221105" ] ;
+       fhir:display [ fhir:v "Influenza vaccine" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ;
+         fhir:l <http://www.whocc.no/atc>
+       ] ;
+       fhir:code [ fhir:v "J07BB02" ] ;
+       fhir:display [ fhir:v "influenza, inactivated, split virus or surface antigen" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.610"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.610>
+       ] ;
+       fhir:code [ fhir:v "48" ] ;
+       fhir:display [ fhir:v "Influenssarokote" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.611"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.611>
+       ] ;
+       fhir:code [ fhir:v "122" ] ;
+       fhir:display [ fhir:v "VaxigripTetra" ]
+     ] ) ;
+     fhir:text [ fhir:v "VaxigripTetra vaccine for influenza" ]
+  ] ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2022-11-02"^^xsd:date
+  ] ; # 
+  fhir:manufacturer [
+     fhir:display [ fhir:v "Sanofi Pasteur" ]
+  ] ; # 
+  fhir:doseQuantity [
+     fhir:value [ fhir:v 0.5 ] ;
+     fhir:unit [ fhir:v "ml" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "ml" ]
+  ] ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:6142004 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "6142004" ] ;
+         fhir:display [ fhir:v "Influenza" ]
+       ] [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/sid/icd-10>
+         ] ;
+         fhir:code [ fhir:v "J11" ] ;
+         fhir:display [ fhir:v "Influenza, virus not identified" ]
+       ] [
+         fhir:system [
+           fhir:v "urn:oid:1.2.246.537.6.609"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.246.537.6.609>
+         ] ;
+         fhir:code [ fhir:v "12" ] ;
+         fhir:display [ fhir:v "Influenssa" ]
+       ] ) ;
+       fhir:text [ fhir:v "Influenza" ]
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:PositiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

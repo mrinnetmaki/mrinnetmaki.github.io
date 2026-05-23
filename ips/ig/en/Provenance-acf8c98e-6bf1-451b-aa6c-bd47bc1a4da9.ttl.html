@@ -1,0 +1,517 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Provenance-ai-use - TTL Representation - International Patient Summary for Mikael Rinnetmäki v0.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.113"}
+    h3,h4,h5,h6{--heading-prefix:"2.113"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">International Patient Summary for Mikael Rinnetmäki</span>
+            <br/>
+            <span style="display:inline-block;">0.4.0 - 
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Provenance-ai-use</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">International Patient Summary for Mikael Rinnetmäki - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mikaelrinnetmaki.fi/ips/ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: Provenance-ai-use</h2>
+
+
+<p><a href="Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.ttl" no-download="true">Raw ttl</a> | <a href="Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Provenance ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.security">fhir:security</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PATRPT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;patient reported&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;PATAST&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;patient asserted&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ObservationValue&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AIAST&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artificial Intelligence asserted&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/resource.html#Provenance.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#Provenance.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;additional&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xml:lang=\&quot;en\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;en\&quot;&gt;I used Microsoft Copilot to add LOINC codes to lab results, based on the Finnish domestic Kuntaliitto codes that were present in my records. I verified the accuracy of the added codes and fixed any errors I was able to spot.&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">fhir:target</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of B -Hb (hemoglobiini) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of B -HbA1c (hemoglobiini-A1c) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of B -HKR (hematokriitti) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of B -Leuk (leukosyytit) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of B -Trom (trombosyytit) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of E -MCV (keskimääräinen erytrosyyttitilavuus) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of E -RDW (erytrosyyttien kokojakauma) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of E -MCH (keskimääräinen hemoglobiinimäärä) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of fP-Fe (rauta) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of fP-Transf (transferriini) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -AT3 (antitrombiini III) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -B2GPABG (beta-2-glykoproteiini AB) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -B2GPABM (beta-2-glykoproteiini AB) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Ferrit (ferritiini) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -K (kalium) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Kol-HDL (HDL-kolesteroli) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Kol-LDL (LDL-kolesteroli) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Kol (kolesteroli) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Krea (kreatiini) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -LuakPTT (lupusantikoagulantti, PTT) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -LuakRVV (lupusantikoagulantti, RVV) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Na (natrium) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -PC (proteiini C) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -PS-AgV (proteiini S, antigeeni, vapaa) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -TrAika (trombiiniaika) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -Trigly (triglyseridi) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -TT-INR (tromboplastiiniaika, INR-tulostus) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of P -TT-SPA (tromboplastiiniaika, SPA-tulostus) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 1 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of TrFeSat (transferriinin rautakyllästeisyys) for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Alb (albumiini) 1 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Alb (albumiini) 2 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:07e4f795-134d-4704-a776-ce30216d988e&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:07e4f795-134d-4704-a776-ce30216d988e&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 1 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 2 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Krea (kreatiniini) 1 for Mikael&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation of U -Krea (kreatiniini) 2 for Mikael&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred_x_">fhir:occurred</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-01-23T17:29:00+02:00&quot;^^xsd:dateTime
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">fhir:recorded</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2026-02-13T18:41:00+02:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.reason">fhir:reason</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ActReason&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ActReason&gt;       ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;LABELING&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;labeling&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Add LOINC codes in addition to the local Kuntaliitto codes.&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">fhir:agent</a> ( [
+<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/provenance-participant-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/provenance-participant-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;author&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Author&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.role">fhir:role</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AUT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;author (originator)&quot; ]       ] )     ] [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleCode&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CLASSIFIER&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;classifier&quot; ]       ] )     ] [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/extra-security-role-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/extra-security-role-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;humanuser&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;human user&quot; ]       ] )     ] ) ;
+<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">fhir:who</a> [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mikael Rinnetmäki, the patient&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/provenance-participant-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/provenance-participant-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;composer&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Composer&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.role">fhir:role</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/extra-security-role-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/extra-security-role-type&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dataprocessor&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;data processor&quot; ]       ] )     ] [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-RoleClass&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v3-RoleClass&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AGNT&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;agent&quot; ]       ] )     ] ) ;
+<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">fhir:who</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:ietf:rfc:3986&gt;         ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://copilot.microsoft.com/&quot; ]       ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Copilot in Visual Studio Code&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.onBehalfOf">fhir:onBehalfOf</a> [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:l</a> &lt;urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Mikael Rinnetmäki, the patient&quot; ]     ]
+  ] ) . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mikaelrinnetmaki.fi">Mikael Rinnetmäki</a>.  
+          Package fi.mikaelrinnetmaki.ips#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Sat, May 23, 2026 14:19+0300">2026-05-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

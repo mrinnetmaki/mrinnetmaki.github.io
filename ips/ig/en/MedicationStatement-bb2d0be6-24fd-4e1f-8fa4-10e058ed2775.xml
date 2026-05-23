@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="bb2d0be6-24fd-4e1f-8fa4-10e058ed2775"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/medicationStatement-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/MedicationStatement-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationStatement bb2d0be6-24fd-4e1f-8fa4-10e058ed2775</b></p><a name="bb2d0be6-24fd-4e1f-8fa4-10e058ed2775"> </a><a name="hcbb2d0be6-24fd-4e1f-8fa4-10e058ed2775"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medicationstatement.html">IPA-MedicationStatement</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-MedicationStatement-uv-ips.html">MedicationStatement (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationStatement-eu-core.html">MedicationStatement (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-MedicationStatement-eu-eps.html">MedicationStatement (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>basedOn</b>: <a href="Bundle-IpsBundle.html#urn-uuid-847b849a-eb83-4387-b60b-46eb8d39ebfd">Prescription for Insulin Novorapid</a></p><p><b>status</b>: active</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/medication-statement-category community}, {http://snomed.info/sct 360270004}">Active ambulatory use</span></p><p><b>medication</b>: <a href="Bundle-IpsBundle.html#urn-uuid-e6f153f4-6188-4dc4-9f19-f4179b9ee720">Insulin NovoRapid 100 units/ml</a></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2023-10-06 --&gt; (ongoing)</p><p><b>informationSource</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki, the patient</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 46635009}, {http://hl7.org/fhir/sid/icd-10 E10}">Type 1 diabetes mellitus</span></p><p><b>reasonReference</b>: <a href="Bundle-IpsBundle.html#urn-uuid-1558c456-efa1-4b3d-abe2-1522c6048bc7">Type 1 diabetes mellitus</a></p><p><b>note</b>: By urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f</p><blockquote><div><p>My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day.</p>
+</div></blockquote><blockquote><p><b>dosage</b></p><p><b>text</b>: 40-70 iU/d</p><h3>DoseAndRates</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Rate[x]</b></td></tr><tr><td style="display: none">*</td><td>40-70 units per day</td></tr></table></blockquote></div>
+  </text>
+  <basedOn>
+    <reference value="urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd"/>
+    <display value="Prescription for Insulin Novorapid"/>
+  </basedOn>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+      <code value="community"/>
+      <display value="Community"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="360270004"/>
+      <display value="Therapy - action"/>
+    </coding>
+    <text value="Active ambulatory use"/>
+  </category>
+  <medicationReference>
+    <reference value="urn:uuid:e6f153f4-6188-4dc4-9f19-f4179b9ee720"/>
+    <display value="Insulin NovoRapid 100 units/ml"/>
+  </medicationReference>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2023-10-06"/>
+  </effectivePeriod>
+  <informationSource>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </informationSource>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="46635009"/>
+      <display value="Type 1 diabetes mellitus"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="E10"/>
+      <display value="Type 1 diabetes mellitus"/>
+    </coding>
+    <text value="Type 1 diabetes mellitus"/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7"/>
+    <display value="Type 1 diabetes mellitus"/>
+  </reasonReference>
+  <note>
+    <authorReference>
+      <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+      <display value="Mikael Rinnetmäki, the patient"/>
+    </authorReference>
+    <text value="My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day."/>
+  </note>
+  <dosage>
+    <text value="40-70 iU/d"/>
+    <doseAndRate>
+      <rateRange>
+        <low>
+          <value value="40"/>
+          <unit value="units per day"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="[iU]/d"/>
+        </low>
+        <high>
+          <value value="70"/>
+          <unit value="units per day"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="[iU]/d"/>
+        </high>
+      </rateRange>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

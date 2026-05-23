@@ -1,0 +1,77 @@
+{
+  "resourceType" : "Composition",
+  "id" : "662c4ac5-d2be-4317-9dd9-cc4384e32200",
+  "meta" : {
+    "profile" : ["http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition 662c4ac5-d2be-4317-9dd9-cc4384e32200</b></p><a name=\"662c4ac5-d2be-4317-9dd9-cc4384e32200\"> </a><a name=\"hc662c4ac5-d2be-4317-9dd9-cc4384e32200\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.eu/fhir/laboratory/2.0.0/StructureDefinition-Composition-eu-lab.html\">Composition: Laboratory Report</a></p></div><p><b>Document DiagnosticReport Reference</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-80e14e2e-2b8c-4062-a304-d86c21cbf28b\">Diagnostic Report for 'Laboratory report' for '-&gt;Mikael, the patient'</a></p><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.1.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">URI</a>/urn:uuid:662c4ac5-d2be-4317-9dd9-cc4384e32200</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 26436-6}\">Laboratory Studies (set)</span></p><p><b>date</b>: 2024-12-17 10:25:00+0300</p><p><b>author</b>: Fimlab</p><p><b>title</b>: Laboratoriotulokset</p><p><b>custodian</b>: Fimlab</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+    "valueReference" : {
+      "reference" : "urn:uuid:80e14e2e-2b8c-4062-a304-d86c21cbf28b"
+    }
+  }],
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:662c4ac5-d2be-4317-9dd9-cc4384e32200"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "26436-6",
+      "display" : "Laboratory Studies (set)"
+    }]
+  }],
+  "subject" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael, the patient"
+  },
+  "date" : "2024-12-17T10:25:00+03:00",
+  "author" : [{
+    "display" : "Fimlab"
+  }],
+  "title" : "Laboratoriotulokset",
+  "custodian" : {
+    "display" : "Fimlab"
+  },
+  "section" : [{
+    "title" : "B -PVK",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "26436-6",
+        "display" : "Laboratory Studies (set)"
+      },
+      {
+        "system" : "http://loinc.org",
+        "code" : "26436-6",
+        "display" : "Laboratory Studies (set)"
+      }],
+      "text" : "B -PVK, perusverenkuva"
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fi\"><p>Perusverenkuvatutkimusta käytetään tavallisimmin epäiltäessä anemiaa (alhainen hemoglobiini). Tutkimuksen yhteydessä saadaan selville myös useita muita verisolujen määrää ja kokoa kuvaavia markkereita. Perusverenkuva sisältää seuraavat osatutkimukset: B -Leuk (valkosolut), B -Eryt (punasolut), B -Hb (hemoglobiini), B -HKR (hematokriitti), B -Trom (trombosyytit), E -RDW (punasolujen kokojaukauma) ja B -EryBla (erytroblastit).</p><p>Perusverenkuvatutkimus tehdään verinäytteestä. Tutkimus ei vaadi paastoa tai aamunäytteenottoa.</p></div>"
+    },
+    "entry" : [{
+      "reference" : "urn:uuid:019e5085-d68d-7d9f-9f6b-87577d73c0fa",
+      "display" : "B -Erybla 2026-05-22"
+    },
+    {
+      "reference" : "urn:uuid:019e512b-0f31-7156-8950-48681563eb87",
+      "display" : "B -Leuk 2026-05-22"
+    }]
+  }]
+}

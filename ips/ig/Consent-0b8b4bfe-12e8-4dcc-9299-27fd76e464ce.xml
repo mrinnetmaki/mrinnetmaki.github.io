@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="0b8b4bfe-12e8-4dcc-9299-27fd76e464ce"/>
+  <meta>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/consent-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+  </meta>
+  <text>
+    <status value="additional"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>I want my data to be used for my treatment. Please use it! I'm fine with AI and decision support systems having access to my data for this purpose</p></div>
+  </text>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="adr"/>
+      <display value="Advanced Care Directive"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+      <display value="Privacy Consent"/>
+    </coding>
+    <text value="Patient Privacy"/>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="64292-6"/>
+      <display value="Release of information consent Document"/>
+    </coding>
+    <text value="Release of information consent Document"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="acd"/>
+      <display value="Advance Directive"/>
+    </coding>
+    <text value="Advance Directive"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="rsdid"/>
+      <display value="De-identified Information Access"/>
+    </coding>
+    <text value="De-identified information"/>
+  </category>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="rsreid"/>
+      <display value="Re-identifiable Information Access"/>
+    </coding>
+    <text value="Re-identifiable information"/>
+  </category>
+  <patient>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </patient>
+  <dateTime value="2026-02-13T17:59:00+02:00"/>
+  <performer>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </performer>
+  <policy>
+    <uri value="https://eur-lex.europa.eu/eli/reg/2016/679/oj"/>
+  </policy>
+  <provision>
+    <type value="permit"/>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="collect"/>
+      </coding>
+    </action>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="access"/>
+      </coding>
+    </action>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="use"/>
+      </coding>
+    </action>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="disclose"/>
+      </coding>
+    </action>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="correct"/>
+      </coding>
+    </action>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="TREAT"/>
+      <display value="treatment"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="COC"/>
+      <display value="coordination of care"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="ETREAT"/>
+      <display value="Emergency Treatment"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="BTG"/>
+      <display value="break the glass"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="ERTREAT"/>
+      <display value="emergency room treatment"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HOPERAT"/>
+      <display value="healthcare operations"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="TREATDS"/>
+      <display value="decision support assisted treatment decision"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </purpose>
+    <purpose>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="PATRQT"/>
+      <display value="patient requested"/>
+    </purpose>
+  </provision>
+</Consent>

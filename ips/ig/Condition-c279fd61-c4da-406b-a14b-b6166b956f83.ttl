@@ -1,0 +1,138 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Condition/c279fd61-c4da-406b-a14b-b6166b956f83> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "c279fd61-c4da-406b-a14b-b6166b956f83"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition c279fd61-c4da-406b-a14b-b6166b956f83</b></p><a name=\"c279fd61-c4da-406b-a14b-b6166b956f83\"> </a><a name=\"hcc279fd61-c4da-406b-a14b-b6166b956f83\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html\">IPA-Condition</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-problem-list-item.html\">IPA-problem-list-item</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html\">Condition (IPS)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html\">Condition - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}, {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Problem List Item</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 255604002}\">Mild</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 13644009}, {http://hl7.org/fhir/sid/icd-10 E78.0}\">Hypercholesterolemia</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2023-12-18</p><p><b>note</b>: By urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f</p><blockquote><div><p>The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is &lt; 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is &lt; 1.4 mmol/l.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] ) ;
+     fhir:text [ fhir:v "Active" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+       ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Confirmed" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-category>
+       ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-category>
+       ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Problem List Item" ]
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:255604002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "255604002" ] ;
+       fhir:display [ fhir:v "Mild" ]
+     ] ) ;
+     fhir:text [ fhir:v "Mild" ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:13644009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "13644009" ] ;
+       fhir:display [ fhir:v "Hypercholesterolemia (disorder)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10>
+       ] ;
+       fhir:code [ fhir:v "E78.0" ] ;
+       fhir:display [ fhir:v "Pure hypercholesterolaemia" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hypercholesterolemia" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:DateTime ;
+     fhir:v "2023-12-18"^^xsd:date
+  ] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+       fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+       fhir:display [ fhir:v "Mikael Rinnetmäki, the patient" ]
+     ] ;
+     fhir:text [ fhir:v "The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is < 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is < 1.4 mmol/l." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

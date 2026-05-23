@@ -1,0 +1,131 @@
+# MedicationRosuvastatin5mg - International Patient Summary for Mikael Rinnetmäki v0.4.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MedicationRosuvastatin5mg**
+
+## Example Medication: MedicationRosuvastatin5mg
+
+Profiles: [IPA-Medication](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medication.html) version: 1.1.0, [Medication (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Medication-uv-ips.html), [Medication (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html), [Medication - Obligations (EPS)](https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-medication-obl-eu-eps.html)
+
+Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')
+
+**code**: Rosuvastatin
+
+**status**: Inactive
+
+**form**: Oral tablet
+
+### Ingredients
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Item[x]** | **Strength** |
+| * | Rosuvastatin | 5 mg (Details: UCUM codemg = 'mg')/ 1 (Details: UCUM code1 = '1') |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Medication",
+  "id" : "9a265107-bd19-4ea4-bc5d-6fd94e8d7c88",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication|1.1.0",
+    "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips",
+    "http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core",
+    "http://hl7.eu/fhir/eps/StructureDefinition/medication-obl-eu-eps"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "DEVRPT",
+      "display" : "device reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATRPT",
+      "display" : "patient reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "SYNTAC",
+      "display" : "syntactic transform"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "MAPPED",
+      "display" : "mapped"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATAST",
+      "display" : "patient asserted"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C10AA07",
+      "display" : "Rosuvastatin"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "409108001",
+      "display" : "Product containing precisely rosuvastatin (as rosuvastatin calcium) 5 milligram/1 each conventional release oral tablet (clinical drug)"
+    },
+    {
+      "system" : "https://vnr.fi/",
+      "code" : "067530",
+      "display" : "Rosuvastatin Orion"
+    }],
+    "text" : "Rosuvastatin"
+  },
+  "status" : "inactive",
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385055001",
+      "display" : "Tablet"
+    },
+    {
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "10219000",
+      "display" : "Tablet"
+    }],
+    "text" : "Oral tablet"
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "700067006",
+        "display" : "Rosuvastatin"
+      },
+      {
+        "system" : "http://www.whocc.no/atc",
+        "code" : "C10AA07",
+        "display" : "Rosuvastatin"
+      },
+      {
+        "system" : "https://spor.ema.europa.eu/v2/SubstanceDefinition",
+        "code" : "100000088232",
+        "display" : "Rosuvastatin"
+      }],
+      "text" : "Rosuvastatin"
+    },
+    "strength" : {
+      "numerator" : {
+        "value" : 5,
+        "unit" : "mg",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  }]
+}
+
+```

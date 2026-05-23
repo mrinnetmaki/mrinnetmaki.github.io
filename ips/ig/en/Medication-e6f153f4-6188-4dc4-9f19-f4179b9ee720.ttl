@@ -1,0 +1,177 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Medication/e6f153f4-6188-4dc4-9f19-f4179b9ee720> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "e6f153f4-6188-4dc4-9f19-f4179b9ee720"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/medication-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/medication-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/medication-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "DEVRPT" ] ;
+       fhir:display [ fhir:v "device reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "SYNTAC" ] ;
+       fhir:display [ fhir:v "syntactic transform" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "MAPPED" ] ;
+       fhir:display [ fhir:v "mapped" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication e6f153f4-6188-4dc4-9f19-f4179b9ee720</b></p><a name=\"e6f153f4-6188-4dc4-9f19-f4179b9ee720\"> </a><a name=\"hce6f153f4-6188-4dc4-9f19-f4179b9ee720\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medication.html\">IPA-Medication</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Medication-uv-ips.html\">Medication (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medication-eu-core.html\">Medication (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-medication-obl-eu-eps.html\">Medication - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>code</b>: <span title=\"Codes:{http://www.whocc.no/atc A10AB05}, {http://snomed.info/sct 781940009}, {https://vnr.fi/ 467931}\">Insulin NovoRapid 100 units/ml</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Novo Nordisk (Identifier: Organization identifier/https://www.novonordisk.com/ (use: official, ))</p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 11201000}, {http://snomed.info/sct 385219001}\">Solution for injection</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 325072002}, {https://spor.ema.europa.eu/v2/SubstanceDefinition 100000085441}\">Insulin Aspart (substance)</span></td><td>100 units<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeU = 'U')</span>/1 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ;
+         fhir:l <http://www.whocc.no/atc>
+       ] ;
+       fhir:code [ fhir:v "A10AB05" ] ;
+       fhir:display [ fhir:v "Insulin aspart" ]
+     ] [
+       a sct:781940009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "781940009" ] ;
+       fhir:display [ fhir:v "Insulin aspart 100 unit/mL solution for injection" ]
+     ] [
+       fhir:system [
+         fhir:v "https://vnr.fi/"^^xsd:anyURI ;
+         fhir:l <https://vnr.fi/>
+       ] ;
+       fhir:code [ fhir:v "467931" ] ;
+       fhir:display [ fhir:v "NovoRapid PumpCart 100 yksikköä/ml" ]
+     ] ) ;
+     fhir:text [ fhir:v "Insulin NovoRapid 100 units/ml" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [
+     fhir:identifier [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+           ] ;
+           fhir:code [ fhir:v "XX" ]
+         ] )
+       ] ;
+       fhir:system [
+         fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+         fhir:l <urn:ietf:rfc:3986>
+       ] ;
+       fhir:value [ fhir:v "https://www.novonordisk.com/" ]
+     ] ;
+     fhir:display [ fhir:v "Novo Nordisk" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ;
+         fhir:l <http://standardterms.edqm.eu>
+       ] ;
+       fhir:code [ fhir:v "11201000" ] ;
+       fhir:display [ fhir:v "Solution for injection" ]
+     ] [
+       a sct:385219001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "385219001" ] ;
+       fhir:display [ fhir:v "Solution for injection" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:325072002 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "325072002" ] ;
+         fhir:display [ fhir:v "Insulin Aspart (substance)" ]
+       ] [
+         fhir:system [
+           fhir:v "https://spor.ema.europa.eu/v2/SubstanceDefinition"^^xsd:anyURI ;
+           fhir:l <https://spor.ema.europa.eu/v2/SubstanceDefinition>
+         ] ;
+         fhir:code [ fhir:v "100000085441" ] ;
+         fhir:display [ fhir:v "Insulin aspart" ]
+       ] )
+     ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "units" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "U" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "ml" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "mL" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

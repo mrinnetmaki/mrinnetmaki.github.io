@@ -1,0 +1,182 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Condition/ead8fa45-4c6b-47b5-876b-6c01090d2c49> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ead8fa45-4c6b-47b5-876b-6c01090d2c49"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "DEVRPT" ] ;
+       fhir:display [ fhir:v "device reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "SYNTAC" ] ;
+       fhir:display [ fhir:v "syntactic transform" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "MAPPED" ] ;
+       fhir:display [ fhir:v "mapped" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ead8fa45-4c6b-47b5-876b-6c01090d2c49</b></p><a name=\"ead8fa45-4c6b-47b5-876b-6c01090d2c49\"> </a><a name=\"hcead8fa45-4c6b-47b5-876b-6c01090d2c49\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html\">IPA-Condition</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html\">Condition (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-condition-eu-core.html\">Condition (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html\">Condition - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 704094001}, {http://hl7.org/fhir/sid/icd-10 S62.6}, {urn:oid:1.2.246.537.6.1 S62.6}, {http://hl7.org/fhir/sid/icd-10 W09}, {urn:oid:1.2.246.537.6.1 W09}, {urn:oid:1.2.246.537.6.1 Y94.8}, {urn:oid:1.2.246.537.6.31 L08}\">Fracture of left ring finger</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2017-11-20</p><p><b>asserter</b>: Partio, E Nikke Nestor Erikoistuva lääkäri</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
+       ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] ) ;
+     fhir:text [ fhir:v "Resolved" ]
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+       ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] ) ;
+     fhir:text [ fhir:v "Confirmed" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-category>
+       ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] ) ;
+     fhir:text [ fhir:v "Encounter Diagnosis" ]
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:6736007 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "6736007" ] ;
+       fhir:display [ fhir:v "Midgrade" ]
+     ] ) ;
+     fhir:text [ fhir:v "Moderate" ]
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:704094001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "704094001" ] ;
+       fhir:display [ fhir:v "Closed fracture of proximal phalanx of ring finger (disorder)" ]
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10>
+       ] ;
+       fhir:code [ fhir:v "S62.6" ] ;
+       fhir:display [ fhir:v "Fracture of other finger" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.1>
+       ] ;
+       fhir:code [ fhir:v "S62.6" ] ;
+       fhir:display [ fhir:v "Muun sormen murtuma" ]
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10>
+       ] ;
+       fhir:code [ fhir:v "W09" ] ;
+       fhir:display [ fhir:v "Fall involving playground equipment" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.1>
+       ] ;
+       fhir:code [ fhir:v "W09" ] ;
+       fhir:display [ fhir:v "Kaatuminen tai putoaminen leikkikenttävälineeltä" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.1>
+       ] ;
+       fhir:code [ fhir:v "Y94.8" ] ;
+       fhir:display [ fhir:v "Muu vapaa-ajan tapaturma" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.31"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.31>
+       ] ;
+       fhir:code [ fhir:v "L08" ] ;
+       fhir:display [ fhir:v "Olkapään oire/vaiva" ]
+     ] ) ;
+     fhir:text [ fhir:v "Fracture of left ring finger" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:DateTime ;
+     fhir:v "2017-11-20"^^xsd:date
+  ] ; # 
+  fhir:asserter [
+     fhir:display [ fhir:v "Partio, E Nikke Nestor Erikoistuva lääkäri" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

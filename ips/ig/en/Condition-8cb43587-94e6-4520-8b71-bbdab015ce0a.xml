@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="8cb43587-94e6-4520-8b71-bbdab015ce0a"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition 8cb43587-94e6-4520-8b71-bbdab015ce0a</b></p><a name="8cb43587-94e6-4520-8b71-bbdab015ce0a"> </a><a name="hc8cb43587-94e6-4520-8b71-bbdab015ce0a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html">IPA-Condition</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-condition-eu-core.html">Condition (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html">Condition - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}, {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Problem List Item</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 255604002}">Mild</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 723169001}, {http://hl7.org/fhir/sid/icd-10 E10.3}, {urn:oid:1.2.246.537.6.1 H36.00*}, {http://hl7.org/fhir/sid/icd-10 H36.0}">Diabetic retinopathy</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 113323002}">Retina</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2018-04-11</p><p><b>asserter</b>: Hujanen, Wille Pekko Erikoistuva lääkäri</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Problem List Item"/>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="255604002"/>
+      <display value="Mild"/>
+    </coding>
+    <text value="Mild"/>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="723169001"/>
+      <display value="Background retinopathy due to impaired glucose regulation (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="E10.3"/>
+      <display value="Type 1 diabetes mellitus : With ophthalmic complications"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.1"/>
+      <code value="H36.00*"/>
+      <display value="Diabeettinen taustaretinopatia (Molemminpuolinen)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="H36.0"/>
+      <display value="Diabetic retinopathy[E10-E14 with common fourth character .3]"/>
+    </coding>
+    <text value="Diabetic retinopathy"/>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="113323002"/>
+      <display value="Structure of retina of both eyes (body structure)"/>
+    </coding>
+    <text value="Retina"/>
+  </bodySite>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <onsetDateTime value="2018-04-11"/>
+  <asserter>
+    <display value="Hujanen, Wille Pekko Erikoistuva lääkäri"/>
+  </asserter>
+</Condition>

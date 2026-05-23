@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="14534413-2ea5-4988-9f2a-a7f6c6059353"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition 14534413-2ea5-4988-9f2a-a7f6c6059353</b></p><a name="14534413-2ea5-4988-9f2a-a7f6c6059353"> </a><a name="hc14534413-2ea5-4988-9f2a-a7f6c6059353"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html">IPA-Condition</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-condition-eu-core.html">Condition (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html">Condition - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 6736007}">Moderate</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 60600009}, {http://hl7.org/fhir/sid/icd-10 J38.7}">Muu kurkunpään sairaus</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2016-06-14</p><p><b>asserter</b>: Kleemola, Leenamaija</p><p><b>note</b>: By urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f</p><blockquote><div><p>I disagree with this diagnosis. The earlier diagnosis of dysphonia due to vocal cord problems is correct. For this diagnosis, I got a prescription for reflux medication, which I did not get. For the earlier diagnosis, I was supposed to get voice therapy, but got this other diagnosis instead. What actually helped was that I started to sing in a choir. Whenever I take a longer break from singing, the symptoms come back. When I start singing again, the symptoms go away.</p>
+</div></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+      <display value="Resolved"/>
+    </coding>
+    <text value="Resolved"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <text value="Encounter Diagnosis"/>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="6736007"/>
+      <display value="Midgrade"/>
+    </coding>
+    <text value="Moderate"/>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="60600009"/>
+      <display value="Disorder of the larynx (disorder)"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="J38.7"/>
+      <display value="Other diseases of larynx"/>
+    </coding>
+    <text value="Muu kurkunpään sairaus"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <onsetDateTime value="2016-06-14"/>
+  <asserter>
+    <display value="Kleemola, Leenamaija"/>
+  </asserter>
+  <note>
+    <authorReference>
+      <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+      <display value="Mikael Rinnetmäki, the patient"/>
+    </authorReference>
+    <text value="I disagree with this diagnosis. The earlier diagnosis of dysphonia due to vocal cord problems is correct. For this diagnosis, I got a prescription for reflux medication, which I did not get. For the earlier diagnosis, I was supposed to get voice therapy, but got this other diagnosis instead. What actually helped was that I started to sing in a choir. Whenever I take a longer break from singing, the symptoms come back. When I start singing again, the symptoms go away."/>
+  </note>
+</Condition>

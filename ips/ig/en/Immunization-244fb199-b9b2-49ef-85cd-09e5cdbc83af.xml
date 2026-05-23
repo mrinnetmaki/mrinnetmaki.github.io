@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="244fb199-b9b2-49ef-85cd-09e5cdbc83af"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization|1.1.0"/>
+    <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
+    <profile value="http://hl7.eu/fhir/base/StructureDefinition/immunization-eu-core"/>
+    <profile value="http://hl7.eu/fhir/eps/StructureDefinition/immunization-obl-eu-eps"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="DEVRPT"/>
+      <display value="device reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="SYNTAC"/>
+      <display value="syntactic transform"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="MAPPED"/>
+      <display value="mapped"/>
+    </security>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATAST"/>
+      <display value="patient asserted"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Immunization 244fb199-b9b2-49ef-85cd-09e5cdbc83af</b></p><a name="244fb199-b9b2-49ef-85cd-09e5cdbc83af"> </a><a name="hc244fb199-b9b2-49ef-85cd-09e5cdbc83af"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-immunization.html">IPA-Immunization</a> version: 1.1.0, <a href="http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a>, <a href="http://hl7.eu/fhir/base/2.0.0/StructureDefinition-immunization-eu-core.html">Immunization (EU core)</a>, <a href="https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-immunization-obl-eu-eps.html">Immunization - Obligations (EPS)</a></p><p style="margin-bottom: 0px">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 871751006}, {http://www.whocc.no/atc J07BC02}, {urn:oid:1.2.246.537.6.610 50}, {urn:oid:1.2.246.537.6.611 13}">Havrix for hepatitis A</span></p><p><b>patient</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>occurrence</b>: 2004-11-02</p><p><b>manufacturer</b>: GlaxoSmithCline (GSK)</p><p><b>doseQuantity</b>: 1 ml<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeml = 'ml')</span></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 281657000}">Travel vaccinations</span>, <span title="Codes:{http://snomed.info/sct 14747002}">Elective immunization for international travel</span></p><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 40468003}, {http://hl7.org/fhir/sid/icd-10 B15}, {urn:oid:1.2.246.537.6.609 13}">Hepatitis A</span></td><td>1</td><td>2</td></tr></table></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="871751006"/>
+      <display value="Hepatitis A vaccine"/>
+    </coding>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="J07BC02"/>
+      <display value="hepatitis A, inactivated, whole virus"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.610"/>
+      <code value="50"/>
+      <display value="Hepatiitti A -rokote"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.611"/>
+      <code value="13"/>
+      <display value="Havrix"/>
+    </coding>
+    <text value="Havrix for hepatitis A"/>
+  </vaccineCode>
+  <patient>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </patient>
+  <occurrenceDateTime value="2004-11-02"/>
+  <manufacturer>
+    <display value="GlaxoSmithCline (GSK)"/>
+  </manufacturer>
+  <doseQuantity>
+    <value value="1"/>
+    <unit value="ml"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="ml"/>
+  </doseQuantity>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="281657000"/>
+      <display value="Travel vaccinations"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="14747002"/>
+      <display value="Elective immunization for international travel"/>
+    </coding>
+  </reasonCode>
+  <protocolApplied>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="40468003"/>
+        <display value="Viral hepatitis, type A"/>
+      </coding>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
+        <code value="B15"/>
+        <display value="Acute hepatitis A"/>
+      </coding>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.609"/>
+        <code value="13"/>
+        <display value="Hepatiitti A -viruksen aiheuttama maksatulehdus"/>
+      </coding>
+      <text value="Hepatitis A"/>
+    </targetDisease>
+    <doseNumberPositiveInt value="1"/>
+    <seriesDosesPositiveInt value="2"/>
+  </protocolApplied>
+</Immunization>

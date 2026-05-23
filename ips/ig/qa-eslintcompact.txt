@@ -1,0 +1,11 @@
+MikaelsIPS
+=========================================
+
+Generic: line 0, col 0, Error - The link 'Bundle-IpsBundle.html#urn-uuid-80e14e2e-2b8c-4062-a304-d86c21cbf28b' for "Diagnostic Report for 'Laboratory report' for '->Mikael, the patient'" cannot be resolved (valid targets: 591 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Bundle-IpsBundle.html#urn-uuid-019e5085-d68d-7d9f-9f6b-87577d73c0fa' for "B -EryBla (erytroblastit)" cannot be resolved (valid targets: 591 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Bundle-IpsBundle.html#urn-uuid-019e512b-0f31-7156-8950-48681563eb87' for "B -Leuk, leukosyytit eli valkosolut" cannot be resolved (valid targets: 591 targets) (NOTFOUND)
+/Users/mikael/GitHub/ips/ig/fsh-generated/resources/CapabilityStatement-ips-client-capability-statement-01.json: line 0, col 0, Info - The resource CapabilityStatement/ips-client-capability-statement-01 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
+/Users/mikael/GitHub/ips/ig/fsh-generated/resources/CapabilityStatement-ips-server-capability-statement.json: line 0, col 0, Info - The resource CapabilityStatement/ips-server-capability-statement could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
+
+err = 0, warn = 0, info = 2
+IG Publisher Version: 2.2.7

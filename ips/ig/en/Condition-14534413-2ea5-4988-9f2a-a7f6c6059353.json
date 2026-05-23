@@ -1,0 +1,100 @@
+{
+  "resourceType" : "Condition",
+  "id" : "14534413-2ea5-4988-9f2a-a7f6c6059353",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition|1.1.0",
+    "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips",
+    "http://hl7.eu/fhir/base/StructureDefinition/condition-eu-core",
+    "http://hl7.eu/fhir/eps/StructureDefinition/condition-obl-eu-eps"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "DEVRPT",
+      "display" : "device reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATRPT",
+      "display" : "patient reported"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "SYNTAC",
+      "display" : "syntactic transform"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "MAPPED",
+      "display" : "mapped"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "code" : "PATAST",
+      "display" : "patient asserted"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition 14534413-2ea5-4988-9f2a-a7f6c6059353</b></p><a name=\"14534413-2ea5-4988-9f2a-a7f6c6059353\"> </a><a name=\"hc14534413-2ea5-4988-9f2a-a7f6c6059353\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html\">IPA-Condition</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html\">Condition (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-condition-eu-core.html\">Condition (EU core)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html\">Condition - Obligations (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 6736007}\">Moderate</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 60600009}, {http://hl7.org/fhir/sid/icd-10 J38.7}\">Muu kurkunpään sairaus</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>onset</b>: 2016-06-14</p><p><b>asserter</b>: Kleemola, Leenamaija</p><p><b>note</b>: By urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f</p><blockquote><div><p>I disagree with this diagnosis. The earlier diagnosis of dysphonia due to vocal cord problems is correct. For this diagnosis, I got a prescription for reflux medication, which I did not get. For the earlier diagnosis, I was supposed to get voice therapy, but got this other diagnosis instead. What actually helped was that I started to sing in a choir. Whenever I take a longer break from singing, the symptoms come back. When I start singing again, the symptoms go away.</p>\n</div></blockquote></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "resolved",
+      "display" : "Resolved"
+    }],
+    "text" : "Resolved"
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed",
+      "display" : "Confirmed"
+    }],
+    "text" : "Confirmed"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis",
+      "display" : "Encounter Diagnosis"
+    }],
+    "text" : "Encounter Diagnosis"
+  }],
+  "severity" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Midgrade"
+    }],
+    "text" : "Moderate"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "60600009",
+      "display" : "Disorder of the larynx (disorder)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "J38.7",
+      "display" : "Other diseases of larynx"
+    }],
+    "text" : "Muu kurkunpään sairaus"
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+    "display" : "Mikael Rinnetmäki"
+  },
+  "onsetDateTime" : "2016-06-14",
+  "asserter" : {
+    "display" : "Kleemola, Leenamaija"
+  },
+  "note" : [{
+    "authorReference" : {
+      "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
+      "display" : "Mikael Rinnetmäki, the patient"
+    },
+    "text" : "I disagree with this diagnosis. The earlier diagnosis of dysphonia due to vocal cord problems is correct. For this diagnosis, I got a prescription for reflux medication, which I did not get. For the earlier diagnosis, I was supposed to get voice therapy, but got this other diagnosis instead. What actually helped was that I started to sing in a choir. Whenever I take a longer break from singing, the symptoms come back. When I start singing again, the symptoms go away."
+  }]
+}

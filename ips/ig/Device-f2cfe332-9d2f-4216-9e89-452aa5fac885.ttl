@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Device/f2cfe332-9d2f-4216-9e89-452aa5fac885> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "f2cfe332-9d2f-4216-9e89-452aa5fac885"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/eps/StructureDefinition/device-eu-eps"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/eps/StructureDefinition/device-eu-eps>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device f2cfe332-9d2f-4216-9e89-452aa5fac885</b></p><a name=\"f2cfe332-9d2f-4216-9e89-452aa5fac885\"> </a><a name=\"hcf2cfe332-9d2f-4216-9e89-452aa5fac885\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Device-uv-ips.html\">Device (IPS)</a>, <a href=\"https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-device-eu-eps.html\">Device (EPS)</a></p><p style=\"margin-bottom: 0px\">Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Abbott</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Freestyle Libre 3</td><td>manufacturer-name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 700585005}\">Invasive interstitial-fluid glucose monitoring system</span></p><p><b>patient</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>parent</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-97b044bd-17ff-4fe0-a52d-af4d4731a0b9\">The mylife Loop automated insulin delivery system</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Abbott"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Freestyle Libre 3" ] ;
+     fhir:type [ fhir:v "manufacturer-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:700585005 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "700585005" ] ;
+       fhir:display [ fhir:v "Invasive interstitial-fluid glucose monitoring system" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:parent [
+     fhir:l <urn:uuid:97b044bd-17ff-4fe0-a52d-af4d4731a0b9> ;
+     fhir:reference [ fhir:v "urn:uuid:97b044bd-17ff-4fe0-a52d-af4d4731a0b9" ] ;
+     fhir:display [ fhir:v "The mylife Loop automated insulin delivery system" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mikaelrinnetmaki.fi/ips/ig/Observation/9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation?version=1.1.0>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips>
+     ] [
+       fhir:v "http://hl7.eu/fhir/base/StructureDefinition/medicalTestResult-eu-core"^^xsd:anyURI ;
+       fhir:l <http://hl7.eu/fhir/base/StructureDefinition/medicalTestResult-eu-core>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "DEVRPT" ] ;
+       fhir:display [ fhir:v "device reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATRPT" ] ;
+       fhir:display [ fhir:v "patient reported" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "SYNTAC" ] ;
+       fhir:display [ fhir:v "syntactic transform" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "MAPPED" ] ;
+       fhir:display [ fhir:v "mapped" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "PATAST" ] ;
+       fhir:display [ fhir:v "patient asserted" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+       ] ;
+       fhir:code [ fhir:v "AIAST" ] ;
+       fhir:display [ fhir:v "Artificial Intelligence asserted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation 9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d</b></p><a name=\"9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d\"> </a><a name=\"hc9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html\">IPA-Observation</a> version: 1.1.0, <a href=\"http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html\">Observation Results - Laboratory/Pathology (IPS)</a>, <a href=\"http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html\">Observation: Medical Test Result (EU core)</a></p><p style=\"margin-bottom: 0px\">Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted'), Artificial Intelligence asserted (Details: ObservationValue code AIAST = 'Artificial Intelligence asserted')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 5902-2}, {urn:oid:1.2.246.537.6.3 2782}, {https://fimlab.fi/ P%20-TrAika}\">P -Trombai, trombiiniaika</span></p><p><b>subject</b>: <a href=\"Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f\">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2023-04-27 17:30:00+0300</p><p><b>performer</b>: Fimlab</p><p><b>value</b>: 21 s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codes = 's')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:5902-2 ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label>
+         ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+           ] ;
+           fhir:code [ fhir:v "AIAST" ] ;
+           fhir:display [ fhir:v "Artificial Intelligence asserted" ]
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/uv/security-label-ds4p/StructureDefinition/extension-inline-sec-label>
+         ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
+           ] ;
+           fhir:code [ fhir:v "PATAST" ] ;
+           fhir:display [ fhir:v "patient asserted" ]
+         ]
+       ] ) ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "5902-2" ] ;
+       fhir:display [ fhir:v "Prothrombin time (PT)" ]
+     ] [
+       fhir:system [
+         fhir:v "urn:oid:1.2.246.537.6.3"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.246.537.6.3>
+       ] ;
+       fhir:code [ fhir:v "2782" ] ;
+       fhir:display [ fhir:v "P -Trombai" ]
+     ] [
+       fhir:system [
+         fhir:v "https://fimlab.fi/"^^xsd:anyURI ;
+         fhir:l <https://fimlab.fi/>
+       ] ;
+       fhir:code [ fhir:v "P%20-TrAika" ] ;
+       fhir:display [ fhir:v "P -TrAika" ]
+     ] ) ;
+     fhir:text [ fhir:v "P -Trombai, trombiiniaika" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
+     fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
+     fhir:display [ fhir:v "Mikael Rinnetmäki" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-04-27T17:30:00+03:00"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:display [ fhir:v "Fimlab" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "21"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "s" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "s" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+       ] ;
+       fhir:code [ fhir:v "N" ] ;
+       fhir:display [ fhir:v "Normal" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+    <profile value="http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation|1.1.0"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="PATRPT"/>
+      <display value="patient reported"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation 8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9</b></p><a name="8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"> </a><a name="hc8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/R4/bp.html">Observation Blood Pressure Profile</a>, <a href="http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html">IPA-Observation</a> version: 1.1.0, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a></p><p style="margin-bottom: 0px">Security Label: patient reported (Details: ObservationValue code PATRPT = 'patient reported')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 85354-9}">Blood pressure systolic &amp; diastolic</span></p><p><b>subject</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki</a></p><p><b>effective</b>: 2026-01-04 15:48:09+0200</p><p><b>performer</b>: <a href="Bundle-IpsBundle.html#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f">Mikael Rinnetmäki, the patient</a></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 368208006}">Left upper arm</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 116 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>130 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 66 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>85 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></td></tr></table></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85354-9"/>
+      <display value="Blood pressure panel with all children optional"/>
+    </coding>
+    <text value="Blood pressure systolic &amp; diastolic"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki"/>
+  </subject>
+  <effectiveDateTime value="2026-01-04T15:48:09+02:00"/>
+  <performer>
+    <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+    <display value="Mikael Rinnetmäki, the patient"/>
+  </performer>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="368208006"/>
+      <display value="Left upper arm"/>
+    </coding>
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+      <text value="Systolic blood pressure"/>
+    </code>
+    <valueQuantity>
+      <value value="116"/>
+      <unit value="mmHg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <high>
+        <value value="130"/>
+        <unit value="mmHg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mm[Hg]"/>
+      </high>
+    </referenceRange>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+      <text value="Diastolic blood pressure"/>
+    </code>
+    <valueQuantity>
+      <value value="66"/>
+      <unit value="mmHg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+    <interpretation>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+        <code value="N"/>
+        <display value="Normal"/>
+      </coding>
+    </interpretation>
+    <referenceRange>
+      <high>
+        <value value="85"/>
+        <unit value="mmHg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mm[Hg]"/>
+      </high>
+    </referenceRange>
+  </component>
+</Observation>

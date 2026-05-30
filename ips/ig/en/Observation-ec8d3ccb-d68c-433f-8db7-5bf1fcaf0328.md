@@ -8,7 +8,7 @@
 
 Profiles: [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Observation Social History - Tobacco Use (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-tobaccouse-uv-ips.html) version: 2.0.0
 
-Security Label: patient reported (Details: ObservationValue code PATRPT = 'patient reported')
+Security Label: [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
 
 **status**: Final
 

@@ -445,6 +445,7 @@ I have crafted this summary myself by hand, utilizing data from various sources.
   "reason" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "RECORDMGT",
       "display" : "records management"
     }]

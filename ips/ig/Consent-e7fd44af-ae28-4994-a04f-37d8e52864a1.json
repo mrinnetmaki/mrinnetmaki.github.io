@@ -34,9 +34,39 @@
   },
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "npp",
+      "display" : "Notice of Privacy Practices"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59284-0",
+      "display" : "Patient Consent"
+    },
+    {
       "system" : "http://loinc.org",
       "code" : "64292-6",
       "display" : "Release of information consent Document"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "ICOL",
+      "display" : "information collection"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IDSCL",
+      "display" : "information disclosure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA",
+      "display" : "information access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IRDSCL",
+      "display" : "information redisclosure"
     }],
     "text" : "Release of information consent Document"
   },
@@ -53,6 +83,11 @@
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
       "code" : "research",
       "display" : "Research Information Access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "RESEARCH",
+      "display" : "research information access"
     }],
     "text" : "Research"
   },
@@ -61,8 +96,13 @@
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
       "code" : "rsdid",
       "display" : "De-identified Information Access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "RSDID",
+      "display" : "de-identified information access"
     }],
-    "text" : "De-identified information for research purposes"
+    "text" : "De-identified information"
   }],
   "patient" : {
     "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
@@ -81,60 +121,71 @@
     "action" : [{
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "collect"
+        "code" : "collect",
+        "display" : "Collect"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "access"
+        "code" : "access",
+        "display" : "Access"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "use"
+        "code" : "use",
+        "display" : "Use"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "disclose"
+        "code" : "disclose",
+        "display" : "Disclose"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "correct"
+        "code" : "correct",
+        "display" : "Access and Correct"
       }]
     }],
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HOPERAT",
       "display" : "healthcare operations"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HTEST",
       "display" : "test health data"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "TRAIN",
       "display" : "training"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "MLTRAINING",
       "display" : "machine learning training"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HRESCH",
       "display" : "healthcare research"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "PUBHLTH",
       "display" : "public health"
     }]

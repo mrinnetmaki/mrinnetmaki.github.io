@@ -47,6 +47,11 @@
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
       "code" : "polst",
       "display" : "POLST"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59284-0",
+      "display" : "Patient Consent"
     }],
     "text" : "Advance Directive"
   }],
@@ -73,86 +78,103 @@
     "type" : "permit",
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "TREAT",
       "display" : "treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "COC",
       "display" : "coordination of care"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "ETREAT",
       "display" : "Emergency Treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "BTG",
       "display" : "break the glass"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "ERTREAT",
       "display" : "emergency room treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "POPHLTH",
       "display" : "population health"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "CAREMGT",
       "display" : "care management"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "DONAT",
       "display" : "donation"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "GOV",
       "display" : "government"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HACCRED",
       "display" : "health accreditation"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HCOMPL",
       "display" : "health compliance"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HDECD",
       "display" : "decedent"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HDIRECT",
       "display" : "directory"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HDM",
       "display" : "healthcare delivery management"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "PATADMIN",
       "display" : "patient administration"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "PATSFTY",
       "display" : "patient safety"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HDIRECT",
       "display" : "directory"
     }]

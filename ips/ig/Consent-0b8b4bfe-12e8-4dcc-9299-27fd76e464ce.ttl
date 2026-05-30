@@ -49,6 +49,21 @@
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
+       ] ;
+       fhir:code [ fhir:v "npp" ] ;
+       fhir:display [ fhir:v "Notice of Privacy Practices" ]
+     ] [
+       a loinc:59284-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "59284-0" ] ;
+       fhir:display [ fhir:v "Patient Consent" ]
+     ] [
        a loinc:64292-6 ;
        fhir:system [
          fhir:v "http://loinc.org"^^xsd:anyURI ;
@@ -56,6 +71,34 @@
        ] ;
        fhir:code [ fhir:v "64292-6" ] ;
        fhir:display [ fhir:v "Release of information consent Document" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "ICOL" ] ;
+       fhir:display [ fhir:v "information collection" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "IDSCL" ] ;
+       fhir:display [ fhir:v "information disclosure" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "INFA" ] ;
+       fhir:display [ fhir:v "information access" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "IRDSCL" ] ;
+       fhir:display [ fhir:v "information redisclosure" ]
      ] ) ;
      fhir:text [ fhir:v "Release of information consent Document" ]
   ] [
@@ -68,26 +111,6 @@
        fhir:display [ fhir:v "Advance Directive" ]
      ] ) ;
      fhir:text [ fhir:v "Advance Directive" ]
-  ] [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
-       ] ;
-       fhir:code [ fhir:v "rsdid" ] ;
-       fhir:display [ fhir:v "De-identified Information Access" ]
-     ] ) ;
-     fhir:text [ fhir:v "De-identified information" ]
-  ] [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
-       ] ;
-       fhir:code [ fhir:v "rsreid" ] ;
-       fhir:display [ fhir:v "Re-identifiable Information Access" ]
-     ] ) ;
-     fhir:text [ fhir:v "Re-identifiable information" ]
   ] ) ; # 
   fhir:patient [
      fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
@@ -114,7 +137,8 @@
            fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
            fhir:l <http://terminology.hl7.org/CodeSystem/consentaction>
          ] ;
-         fhir:code [ fhir:v "collect" ]
+         fhir:code [ fhir:v "collect" ] ;
+         fhir:display [ fhir:v "Collect" ]
        ] )
      ] [
        fhir:coding ( [
@@ -122,7 +146,8 @@
            fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
            fhir:l <http://terminology.hl7.org/CodeSystem/consentaction>
          ] ;
-         fhir:code [ fhir:v "access" ]
+         fhir:code [ fhir:v "access" ] ;
+         fhir:display [ fhir:v "Access" ]
        ] )
      ] [
        fhir:coding ( [
@@ -130,7 +155,8 @@
            fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
            fhir:l <http://terminology.hl7.org/CodeSystem/consentaction>
          ] ;
-         fhir:code [ fhir:v "use" ]
+         fhir:code [ fhir:v "use" ] ;
+         fhir:display [ fhir:v "Use" ]
        ] )
      ] [
        fhir:coding ( [
@@ -138,7 +164,8 @@
            fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
            fhir:l <http://terminology.hl7.org/CodeSystem/consentaction>
          ] ;
-         fhir:code [ fhir:v "disclose" ]
+         fhir:code [ fhir:v "disclose" ] ;
+         fhir:display [ fhir:v "Disclose" ]
        ] )
      ] [
        fhir:coding ( [
@@ -146,7 +173,8 @@
            fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ;
            fhir:l <http://terminology.hl7.org/CodeSystem/consentaction>
          ] ;
-         fhir:code [ fhir:v "correct" ]
+         fhir:code [ fhir:v "correct" ] ;
+         fhir:display [ fhir:v "Access and Correct" ]
        ] )
      ] ) ;
      fhir:purpose ( [
@@ -154,6 +182,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "TREAT" ] ;
        fhir:display [ fhir:v "treatment" ]
      ] [
@@ -161,6 +190,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "COC" ] ;
        fhir:display [ fhir:v "coordination of care" ]
      ] [
@@ -168,6 +198,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "ETREAT" ] ;
        fhir:display [ fhir:v "Emergency Treatment" ]
      ] [
@@ -175,6 +206,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "BTG" ] ;
        fhir:display [ fhir:v "break the glass" ]
      ] [
@@ -182,6 +214,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "ERTREAT" ] ;
        fhir:display [ fhir:v "emergency room treatment" ]
      ] [
@@ -189,6 +222,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HOPERAT" ] ;
        fhir:display [ fhir:v "healthcare operations" ]
      ] [
@@ -196,6 +230,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "TREATDS" ] ;
        fhir:display [ fhir:v "decision support assisted treatment decision" ]
      ] [
@@ -203,6 +238,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HTEST" ] ;
        fhir:display [ fhir:v "test health data" ]
      ] [
@@ -210,6 +246,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "PATRQT" ] ;
        fhir:display [ fhir:v "patient requested" ]
      ] )

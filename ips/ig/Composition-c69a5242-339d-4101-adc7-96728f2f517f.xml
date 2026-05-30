@@ -704,20 +704,20 @@
       <status value="additional"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">I'm 186 cm (6 ft 1 in) tall and weigh about 80 kg (175 lb, or 12 st 8 lb). My blood pressure is usually 110-120 / 65-70 mmHg.</div>
     </text>
     <entry>
-      <reference value="urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd"/>
-      <display value="Blood pressure 2026-01-04 168/88 mmHg"/>
+      <reference value="urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce"/>
+      <display value="Blood pressure at clinic 2026-01-04 168/88 mmHg"/>
     </entry>
     <entry>
-      <reference value="urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce"/>
-      <display value="Blood pressure 2025-10-24 150/76 mmHg"/>
+      <reference value="urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd"/>
+      <display value="Blood pressure at clinic 2025-10-24 150/76 mmHg"/>
     </entry>
     <entry>
       <reference value="urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"/>
-      <display value="Blood pressure 2026-01-04 116/66 mmHg"/>
+      <display value="Blood pressure, self-measured, 2026-01-04 116/66 mmHg"/>
     </entry>
     <entry>
       <reference value="urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a"/>
-      <display value="Blood pressure 2026-01-04 118/68 mmHg"/>
+      <display value="Blood pressure, self-measured, 2026-01-04 114/61 mmHg"/>
     </entry>
   </section>
 </Composition>

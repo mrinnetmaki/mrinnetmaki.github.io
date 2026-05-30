@@ -29,9 +29,39 @@
   </scope>
   <category>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="npp"/>
+      <display value="Notice of Privacy Practices"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59284-0"/>
+      <display value="Patient Consent"/>
+    </coding>
+    <coding>
       <system value="http://loinc.org"/>
       <code value="64292-6"/>
       <display value="Release of information consent Document"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="ICOL"/>
+      <display value="information collection"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IDSCL"/>
+      <display value="information disclosure"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="INFA"/>
+      <display value="information access"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IRDSCL"/>
+      <display value="information redisclosure"/>
     </coding>
     <text value="Release of information consent Document"/>
   </category>
@@ -48,6 +78,11 @@
       <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
       <code value="rsreid"/>
       <display value="Re-identifiable Information Access"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="RSREID"/>
+      <display value="re-identifiable information access"/>
     </coding>
     <text value="Re-identifiable information"/>
   </category>
@@ -67,6 +102,7 @@
     <type value="deny"/>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="MLTRAINING"/>
       <display value="machine learning training"/>
     </purpose>

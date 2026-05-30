@@ -30,9 +30,39 @@
   </scope>
   <category>
     <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+      <code value="npp"/>
+      <display value="Notice of Privacy Practices"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59284-0"/>
+      <display value="Patient Consent"/>
+    </coding>
+    <coding>
       <system value="http://loinc.org"/>
       <code value="64292-6"/>
       <display value="Release of information consent Document"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="ICOL"/>
+      <display value="information collection"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IDSCL"/>
+      <display value="information disclosure"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="INFA"/>
+      <display value="information access"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IRDSCL"/>
+      <display value="information redisclosure"/>
     </coding>
     <text value="Release of information consent Document"/>
   </category>
@@ -43,22 +73,6 @@
       <display value="Advance Directive"/>
     </coding>
     <text value="Advance Directive"/>
-  </category>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
-      <code value="rsdid"/>
-      <display value="De-identified Information Access"/>
-    </coding>
-    <text value="De-identified information"/>
-  </category>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
-      <code value="rsreid"/>
-      <display value="Re-identifiable Information Access"/>
-    </coding>
-    <text value="Re-identifiable information"/>
   </category>
   <patient>
     <reference value="urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
@@ -78,74 +92,88 @@
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
         <code value="collect"/>
+        <display value="Collect"/>
       </coding>
     </action>
     <action>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
         <code value="access"/>
+        <display value="Access"/>
       </coding>
     </action>
     <action>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
         <code value="use"/>
+        <display value="Use"/>
       </coding>
     </action>
     <action>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
         <code value="disclose"/>
+        <display value="Disclose"/>
       </coding>
     </action>
     <action>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
         <code value="correct"/>
+        <display value="Access and Correct"/>
       </coding>
     </action>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="TREAT"/>
       <display value="treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="COC"/>
       <display value="coordination of care"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="ETREAT"/>
       <display value="Emergency Treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="BTG"/>
       <display value="break the glass"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="ERTREAT"/>
       <display value="emergency room treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HOPERAT"/>
       <display value="healthcare operations"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="TREATDS"/>
       <display value="decision support assisted treatment decision"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HTEST"/>
       <display value="test health data"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="PATRQT"/>
       <display value="patient requested"/>
     </purpose>

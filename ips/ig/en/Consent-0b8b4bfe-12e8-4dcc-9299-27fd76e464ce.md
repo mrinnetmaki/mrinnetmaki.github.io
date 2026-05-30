@@ -40,9 +40,39 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
   },
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "npp",
+      "display" : "Notice of Privacy Practices"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59284-0",
+      "display" : "Patient Consent"
+    },
+    {
       "system" : "http://loinc.org",
       "code" : "64292-6",
       "display" : "Release of information consent Document"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "ICOL",
+      "display" : "information collection"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IDSCL",
+      "display" : "information disclosure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA",
+      "display" : "information access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IRDSCL",
+      "display" : "information redisclosure"
     }],
     "text" : "Release of information consent Document"
   },
@@ -53,22 +83,6 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
       "display" : "Advance Directive"
     }],
     "text" : "Advance Directive"
-  },
-  {
-    "coding" : [{
-      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-      "code" : "rsdid",
-      "display" : "De-identified Information Access"
-    }],
-    "text" : "De-identified information"
-  },
-  {
-    "coding" : [{
-      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-      "code" : "rsreid",
-      "display" : "Re-identifiable Information Access"
-    }],
-    "text" : "Re-identifiable information"
   }],
   "patient" : {
     "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
@@ -87,75 +101,89 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
     "action" : [{
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "collect"
+        "code" : "collect",
+        "display" : "Collect"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "access"
+        "code" : "access",
+        "display" : "Access"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "use"
+        "code" : "use",
+        "display" : "Use"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "disclose"
+        "code" : "disclose",
+        "display" : "Disclose"
       }]
     },
     {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/consentaction",
-        "code" : "correct"
+        "code" : "correct",
+        "display" : "Access and Correct"
       }]
     }],
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "TREAT",
       "display" : "treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "COC",
       "display" : "coordination of care"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "ETREAT",
       "display" : "Emergency Treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "BTG",
       "display" : "break the glass"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "ERTREAT",
       "display" : "emergency room treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HOPERAT",
       "display" : "healthcare operations"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "TREATDS",
       "display" : "decision support assisted treatment decision"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HTEST",
       "display" : "test health data"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "PATRQT",
       "display" : "patient requested"
     }]

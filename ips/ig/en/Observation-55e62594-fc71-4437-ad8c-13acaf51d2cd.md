@@ -1,10 +1,10 @@
-# Observation-vitals-bloodpressure-3 - International Patient Summary for Mikael Rinnetmäki v0.4.0
+# Observation-vitals-bloodpressure-2 - International Patient Summary for Mikael Rinnetmäki v0.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Observation-vitals-bloodpressure-3**
+* **Observation-vitals-bloodpressure-2**
 
-## Example Observation: Observation-vitals-bloodpressure-3
+## Example Observation: Observation-vitals-bloodpressure-2
 
 Profiles: [Observation Blood Pressure Profile](http://hl7.org/fhir/R4/bp.html), [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Vital Signs Profile](http://hl7.org/fhir/R4/vitalsigns.html)
 

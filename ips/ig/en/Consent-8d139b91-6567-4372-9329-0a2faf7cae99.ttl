@@ -78,6 +78,14 @@
        ] ;
        fhir:code [ fhir:v "polst" ] ;
        fhir:display [ fhir:v "POLST" ]
+     ] [
+       a loinc:59284-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "59284-0" ] ;
+       fhir:display [ fhir:v "Patient Consent" ]
      ] ) ;
      fhir:text [ fhir:v "Advance Directive" ]
   ] ) ; # 
@@ -113,6 +121,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "TREAT" ] ;
        fhir:display [ fhir:v "treatment" ]
      ] [
@@ -120,6 +129,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "COC" ] ;
        fhir:display [ fhir:v "coordination of care" ]
      ] [
@@ -127,6 +137,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "ETREAT" ] ;
        fhir:display [ fhir:v "Emergency Treatment" ]
      ] [
@@ -134,6 +145,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "BTG" ] ;
        fhir:display [ fhir:v "break the glass" ]
      ] [
@@ -141,6 +153,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "ERTREAT" ] ;
        fhir:display [ fhir:v "emergency room treatment" ]
      ] [
@@ -148,6 +161,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "POPHLTH" ] ;
        fhir:display [ fhir:v "population health" ]
      ] [
@@ -155,6 +169,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "CAREMGT" ] ;
        fhir:display [ fhir:v "care management" ]
      ] [
@@ -162,6 +177,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "DONAT" ] ;
        fhir:display [ fhir:v "donation" ]
      ] [
@@ -169,6 +185,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "GOV" ] ;
        fhir:display [ fhir:v "government" ]
      ] [
@@ -176,6 +193,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HACCRED" ] ;
        fhir:display [ fhir:v "health accreditation" ]
      ] [
@@ -183,6 +201,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HCOMPL" ] ;
        fhir:display [ fhir:v "health compliance" ]
      ] [
@@ -190,6 +209,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HDECD" ] ;
        fhir:display [ fhir:v "decedent" ]
      ] [
@@ -197,6 +217,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HDIRECT" ] ;
        fhir:display [ fhir:v "directory" ]
      ] [
@@ -204,6 +225,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HDM" ] ;
        fhir:display [ fhir:v "healthcare delivery management" ]
      ] [
@@ -211,6 +233,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "PATADMIN" ] ;
        fhir:display [ fhir:v "patient administration" ]
      ] [
@@ -218,6 +241,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "PATSFTY" ] ;
        fhir:display [ fhir:v "patient safety" ]
      ] [
@@ -225,6 +249,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HDIRECT" ] ;
        fhir:display [ fhir:v "directory" ]
      ] )

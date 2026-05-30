@@ -49,6 +49,11 @@
       <code value="polst"/>
       <display value="POLST"/>
     </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59284-0"/>
+      <display value="Patient Consent"/>
+    </coding>
     <text value="Advance Directive"/>
   </category>
   <patient>
@@ -74,86 +79,103 @@
     <type value="permit"/>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="TREAT"/>
       <display value="treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="COC"/>
       <display value="coordination of care"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="ETREAT"/>
       <display value="Emergency Treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="BTG"/>
       <display value="break the glass"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="ERTREAT"/>
       <display value="emergency room treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="POPHLTH"/>
       <display value="population health"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="CAREMGT"/>
       <display value="care management"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="DONAT"/>
       <display value="donation"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="GOV"/>
       <display value="government"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HACCRED"/>
       <display value="health accreditation"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HCOMPL"/>
       <display value="health compliance"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HDECD"/>
       <display value="decedent"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HDIRECT"/>
       <display value="directory"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HDM"/>
       <display value="healthcare delivery management"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="PATADMIN"/>
       <display value="patient administration"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="PATSFTY"/>
       <display value="patient safety"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="HDIRECT"/>
       <display value="directory"/>
     </purpose>

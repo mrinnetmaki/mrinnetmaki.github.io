@@ -49,6 +49,21 @@
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
+       ] ;
+       fhir:code [ fhir:v "npp" ] ;
+       fhir:display [ fhir:v "Notice of Privacy Practices" ]
+     ] [
+       a loinc:59284-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "59284-0" ] ;
+       fhir:display [ fhir:v "Patient Consent" ]
+     ] [
        a loinc:64292-6 ;
        fhir:system [
          fhir:v "http://loinc.org"^^xsd:anyURI ;
@@ -56,6 +71,34 @@
        ] ;
        fhir:code [ fhir:v "64292-6" ] ;
        fhir:display [ fhir:v "Release of information consent Document" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "ICOL" ] ;
+       fhir:display [ fhir:v "information collection" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "IDSCL" ] ;
+       fhir:display [ fhir:v "information disclosure" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "INFA" ] ;
+       fhir:display [ fhir:v "information access" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "IRDSCL" ] ;
+       fhir:display [ fhir:v "information redisclosure" ]
      ] ) ;
      fhir:text [ fhir:v "Release of information consent Document" ]
   ] [
@@ -74,20 +117,34 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
        ] ;
-       fhir:code [ fhir:v "rsdid" ] ;
-       fhir:display [ fhir:v "De-identified Information Access" ]
+       fhir:code [ fhir:v "rsreid" ] ;
+       fhir:display [ fhir:v "Re-identifiable Information Access" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "RSREID" ] ;
+       fhir:display [ fhir:v "re-identifiable information access" ]
      ] ) ;
-     fhir:text [ fhir:v "De-identified information" ]
+     fhir:text [ fhir:v "Re-identifiable information" ]
   ] [
      fhir:coding ( [
        fhir:system [
          fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/consentcategorycodes>
        ] ;
-       fhir:code [ fhir:v "rsreid" ] ;
-       fhir:display [ fhir:v "Re-identifiable Information Access" ]
+       fhir:code [ fhir:v "rsdid" ] ;
+       fhir:display [ fhir:v "De-identified Information Access" ]
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+       ] ;
+       fhir:code [ fhir:v "RSDID" ] ;
+       fhir:display [ fhir:v "de-identified information access" ]
      ] ) ;
-     fhir:text [ fhir:v "Re-identifiable information" ]
+     fhir:text [ fhir:v "De-identified information" ]
   ] ) ; # 
   fhir:patient [
      fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
@@ -118,6 +175,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "HMARKT" ] ;
        fhir:display [ fhir:v "healthcare marketing" ]
      ] ) ;

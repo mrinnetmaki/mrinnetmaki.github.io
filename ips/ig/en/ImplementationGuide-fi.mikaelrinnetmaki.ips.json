@@ -11,7 +11,7 @@
   "name" : "MikaelsIPS",
   "title" : "International Patient Summary for Mikael Rinnetmäki",
   "status" : "active",
-  "date" : "2026-05-23T14:19:34+03:00",
+  "date" : "2026-05-30T12:56:35+02:00",
   "publisher" : "Mikael Rinnetmäki",
   "contact" : [{
     "name" : "Mikael Rinnetmäki",
@@ -104,6 +104,17 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "1.2.246.537.6.990.18.5.777"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -405,6 +416,17 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "auto-oid-root"
+      },
+      {
+        "url" : "value",
+        "valueString" : "1.2.246.537.6.990.18.5.777"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -884,7 +906,7 @@
         "reference" : "Consent/e7fd44af-ae28-4994-a04f-37d8e52864a1"
       },
       "name" : "Consent-data-use-research",
-      "description" : "Consent for the use of *de-identified information* for research",
+      "description" : "Consent for the use of *de-identified information* for research, including machine learning training",
       "exampleBoolean" : true
     },
     {
@@ -1973,22 +1995,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"
+        "reference" : "Observation/87fd93df-3a9e-433a-a824-97702a294dce"
       },
       "name" : "Observation-vitals-bloodpressure-1",
-      "description" : "Observation of blood pressure 1 for Mikael",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a"
-      },
-      "name" : "Observation-vitals-bloodpressure-2",
-      "description" : "Observation of blood pressure 2 for Mikael",
+      "description" : "Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (1/2)",
       "exampleBoolean" : true
     },
     {
@@ -1999,8 +2009,8 @@
       "reference" : {
         "reference" : "Observation/55e62594-fc71-4437-ad8c-13acaf51d2cd"
       },
-      "name" : "Observation-vitals-bloodpressure-3",
-      "description" : "Observation of blood pressure 3 for Mikael, performed at a clinic",
+      "name" : "Observation-vitals-bloodpressure-2",
+      "description" : "Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (2/2)",
       "exampleBoolean" : true
     },
     {
@@ -2009,10 +2019,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/87fd93df-3a9e-433a-a824-97702a294dce"
+        "reference" : "Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"
+      },
+      "name" : "Observation-vitals-bloodpressure-3",
+      "description" : "Observation of blood pressure for Mikael 2026-01-04T15:48:09+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a"
       },
       "name" : "Observation-vitals-bloodpressure-4",
-      "description" : "Observation of blood pressure 4 for Mikael, performed at a clinic",
+      "description" : "Observation of blood pressure for Mikael 2026-01-04T15:49:06+02:00",
       "exampleBoolean" : true
     },
     {

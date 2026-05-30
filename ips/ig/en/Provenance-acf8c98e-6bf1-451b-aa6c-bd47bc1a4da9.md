@@ -194,6 +194,7 @@ I used Microsoft Copilot to add LOINC codes to lab results, based on the Finnish
   "reason" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "LABELING",
       "display" : "labeling"
     }],

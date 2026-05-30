@@ -8,7 +8,7 @@
 
 Profiles: [IPA-Condition](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html) version: 1.1.0, [IPA-problem-list-item](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-problem-list-item.html) version: 1.1.0, [Condition (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html), [Condition - Obligations (EPS)](https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html)
 
-Security Labels: patient reported (Details: ObservationValue code PATRPT = 'patient reported'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')
+Security Labels: [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient asserted (Details: v3 Code System ObservationValue code PATAST = 'patient asserted')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
 
 **clinicalStatus**: Active
 
@@ -28,7 +28,7 @@ Security Labels: patient reported (Details: ObservationValue code PATRPT = 'pati
 
 > 
 
-The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is < 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is < 1.4 mmol/l.
+The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is < 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is < 1.4 mmol/l. I reach that target with statins.
 
 
 
@@ -115,7 +115,7 @@ The guidelines for dyslipidemia categorize people who have lived with type 1 dia
       "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
       "display" : "Mikael Rinnetmäki, the patient"
     },
-    "text" : "The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is < 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is < 1.4 mmol/l."
+    "text" : "The guidelines for dyslipidemia categorize people who have lived with type 1 diabetes for more than 10 years into 'high risk' class where the LDL target is < 1.8 mmol/l. For those with additional risk factors (I have mild retinopathy and a past event of pulmonary embolism) the LDL target is < 1.4 mmol/l. I reach that target with statins."
   }]
 }
 

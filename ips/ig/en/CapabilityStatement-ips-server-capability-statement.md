@@ -10,6 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://ips.sensotrend.com/ig/CapabilityStatement/ips-server-capability-statement | *Version*:0.4.0 |
 | Active as of 2026-03-12 | *Computable Name*:SensotrendIpsServerCapabilityStatement |
+| *Other Identifiers:*OID:1.2.246.537.6.990.18.5.777.13.2 | |
 
  [Raw OpenAPI-Swagger Definition file](../ips-server-capability-statement.openapi.json) | [Download](../ips-server-capability-statement.openapi.json) 
 

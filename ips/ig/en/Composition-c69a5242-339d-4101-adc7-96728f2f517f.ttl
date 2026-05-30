@@ -841,21 +841,21 @@
        fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">I'm 186 cm (6 ft 1 in) tall and weigh about 80 kg (175 lb, or 12 st 8 lb). My blood pressure is usually 110-120 / 65-70 mmHg.</div>"^^rdf:XMLLiteral ]
      ] ;
      fhir:entry ( [
-       fhir:l <urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd> ;
-       fhir:reference [ fhir:v "urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd" ] ;
-       fhir:display [ fhir:v "Blood pressure 2026-01-04 168/88 mmHg" ]
-     ] [
        fhir:l <urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce> ;
        fhir:reference [ fhir:v "urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce" ] ;
-       fhir:display [ fhir:v "Blood pressure 2025-10-24 150/76 mmHg" ]
+       fhir:display [ fhir:v "Blood pressure at clinic 2026-01-04 168/88 mmHg" ]
+     ] [
+       fhir:l <urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd> ;
+       fhir:reference [ fhir:v "urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd" ] ;
+       fhir:display [ fhir:v "Blood pressure at clinic 2025-10-24 150/76 mmHg" ]
      ] [
        fhir:l <urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9> ;
        fhir:reference [ fhir:v "urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9" ] ;
-       fhir:display [ fhir:v "Blood pressure 2026-01-04 116/66 mmHg" ]
+       fhir:display [ fhir:v "Blood pressure, self-measured, 2026-01-04 116/66 mmHg" ]
      ] [
        fhir:l <urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a> ;
        fhir:reference [ fhir:v "urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a" ] ;
-       fhir:display [ fhir:v "Blood pressure 2026-01-04 118/68 mmHg" ]
+       fhir:display [ fhir:v "Blood pressure, self-measured, 2026-01-04 114/61 mmHg" ]
      ] )
   ] ) . # 
 

@@ -40,9 +40,39 @@ I don't want my data to be used for marketing purposes.
   },
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "npp",
+      "display" : "Notice of Privacy Practices"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59284-0",
+      "display" : "Patient Consent"
+    },
+    {
       "system" : "http://loinc.org",
       "code" : "64292-6",
       "display" : "Release of information consent Document"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "ICOL",
+      "display" : "information collection"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IDSCL",
+      "display" : "information disclosure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA",
+      "display" : "information access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IRDSCL",
+      "display" : "information redisclosure"
     }],
     "text" : "Release of information consent Document"
   },
@@ -57,18 +87,28 @@ I don't want my data to be used for marketing purposes.
   {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-      "code" : "rsdid",
-      "display" : "De-identified Information Access"
+      "code" : "rsreid",
+      "display" : "Re-identifiable Information Access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "RSREID",
+      "display" : "re-identifiable information access"
     }],
-    "text" : "De-identified information"
+    "text" : "Re-identifiable information"
   },
   {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-      "code" : "rsreid",
-      "display" : "Re-identifiable Information Access"
+      "code" : "rsdid",
+      "display" : "De-identified Information Access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "RSDID",
+      "display" : "de-identified information access"
     }],
-    "text" : "Re-identifiable information"
+    "text" : "De-identified information"
   }],
   "patient" : {
     "reference" : "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f",
@@ -91,6 +131,7 @@ I don't want my data to be used for marketing purposes.
     "type" : "deny",
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "HMARKT",
       "display" : "healthcare marketing"
     }],

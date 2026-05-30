@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "MikaelsIPS"] ; # 
   fhir:title [ fhir:v "International Patient Summary for Mikael Rinnetmäki"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-05-23T14:19:34+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-30T12:56:35+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Mikael Rinnetmäki"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Mikael Rinnetmäki" ] ;
@@ -166,6 +166,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "auto-oid-root"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "1.2.246.537.6.990.18.5.777"
          ]
        ] ) ;
        fhir:url [
@@ -823,6 +847,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "auto-oid-root"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "1.2.246.537.6.990.18.5.777"
          ]
        ] ) ;
        fhir:url [
@@ -1782,7 +1830,7 @@
          fhir:reference [ fhir:v "Consent/e7fd44af-ae28-4994-a04f-37d8e52864a1" ]
        ] ;
        fhir:name [ fhir:v "Consent-data-use-research" ] ;
-       fhir:description [ fhir:v "Consent for the use of *de-identified information* for research" ] ;
+       fhir:description [ fhir:v "Consent for the use of *de-identified information* for research, including machine learning training" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -3689,32 +3737,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9> ;
-         fhir:reference [ fhir:v "Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9" ]
+         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/87fd93df-3a9e-433a-a824-97702a294dce> ;
+         fhir:reference [ fhir:v "Observation/87fd93df-3a9e-433a-a824-97702a294dce" ]
        ] ;
        fhir:name [ fhir:v "Observation-vitals-bloodpressure-1" ] ;
-       fhir:description [ fhir:v "Observation of blood pressure 1 for Mikael" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a> ;
-         fhir:reference [ fhir:v "Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a" ]
-       ] ;
-       fhir:name [ fhir:v "Observation-vitals-bloodpressure-2" ] ;
-       fhir:description [ fhir:v "Observation of blood pressure 2 for Mikael" ] ;
+       fhir:description [ fhir:v "Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (1/2)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -3734,8 +3761,8 @@
          fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/55e62594-fc71-4437-ad8c-13acaf51d2cd> ;
          fhir:reference [ fhir:v "Observation/55e62594-fc71-4437-ad8c-13acaf51d2cd" ]
        ] ;
-       fhir:name [ fhir:v "Observation-vitals-bloodpressure-3" ] ;
-       fhir:description [ fhir:v "Observation of blood pressure 3 for Mikael, performed at a clinic" ] ;
+       fhir:name [ fhir:v "Observation-vitals-bloodpressure-2" ] ;
+       fhir:description [ fhir:v "Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (2/2)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -3752,11 +3779,32 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/87fd93df-3a9e-433a-a824-97702a294dce> ;
-         fhir:reference [ fhir:v "Observation/87fd93df-3a9e-433a-a824-97702a294dce" ]
+         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9> ;
+         fhir:reference [ fhir:v "Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9" ]
+       ] ;
+       fhir:name [ fhir:v "Observation-vitals-bloodpressure-3" ] ;
+       fhir:description [ fhir:v "Observation of blood pressure for Mikael 2026-01-04T15:48:09+02:00" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mikaelrinnetmaki.fi/ips/ig/Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a> ;
+         fhir:reference [ fhir:v "Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a" ]
        ] ;
        fhir:name [ fhir:v "Observation-vitals-bloodpressure-4" ] ;
-       fhir:description [ fhir:v "Observation of blood pressure 4 for Mikael, performed at a clinic" ] ;
+       fhir:description [ fhir:v "Observation of blood pressure for Mikael 2026-01-04T15:49:06+02:00" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true

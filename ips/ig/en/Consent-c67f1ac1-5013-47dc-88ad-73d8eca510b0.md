@@ -40,9 +40,39 @@ I don't want my **re-identifiable** data to be used for machine learning trainin
   },
   "category" : [{
     "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "code" : "npp",
+      "display" : "Notice of Privacy Practices"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59284-0",
+      "display" : "Patient Consent"
+    },
+    {
       "system" : "http://loinc.org",
       "code" : "64292-6",
       "display" : "Release of information consent Document"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "ICOL",
+      "display" : "information collection"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IDSCL",
+      "display" : "information disclosure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA",
+      "display" : "information access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "IRDSCL",
+      "display" : "information redisclosure"
     }],
     "text" : "Release of information consent Document"
   },
@@ -59,6 +89,11 @@ I don't want my **re-identifiable** data to be used for machine learning trainin
       "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
       "code" : "rsreid",
       "display" : "Re-identifiable Information Access"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "RSREID",
+      "display" : "re-identifiable information access"
     }],
     "text" : "Re-identifiable information"
   }],
@@ -78,6 +113,7 @@ I don't want my **re-identifiable** data to be used for machine learning trainin
     "type" : "deny",
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "4.0.0",
       "code" : "MLTRAINING",
       "display" : "machine learning training"
     }]

@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="com.sensotrend.ips"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide com.sensotrend.ips</b></p><a name="com.sensotrend.ips"> </a><a name="hccom.sensotrend.ips"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>SensotrendIPS</h2><p>The official URL for this implementation guide is: </p><pre>https://ips.sensotrend.com/ig/ImplementationGuide/com.sensotrend.ips</pre><div><p>This document describes Sensotrend's implementation of the <a href="https://hl7.org/fhir/uv/ips/">HL7 FHIR IPS</a> format of the <a href="https://international-patient-summary.net/">International Patient Summary (IPS)</a> specification both as a client app and as a FHIR server. It also includes and extensive example patient summary for Mikko, an example patient.</p>
+</div></div>
+  </text>
+  <url value="https://ips.sensotrend.com/ig/ImplementationGuide/com.sensotrend.ips"/>
+  <version value="0.3.0"/>
+  <name value="SensotrendIPS"/>
+  <title value="Sensotrend's International Patient Summary Implementation"/>
+  <status value="active"/>
+  <date value="2026-05-15T21:22:49+03:00"/>
+  <publisher value="Sensotrend Oy"/>
+  <contact>
+    <name value="Sensotrend Oy"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ips.sensotrend.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="This document describes Sensotrend's implementation of the [HL7 FHIR IPS](https://hl7.org/fhir/uv/ips/) format of the [International Patient Summary (IPS)](https://international-patient-summary.net/) specification both as a client app and as a FHIR server. It also includes and extensive example patient summary for Mikko, an example patient."/>
+  <packageId value="com.sensotrend.ips"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ipa">
+    <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
+    <packageId value="hl7.fhir.uv.ipa"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_base">
+    <uri value="http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base"/>
+    <packageId value="hl7.fhir.eu.base"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_fi_base">
+    <uri value="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"/>
+    <packageId value="hl7.fhir.fi.base"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_eu_eps">
+    <uri value="http://hl7.eu/fhir/eps/ImplementationGuide/hl7.fhir.eu.eps"/>
+    <packageId value="hl7.fhir.eu.eps"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_security_label_ds4p">
+    <uri value="http://hl7.org/fhir/uv/security-label-ds4p/ImplementationGuide/hl7.fhir.uv.security-label-ds4p"/>
+    <packageId value="hl7.fhir.uv.security-label-ds4p"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ips.sensotrend.com/ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://ips.sensotrend.com/ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/8d139b91-6567-4372-9329-0a2faf7cae99"/>
+      </reference>
+      <name value="Advance-directives"/>
+      <description value="Advance directives for my treatment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef"/>
+      </reference>
+      <name value="AllergyIntoleranceApple"/>
+      <description value="Allergy to apple"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/cdbc0f23-524a-423b-9114-ee0f06a815b3"/>
+      </reference>
+      <name value="AllergyIntoleranceBirch"/>
+      <description value="Allergy to birch pollen"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/e7ba84d4-87f4-4170-805b-c2c516c4fcab"/>
+      </reference>
+      <name value="AllergyIntoleranceMedicationNoKnown"/>
+      <description value="No known medication allergies"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6728beb7-b028-4976-9ea8-ccc29336756f"/>
+      </reference>
+      <name value="AllergyIntoleranceNut"/>
+      <description value="Allergy to nuts"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/1e591fa2-f118-4ef4-9103-9b9fe5d3da75"/>
+      </reference>
+      <name value="ConditionCollarbone"/>
+      <description value="Past broken collarbone"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/1558c456-efa1-4b3d-abe2-1522c6048bc7"/>
+      </reference>
+      <name value="ConditionDiabetesT1"/>
+      <description value="Type 1 diabetes"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ead8fa45-4c6b-47b5-876b-6c01090d2c49"/>
+      </reference>
+      <name value="ConditionFinger"/>
+      <description value="Past broken finger"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/c279fd61-c4da-406b-a14b-b6166b956f83"/>
+      </reference>
+      <name value="ConditionHypercholesterolemia"/>
+      <description value="Diabetes related hypercholesterolemia"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/2c4dc13c-2927-4cd7-b86e-1a3b89493d2b"/>
+      </reference>
+      <name value="ConditionPulmonaryEmbolism"/>
+      <description value="Past pulmonary embolism"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/8cb43587-94e6-4520-8b71-bbdab015ce0a"/>
+      </reference>
+      <name value="ConditionRetinopathy"/>
+      <description value="Diabetes related retinopathy"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/22e07a7b-4d9b-406d-93bc-dc60de933f1f"/>
+      </reference>
+      <name value="ConditionShoulder"/>
+      <description value="Past problem with shoulder"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/af227524-ca64-46ed-8aad-c17f1a712af5"/>
+      </reference>
+      <name value="ConditionSight"/>
+      <description value="Mild myopia"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/d621ec37-44d1-455a-9f95-b62ee1e6f7f1"/>
+      </reference>
+      <name value="ConditionVocalChord-1"/>
+      <description value="Dysphonia due to vocal cord problems"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/14534413-2ea5-4988-9f2a-a7f6c6059353"/>
+      </reference>
+      <name value="ConditionVocalChord-2"/>
+      <description value="Disputed diagnosis of disease in larynx"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/0b8b4bfe-12e8-4dcc-9299-27fd76e464ce"/>
+      </reference>
+      <name value="Consent-data-use-healthcare"/>
+      <description value="Consent for the use of my data in healthcare"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/e7fd44af-ae28-4994-a04f-37d8e52864a1"/>
+      </reference>
+      <name value="Consent-data-use-research"/>
+      <description value="Consent for the use of *de-identified information* for research"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/fc6ca80d-ce07-47d9-a1c0-49e955ae166b"/>
+      </reference>
+      <name value="Deny-data-use-for-marketing"/>
+      <description value="Deny the use of my data for marketing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/c67f1ac1-5013-47dc-88ad-73d8eca510b0"/>
+      </reference>
+      <name value="Deny-data-use-for-ml-training"/>
+      <description value="Deny the use of *re-identifiable* data for machine learning training"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/f2cfe332-9d2f-4216-9e89-452aa5fac885"/>
+      </reference>
+      <name value="DeviceAbbottFreestyleLibre3"/>
+      <description value="Abbott Freestyle Libre 3 continuous glucose monitoring system"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/9c49dff9-84b0-45f6-9e52-e8fa4b186473"/>
+      </reference>
+      <name value="DeviceCamAPS"/>
+      <description value="CamAPS hybrid closed loop insulin delivery system algorithm"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/876781b9-0db0-429a-877b-23e17e4d8443"/>
+      </reference>
+      <name value="DeviceDexcomG6"/>
+      <description value="Dexcom G6 continuous glucose monitoring system"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/97b044bd-17ff-4fe0-a52d-af4d4731a0b9"/>
+      </reference>
+      <name value="DeviceMylifeLoop"/>
+      <description value="mylife Loop automated insulin delivery system"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/2ba85ad7-9e3e-4468-a10f-7c7d13114f0f"/>
+      </reference>
+      <name value="DeviceUseStatementCamAPSFX"/>
+      <description value="Use of the CamAPS FX hybrid closed loop insulin delivery system algorithm since October 6, 2023"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/85861b49-a76c-4ecf-a4db-8e9e67b72068"/>
+      </reference>
+      <name value="DeviceUseStatementDexcomG6"/>
+      <description value="Use of the Dexcom G6 continuous glucose monitoring (CGM) system since October 6, 2023 until November 30, 2024"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/25ba5f1a-90b3-49a8-a251-ac402bb4ccc8"/>
+      </reference>
+      <name value="DeviceUseStatementFreestyleLibre3"/>
+      <description value="Use of the Abbott Freestyle Libre 3 continuous glucose monitoring (CGM) system since November 30, 2024"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/905180fb-dc21-4b81-95d8-e2918657ce22"/>
+      </reference>
+      <name value="DeviceUseStatementMylifeLoop2023"/>
+      <description value="Use of the mylife Loop automated insulin delivery system since October 6, 2023"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/96001cc6-0b17-434e-8405-ed37dfddc76a"/>
+      </reference>
+      <name value="DeviceUseStatementYpsoPump"/>
+      <description value="Use of the mylife YpsoPump insulin pump since October 6, 2023"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/a88f7ff5-7803-43f5-a6bb-3c542736ce5e"/>
+      </reference>
+      <name value="DeviceYpsopump"/>
+      <description value="Ypsopump insulin pump"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/d9828658-c9dd-478c-8573-c514cd834f5f"/>
+      </reference>
+      <name value="ImmunizationCovid1"/>
+      <description value="Covid vaccination 1, Comirnaty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/f3fff46d-7755-4af3-a334-a3d3899d8a58"/>
+      </reference>
+      <name value="ImmunizationCovid2"/>
+      <description value="Covid vaccination 2, Comirnaty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/aac217a5-cd2f-4217-b5ff-c55e9f7c3378"/>
+      </reference>
+      <name value="ImmunizationCovid3"/>
+      <description value="Covid vaccination 3, Spikevax"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/9c0744c0-9b0a-4796-b653-452a0098625f"/>
+      </reference>
+      <name value="ImmunizationCovid4"/>
+      <description value="Covid vaccination 4, Comirnaty"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/244fb199-b9b2-49ef-85cd-09e5cdbc83af"/>
+      </reference>
+      <name value="ImmunizationHepatitisA1"/>
+      <description value="Hepatitis A vaccination 1 / 2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/97345cda-49d9-453c-8c9c-01edc6607cc7"/>
+      </reference>
+      <name value="ImmunizationHepatitisA2"/>
+      <description value="Hepatitis A vaccination 2 / 2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/a0ca2399-1f86-487b-ad6c-3e64081ae945"/>
+      </reference>
+      <name value="ImmunizationHepatitisB1"/>
+      <description value="Hepatitis B vaccination 1 / 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2"/>
+      </reference>
+      <name value="ImmunizationHepatitisB2"/>
+      <description value="Hepatitis B vaccination 2 / 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/f871751d-14fe-4672-bc2f-6a6e83e6ac73"/>
+      </reference>
+      <name value="ImmunizationHepatitisB3"/>
+      <description value="Hepatitis B vaccination 3 / 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/cae0ed26-c654-403c-8c85-ff4432949786"/>
+      </reference>
+      <name value="ImmunizationInfluenza1"/>
+      <description value="Vaxigrip influenza vaccine 2014"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/b54184da-87e6-4c0f-a85a-9546a5cc9783"/>
+      </reference>
+      <name value="ImmunizationInfluenza2"/>
+      <description value="Vaxigrip influenza vaccine 2015"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/04dfd1be-9483-485d-8030-a9ce3a264363"/>
+      </reference>
+      <name value="ImmunizationInfluenza3"/>
+      <description value="Vaxigriptetra influenza vaccine 2019"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/5906618a-e76b-44b5-b670-7a0820075bae"/>
+      </reference>
+      <name value="ImmunizationInfluenza4"/>
+      <description value="Vaxigriptetra influenza vaccine 2022"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/bfe1d5a4-be0e-403a-a27c-16ef74aca3b3"/>
+      </reference>
+      <name value="ImmunizationInfluenza5"/>
+      <description value="Vaxigriptetra influenza vaccine 2023"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/cf4545bb-604d-45de-a7da-95baf181286b"/>
+      </reference>
+      <name value="ImmunizationMeningitis"/>
+      <description value="MeningoVac A+C meningococcal vaccine"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/f1649cba-fde7-4d54-8fcd-37b6240017ac"/>
+      </reference>
+      <name value="ImmunizationPolio"/>
+      <description value="Imovax Polio vaccine"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/5a3c0871-af41-4f63-9615-d98308d9e794"/>
+      </reference>
+      <name value="ImmunizationTetanus1"/>
+      <description value="Tetanus booster 2003"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/bd632ca0-6661-4b9d-bbf6-7ffd3154e700"/>
+      </reference>
+      <name value="ImmunizationTetanus2"/>
+      <description value="Tetanus booster 2015"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/6b8e54e6-6023-4911-9a43-91b73066dc08"/>
+      </reference>
+      <name value="ImmunizationTyphoidFever"/>
+      <description value="Typherix typhoid fever vaccine 2019"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/6cfe08b7-55a1-40d9-9010-484f59b13ff2"/>
+      </reference>
+      <name value="ImmunizationYellowFever"/>
+      <description value="Yellow fever vaccination"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/c69a5242-339d-4101-adc7-96728f2f517f"/>
+      </reference>
+      <name value="International Patient Summary"/>
+      <description value="International Patient Summary for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IpsBundle"/>
+      </reference>
+      <name value="IpsBundle"/>
+      <description value="International Patient Summary for Mikko as a FHIR Bundle"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/9a241a9a-d6ee-4361-af90-9aa702499329"/>
+      </reference>
+      <name value="MedicationEzetimibe"/>
+      <description value="Ezetimibe"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/e6f153f4-6188-4dc4-9f19-f4179b9ee720"/>
+      </reference>
+      <name value="MedicationInsulinNovorapid"/>
+      <description value="Insulin Novorapid"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/58b57392-03fb-4a5f-90b9-117f82754431"/>
+      </reference>
+      <name value="MedicationRequestExetimibe"/>
+      <description value="Prescription for Ezetimibe"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/847b849a-eb83-4387-b60b-46eb8d39ebfd"/>
+      </reference>
+      <name value="MedicationRequestInsulinNovorapid"/>
+      <description value="Prescription for Insulin Novorapid"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/83e47f0e-cfb3-4ada-9bdb-7ad7223e0260"/>
+      </reference>
+      <name value="MedicationRequestRosuvastatin10mg"/>
+      <description value="Prescription for Rosuvastatin"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/03fd8e6f-d898-4fc9-9e79-3dc7132c721d"/>
+      </reference>
+      <name value="MedicationRequestRosuvastatin5mg"/>
+      <description value="Prescription for Rosuvastatin 5mg, stopped (replaced by 10mg)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/1af60d57-5a04-42d4-b63e-f509652c57f2"/>
+      </reference>
+      <name value="MedicationRosuvastatin10mg"/>
+      <description value="Rosuvastatin 10 mg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/9a265107-bd19-4ea4-bc5d-6fd94e8d7c88"/>
+      </reference>
+      <name value="MedicationRosuvastatin5mg"/>
+      <description value="Rosuvastatin 5 mg"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/17725642-fd58-4f71-a9e6-1dee30e048bf"/>
+      </reference>
+      <name value="MedicationStatementEzetimibe"/>
+      <description value="I use Rosuvastatin and Ezetimibe for diabetes related hypercholesterolemia."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/bb2d0be6-24fd-4e1f-8fa4-10e058ed2775"/>
+      </reference>
+      <name value="MedicationStatementInsulinNovorapid"/>
+      <description value="I use Insulin Novorapid for Type 1 diabetes"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/f3f4ff44-62be-440c-9e79-1a5de2d64016"/>
+      </reference>
+      <name value="MedicationStatementRosuvastatin"/>
+      <description value="I use Rosuvastatin and Ezetimibe for diabetes related hypercholesterolemia."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/b4ac89c5-6589-417f-beef-d3fb1ef9c70f"/>
+      </reference>
+      <name value="Mikko"/>
+      <description value="Mikko Virtanen, the patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/432d2590-6b3a-4e3f-b38c-6a0cc8dc9243"/>
+      </reference>
+      <name value="Observation-alcohol-use"/>
+      <description value="Observation of alcohol use for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/125cef80-fe5c-40db-976f-c6d51e099519"/>
+      </reference>
+      <name value="Observation-b-erybla-1"/>
+      <description value="Observation of B -EryBla (erytroblastit) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/3db4dd0f-789d-492e-baa8-74b3994e89e9"/>
+      </reference>
+      <name value="Observation-b-eryt-1"/>
+      <description value="Observation of B -Erytrosyytit for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c00df5d3-5bf4-4093-9a1b-b877ff75a1d3"/>
+      </reference>
+      <name value="Observation-f-calpro-1"/>
+      <description value="Observation of F -Calpro (kalprotektiini) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4"/>
+      </reference>
+      <name value="Observation-lab-b-hb-1"/>
+      <description value="Observation of B -Hb (hemoglobiini) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6"/>
+      </reference>
+      <name value="Observation-lab-b-hba1c-1"/>
+      <description value="Observation of B -HbA1c (hemoglobiini-A1c) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2"/>
+      </reference>
+      <name value="Observation-lab-b-hkr-1"/>
+      <description value="Observation of B -HKR (hematokriitti) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8"/>
+      </reference>
+      <name value="Observation-lab-b-leuk-1"/>
+      <description value="Observation of B -Leuk (leukosyytit eli valkosolut) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4"/>
+      </reference>
+      <name value="Observation-lab-b-trom-1"/>
+      <description value="Observation of B -Trom (verihiutaleet) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f"/>
+      </reference>
+      <name value="Observation-lab-e-mch-1"/>
+      <description value="Observation of E -MCH (hemoglobiini, keskimassa) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b"/>
+      </reference>
+      <name value="Observation-lab-e-mcv-1"/>
+      <description value="Observation of E -MCV (keskimääräinen punasolun tilavuus) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+      </reference>
+      <name value="Observation-lab-e-rdw-1"/>
+      <description value="Observation of E -RDW (punasolujen kokojakauma) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"/>
+      </reference>
+      <name value="Observation-lab-fp-fe-1"/>
+      <description value="Observation of fP-Fe (rauta) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"/>
+      </reference>
+      <name value="Observation-lab-fp-transf-1"/>
+      <description value="Observation of fP-Transf (transferriini) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"/>
+      </reference>
+      <name value="Observation-lab-p-at3-1"/>
+      <description value="Observation of P -AT3 (antitrombiini III) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"/>
+      </reference>
+      <name value="Observation-lab-p-b2gpabg-1"/>
+      <description value="Observation of P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"/>
+      </reference>
+      <name value="Observation-lab-p-b2gpabm-1"/>
+      <description value="Observation of P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1"/>
+      </reference>
+      <name value="Observation-lab-p-ferrit-1"/>
+      <description value="Observation of P -Ferrit (ferritiini) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"/>
+      </reference>
+      <name value="Observation-lab-p-k-1"/>
+      <description value="Observation of P -K (kalium) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"/>
+      </reference>
+      <name value="Observation-lab-p-kardabg-1"/>
+      <description value="Observation of P -KardAbG (kardiolipiini, IgG-vasta-aineet) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"/>
+      </reference>
+      <name value="Observation-lab-p-kardabm-1"/>
+      <description value="Observation of P -KardAbM (kardiolipiini, IgM-vasta-aineet) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b"/>
+      </reference>
+      <name value="Observation-lab-p-kol-1"/>
+      <description value="Observation of P -Kol (kokonaiskolesteroli) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"/>
+      </reference>
+      <name value="Observation-lab-p-kol-hdl-1"/>
+      <description value="Observation of P -Kol-HDL (HDL-kolesteroli) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"/>
+      </reference>
+      <name value="Observation-lab-p-kol-ldl-1"/>
+      <description value="Observation of P -Kol-LDL (LDL-kolesteroli) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6"/>
+      </reference>
+      <name value="Observation-lab-p-krea-1"/>
+      <description value="Observation of P -Krea (kreatiniini) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"/>
+      </reference>
+      <name value="Observation-lab-p-luakptt-1"/>
+      <description value="Observation of P -LuakPTT (lupusantikoagulantti, PTT) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5"/>
+      </reference>
+      <name value="Observation-lab-p-luakrvv-1"/>
+      <description value="Observation of P -LuakRVV (lupusantikoagulantti, dRVVT) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2"/>
+      </reference>
+      <name value="Observation-lab-p-na-1"/>
+      <description value="Observation of P -Na (natrium) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0"/>
+      </reference>
+      <name value="Observation-lab-p-pc-1"/>
+      <description value="Observation of P -PC (proteiini C) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"/>
+      </reference>
+      <name value="Observation-lab-p-ps-agv-1"/>
+      <description value="Observation of P -PS-AgV (proteiini S, antigeeni, vapaa) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d"/>
+      </reference>
+      <name value="Observation-lab-p-traika-1"/>
+      <description value="Observation of P -TrAika (trombiiniaika) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"/>
+      </reference>
+      <name value="Observation-lab-p-trigly-1"/>
+      <description value="Observation of P -Trigly (triglyseridi) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"/>
+      </reference>
+      <name value="Observation-lab-p-tt-inr-1"/>
+      <description value="Observation of P -TT-INR (tromboplastiiniaika, INR-tulostus) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8"/>
+      </reference>
+      <name value="Observation-lab-p-tt-spa-1"/>
+      <description value="Observation of P -TT-SPA (tromboplastiiniaika, SPA-tulostus) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc"/>
+      </reference>
+      <name value="Observation-lab-pt-gfrepi-1"/>
+      <description value="Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 1 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c"/>
+      </reference>
+      <name value="Observation-lab-pt-gfrepi-2"/>
+      <description value="Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"/>
+      </reference>
+      <name value="Observation-lab-trfesat-1"/>
+      <description value="Observation of TrFeSat (transferriinin rautakyllästeisyys) for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc"/>
+      </reference>
+      <name value="Observation-lab-u-alb-1"/>
+      <description value="Observation of U -Alb (albumiini) 1 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+      </reference>
+      <name value="Observation-lab-u-alb-2"/>
+      <description value="Observation of U -Alb (albumiini) 2 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/07e4f795-134d-4704-a776-ce30216d988e"/>
+      </reference>
+      <name value="Observation-lab-u-albkre-1"/>
+      <description value="Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 1 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/04d80b58-af0f-40d1-8cca-2a416bebbc74"/>
+      </reference>
+      <name value="Observation-lab-u-albkre-2"/>
+      <description value="Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 2 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4384b8a1-0a26-405a-9519-08035d9ab72a"/>
+      </reference>
+      <name value="Observation-lab-u-krea-1"/>
+      <description value="Observation of U -Krea (kreatiniini) 1 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/26868547-dc76-45a1-9f6e-3ce6fe2d4e61"/>
+      </reference>
+      <name value="Observation-lab-u-krea-2"/>
+      <description value="Observation of U -Krea (kreatiniini) 2 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328"/>
+      </reference>
+      <name value="Observation-tobacco-use"/>
+      <description value="Observation of tobacco use for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9"/>
+      </reference>
+      <name value="Observation-vitals-bloodpressure-1"/>
+      <description value="Observation of blood pressure 1 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/b06784f5-9e17-41b1-8ab0-09d8eb824f9a"/>
+      </reference>
+      <name value="Observation-vitals-bloodpressure-2"/>
+      <description value="Observation of blood pressure 2 for Mikko"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/55e62594-fc71-4437-ad8c-13acaf51d2cd"/>
+      </reference>
+      <name value="Observation-vitals-bloodpressure-3"/>
+      <description value="Observation of blood pressure 3 for Mikko, performed at a clinic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/87fd93df-3a9e-433a-a824-97702a294dce"/>
+      </reference>
+      <name value="Observation-vitals-bloodpressure-4"/>
+      <description value="Observation of blood pressure 4 for Mikko, performed at a clinic"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/f134bd3a-755a-444a-9364-0e4e1cef2520"/>
+      </reference>
+      <name value="ProcedureRingFinger"/>
+      <description value="Surgical operation to fix a fraccture of the left ring finger"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9"/>
+      </reference>
+      <name value="Provenance-ai-use"/>
+      <description value="Declaration of the use of AI in the creation of this patient summary"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/1f5bd080-2962-4a52-ae9f-d2209abef49b"/>
+      </reference>
+      <name value="Provenance-ips-creation"/>
+      <description value="Declaration of this patient summary being crafted by hand by the patient themselves"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ips-client-capability-statement-01"/>
+      </reference>
+      <name value="Sensotrend IPS Client Capability Statement"/>
+      <description value="The metadata about the IPS Client implementation, including the supported resources and operations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ips-server-capability-statement"/>
+      </reference>
+      <name value="Sensotrend IPS Server Capability Statement"/>
+      <description value="The metadata about the IPS Server implementation, including the supported resources and operations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

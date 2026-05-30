@@ -206,6 +206,7 @@
          fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
          fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
        ] ;
+       fhir:version [ fhir:v "4.0.0" ] ;
        fhir:code [ fhir:v "LABELING" ] ;
        fhir:display [ fhir:v "labeling" ]
      ] ) ;

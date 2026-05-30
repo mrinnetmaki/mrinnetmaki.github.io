@@ -10,6 +10,7 @@
 | :--- | :--- |
 | *Official URL*:https://ips.sensotrend.com/ig/CapabilityStatement/ips-client-capability-statement-01 | *Version*:0.4.0 |
 | Active as of 2026-03-12 | *Computable Name*:IpsClientCapabilityStatement |
+| *Other Identifiers:*OID:1.2.246.537.6.990.18.5.777.13.1 | |
 
  [Raw OpenAPI-Swagger Definition file](../ips-client-capability-statement-01.openapi.json) | [Download](../ips-client-capability-statement-01.openapi.json) 
 

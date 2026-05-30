@@ -3,19 +3,22 @@
   "type" : "CapabilityStatement",
   "url" : "https://ips.sensotrend.com/ig/CapabilityStatement/ips-client-capability-statement-01",
   "version" : "0.4.0",
-  "name" : "IpsClientCapabilityStatement"
+  "name" : "IpsClientCapabilityStatement",
+  "oids" : ["1.2.246.537.6.990.18.5.777.13.1"]
 },
 {
   "id" : "ips-server-capability-statement",
   "type" : "CapabilityStatement",
   "url" : "https://ips.sensotrend.com/ig/CapabilityStatement/ips-server-capability-statement",
   "version" : "0.4.0",
-  "name" : "SensotrendIpsServerCapabilityStatement"
+  "name" : "SensotrendIpsServerCapabilityStatement",
+  "oids" : ["1.2.246.537.6.990.18.5.777.13.2"]
 },
 {
   "id" : "fi.mikaelrinnetmaki.ips",
   "type" : "ImplementationGuide",
   "url" : "https://mikaelrinnetmaki.fi/ips/ig/ImplementationGuide/fi.mikaelrinnetmaki.ips",
   "version" : "0.4.0",
-  "name" : "MikaelsIPS"
+  "name" : "MikaelsIPS",
+  "oids" : ["1.2.246.537.6.990.18.5.777"]
 }]

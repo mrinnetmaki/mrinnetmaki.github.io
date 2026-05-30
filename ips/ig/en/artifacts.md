@@ -29,7 +29,7 @@ These are example instances that show what data produced and consumed by systems
 | [ ConditionVocalChord-1  ](Condition-d621ec37-44d1-455a-9f95-b62ee1e6f7f1.md) | Dysphonia due to vocal cord problems |
 | [ ConditionVocalChord-2  ](Condition-14534413-2ea5-4988-9f2a-a7f6c6059353.md) | Disputed diagnosis of disease in larynx |
 | [ Consent-data-use-healthcare  ](Consent-0b8b4bfe-12e8-4dcc-9299-27fd76e464ce.md) | Consent for the use of my data in healthcare |
-| [ Consent-data-use-research  ](Consent-e7fd44af-ae28-4994-a04f-37d8e52864a1.md) | Consent for the use of **de-identified information** for research |
+| [ Consent-data-use-research  ](Consent-e7fd44af-ae28-4994-a04f-37d8e52864a1.md) | Consent for the use of **de-identified information** for research, including machine learning training |
 | [ Deny-data-use-for-marketing  ](Consent-fc6ca80d-ce07-47d9-a1c0-49e955ae166b.md) | Deny the use of my data for marketing |
 | [ Deny-data-use-for-ml-training  ](Consent-c67f1ac1-5013-47dc-88ad-73d8eca510b0.md) | Deny the use of **re-identifiable** data for machine learning training |
 | [ DeviceAbbottFreestyleLibre3  ](Device-f2cfe332-9d2f-4216-9e89-452aa5fac885.md) | Abbott Freestyle Libre 3 continuous glucose monitoring system |
@@ -120,10 +120,10 @@ These are example instances that show what data produced and consumed by systems
 | [ Observation-lab-u-krea-1  ](Observation-4384b8a1-0a26-405a-9519-08035d9ab72a.md) | Observation of U -Krea (kreatiniini) 1 for Mikael |
 | [ Observation-lab-u-krea-2  ](Observation-26868547-dc76-45a1-9f6e-3ce6fe2d4e61.md) | Observation of U -Krea (kreatiniini) 2 for Mikael |
 | [ Observation-tobacco-use  ](Observation-ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328.md) | Observation of tobacco use for Mikael |
-| [ Observation-vitals-bloodpressure-1  ](Observation-8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9.md) | Observation of blood pressure 1 for Mikael |
-| [ Observation-vitals-bloodpressure-2  ](Observation-b06784f5-9e17-41b1-8ab0-09d8eb824f9a.md) | Observation of blood pressure 2 for Mikael |
-| [ Observation-vitals-bloodpressure-3  ](Observation-55e62594-fc71-4437-ad8c-13acaf51d2cd.md) | Observation of blood pressure 3 for Mikael, performed at a clinic |
-| [ Observation-vitals-bloodpressure-4  ](Observation-87fd93df-3a9e-433a-a824-97702a294dce.md) | Observation of blood pressure 4 for Mikael, performed at a clinic |
+| [ Observation-vitals-bloodpressure-1  ](Observation-87fd93df-3a9e-433a-a824-97702a294dce.md) | Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (1/2) |
+| [ Observation-vitals-bloodpressure-2  ](Observation-55e62594-fc71-4437-ad8c-13acaf51d2cd.md) | Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (2/2) |
+| [ Observation-vitals-bloodpressure-3  ](Observation-8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9.md) | Observation of blood pressure for Mikael 2026-01-04T15:48:09+02:00 |
+| [ Observation-vitals-bloodpressure-4  ](Observation-b06784f5-9e17-41b1-8ab0-09d8eb824f9a.md) | Observation of blood pressure for Mikael 2026-01-04T15:49:06+02:00 |
 | [ ProcedureRingFinger  ](Procedure-f134bd3a-755a-444a-9364-0e4e1cef2520.md) | Surgical operation to fix a fraccture of the left ring finger |
 | [ Provenance-ai-use  ](Provenance-acf8c98e-6bf1-451b-aa6c-bd47bc1a4da9.md) | Declaration of the use of AI in the creation of this patient summary |
 | [ Provenance-ips-creation  ](Provenance-1f5bd080-2962-4a52-ae9f-d2209abef49b.md) | Declaration of this patient summary being crafted by hand by the patient themselves |

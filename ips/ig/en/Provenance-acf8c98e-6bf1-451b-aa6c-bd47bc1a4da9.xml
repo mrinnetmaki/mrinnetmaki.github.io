@@ -184,6 +184,7 @@
   <reason>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <version value="4.0.0"/>
       <code value="LABELING"/>
       <display value="labeling"/>
     </coding>

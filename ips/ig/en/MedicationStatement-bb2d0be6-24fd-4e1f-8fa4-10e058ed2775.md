@@ -8,11 +8,11 @@
 
 Profiles: [IPA-MedicationStatement](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medicationstatement.html) version: 1.1.0, [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-MedicationStatement-uv-ips.html), [MedicationStatement (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationStatement-eu-core.html), [MedicationStatement (EPS)](https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-MedicationStatement-eu-eps.html)
 
-Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')
+Security Labels: [device reported (Details: v3 Code System ObservationValue code DEVRPT = 'device reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [syntactic transform (Details: v3 Code System ObservationValue code SYNTAC = 'syntactic transform')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [mapped (Details: v3 Code System ObservationValue code MAPPED = 'mapped')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient asserted (Details: v3 Code System ObservationValue code PATAST = 'patient asserted')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
 
 **basedOn**: [Prescription for Insulin Novorapid](Bundle-IpsBundle.md#urn-uuid-847b849a-eb83-4387-b60b-46eb8d39ebfd)
 
-**status**: active
+**status**: Active
 
 **category**: Active ambulatory use
 
@@ -35,7 +35,7 @@ Security Labels: device reported (Details: ObservationValue code DEVRPT = 'devic
 My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day.
 
 
-> **dosage****text**: 40-70 iU/d
+> **dosage****text**: 40-70 iU/d**patientInstruction**: 50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI
 
 ### DoseAndRates
 
@@ -143,6 +143,7 @@ My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day.
   }],
   "dosage" : [{
     "text" : "40-70 iU/d",
+    "patientInstruction" : "50-100 yksikköä vuorokaudessa, Pumpcart säiliöt insuliinipumppuun ihon alle DMI",
     "doseAndRate" : [{
       "rateRange" : {
         "low" : {

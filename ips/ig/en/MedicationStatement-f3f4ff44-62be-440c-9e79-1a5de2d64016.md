@@ -8,14 +8,14 @@
 
 Profiles: [IPA-MedicationStatement](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-medicationstatement.html) version: 1.1.0, [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-MedicationStatement-uv-ips.html), [MedicationStatement (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicationStatement-eu-core.html), [MedicationStatement (EPS)](https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-MedicationStatement-eu-eps.html)
 
-Security Labels: device reported (Details: ObservationValue code DEVRPT = 'device reported'), patient reported (Details: ObservationValue code PATRPT = 'patient reported'), syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform'), mapped (Details: ObservationValue code MAPPED = 'mapped'), patient asserted (Details: ObservationValue code PATAST = 'patient asserted')
+Security Labels: [device reported (Details: v3 Code System ObservationValue code DEVRPT = 'device reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [syntactic transform (Details: v3 Code System ObservationValue code SYNTAC = 'syntactic transform')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [mapped (Details: v3 Code System ObservationValue code MAPPED = 'mapped')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient asserted (Details: v3 Code System ObservationValue code PATAST = 'patient asserted')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
 
 **basedOn**: 
 
 * [Prescription for Rosuvastatin 5 mg](Bundle-IpsBundle.md#urn-uuid-03fd8e6f-d898-4fc9-9e79-3dc7132c721d)
 * [Prescription for Rosuvastatin 10 mg](Bundle-IpsBundle.md#urn-uuid-83e47f0e-cfb3-4ada-9bdb-7ad7223e0260)
 
-**status**: active
+**status**: Active
 
 **category**: Active ambulatory use
 
@@ -38,7 +38,7 @@ Security Labels: device reported (Details: ObservationValue code DEVRPT = 'devic
 Started with 5mg in 2022, dose set to 10mg late 2024. I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves.
 
 
-> **dosage****text**: 1 tabletti iltaisin Kolesterolilääke
+> **dosage****text**: 10mg, 1 tablet every evening**patientInstruction**: 1 tabletti iltaisin Kolesterolilääke
 
 ### DoseAndRates
 
@@ -149,7 +149,8 @@ Started with 5mg in 2022, dose set to 10mg late 2024. I know I should be taking 
     "text" : "Started with 5mg in 2022, dose set to 10mg late 2024. I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves."
   }],
   "dosage" : [{
-    "text" : "1 tabletti iltaisin Kolesterolilääke",
+    "text" : "10mg, 1 tablet every evening",
+    "patientInstruction" : "1 tabletti iltaisin Kolesterolilääke",
     "doseAndRate" : [{
       "rateQuantity" : {
         "value" : 10,

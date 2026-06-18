@@ -46,21 +46,25 @@
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="ICOL"/>
       <display value="information collection"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="IDSCL"/>
       <display value="information disclosure"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="INFA"/>
       <display value="information access"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="IRDSCL"/>
       <display value="information redisclosure"/>
     </coding>
@@ -125,37 +129,31 @@
     </action>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="TREAT"/>
       <display value="treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="COC"/>
       <display value="coordination of care"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="ETREAT"/>
       <display value="Emergency Treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="BTG"/>
       <display value="break the glass"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="ERTREAT"/>
       <display value="emergency room treatment"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="HOPERAT"/>
       <display value="healthcare operations"/>
     </purpose>
@@ -167,13 +165,11 @@
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="HTEST"/>
       <display value="test health data"/>
     </purpose>
     <purpose>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-      <version value="4.0.0"/>
       <code value="PATRQT"/>
       <display value="patient requested"/>
     </purpose>

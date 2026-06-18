@@ -34,167 +34,297 @@ I used Microsoft Copilot to add LOINC codes to lab results, based on the Finnish
     }]
   },
   "target" : [{
-    "reference" : "urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4",
-    "display" : "Observation of B -Hb (hemoglobiini) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-78e8-9e1a-5a73c2107ab7",
+    "display" : "Observation P -AT3 (antitrombiini III) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6",
-    "display" : "Observation of B -HbA1c (hemoglobiini-A1c) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-78af-b514-14dcb1304c76",
+    "display" : "Observation P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2",
-    "display" : "Observation of B -HKR (hematokriitti) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-79b0-bf17-2541c3e7a20e",
+    "display" : "Observation P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8",
-    "display" : "Observation of B -Leuk (leukosyytit) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7e89-84a8-22f094e6b741",
+    "display" : "Observation P -KardAbG (kardiolipiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4",
-    "display" : "Observation of B -Trom (trombosyytit) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-753c-85d5-be8d1517bdf5",
+    "display" : "Observation P -KardAbM (kardiolipiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b",
-    "display" : "Observation of E -MCV (keskimääräinen erytrosyyttitilavuus) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7709-9007-9af23bfe9a4b",
+    "display" : "Observation P -LuakPTT (lupusantikoagulantti, PTT) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-    "display" : "Observation of E -RDW (erytrosyyttien kokojakauma) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7f17-963f-789803935a78",
+    "display" : "Observation P -LuakRVV (lupusantikoagulantti, dRVVT) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
-    "display" : "Observation of E -MCH (keskimääräinen hemoglobiinimäärä) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7240-997e-a3c84607400d",
+    "display" : "Observation P -PC (proteiini C) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d",
-    "display" : "Observation of fP-Fe (rauta) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7fe2-a9d9-6e2ed30928ae",
+    "display" : "Observation P -PS-AgV (proteiini S, antigeeni, vapaa) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
-    "display" : "Observation of fP-Transf (transferriini) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-73ca-984c-c0010d804a1b",
+    "display" : "Observation P -Trombai (trombiiniaika) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d",
-    "display" : "Observation of P -AT3 (antitrombiini III) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7fd5-b524-b1532b2bde54",
+    "display" : "Observation P -TT-INR (tromboplastiiniaika, INR-tulostus) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
-    "display" : "Observation of P -B2GPABG (beta-2-glykoproteiini AB) for Mikael"
+    "reference" : "urn:uuid:0187c31e-fa40-7520-a5be-6c6a5148b4f8",
+    "display" : "Observation P -TT-SPA (tromboplastiiniaika) 2023-04-27T17:30:00+03:00"
   },
   {
-    "reference" : "urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f",
-    "display" : "Observation of P -B2GPABM (beta-2-glykoproteiini AB) for Mikael"
+    "reference" : "urn:uuid:018c7b14-a600-7ff4-a3e6-b46d9011297f",
+    "display" : "Observation U -Alb (albumiini) 2023-12-18T06:00:00+02:00"
   },
   {
-    "reference" : "urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1",
-    "display" : "Observation of P -Ferrit (ferritiini) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7168-90eb-61f12e9e2f50",
+    "display" : "Observation B -Hb (hemoglobiini) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a",
-    "display" : "Observation of P -K (kalium) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7574-8c1b-3b489673e3ac",
+    "display" : "Observation B -HbA1c (hemoglobiini-A1c) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d",
-    "display" : "Observation of P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7503-8440-72e15df80781",
+    "display" : "Observation (B -HKR (hematokriitti 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b",
-    "display" : "Observation of P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7b9b-a172-de3a6d5dea73",
+    "display" : "Observation B -Leuk (valkosolut) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
-    "display" : "Observation of P -Kol-HDL (HDL-kolesteroli) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7b20-8370-784f0396c477",
+    "display" : "Observation B -Trom (trombosyytit) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e",
-    "display" : "Observation of P -Kol-LDL (LDL-kolesteroli) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7338-9a33-d671f24ea40a",
+    "display" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
-    "display" : "Observation of P -Kol (kolesteroli) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7b15-b731-cadbd01e578e",
+    "display" : "Observation P -K (kalium) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6",
-    "display" : "Observation of P -Krea (kreatiini) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7fe0-a8e3-3d8bed13c6fe",
+    "display" : "Observation P -Krea (kreatiniini) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
-    "display" : "Observation of P -LuakPTT (lupusantikoagulantti, PTT) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7a8e-ba89-b07dc2bfc222",
+    "display" : "Observation P -Na (natrium) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5",
-    "display" : "Observation of P -LuakRVV (lupusantikoagulantti, RVV) for Mikael"
+    "reference" : "urn:uuid:018c7c6b-f8a0-7137-a5cb-5b5e37b5b4a6",
+    "display" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2023-12-18T12:15:00+02:00"
   },
   {
-    "reference" : "urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2",
-    "display" : "Observation of P -Na (natrium) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7e66-8528-ab9c6a1ff612",
+    "display" : "Observation B -Hb (hemoglobiini) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0",
-    "display" : "Observation of P -PC (proteiini C) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7775-9275-f74e5f706fab",
+    "display" : "Observation B -HbA1c (hemoglobiini-A1c) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
-    "display" : "Observation of P -PS-AgV (proteiini S, antigeeni, vapaa) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-776b-b370-875cc4a39a7d",
+    "display" : "Observation (B -HKR (hematokriitti 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
-    "display" : "Observation of P -TrAika (trombiiniaika) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-712f-9512-dd27ddc42661",
+    "display" : "Observation B -Trom (trombosyytit) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e",
-    "display" : "Observation of P -Trigly (triglyseridi) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-76b8-8f3c-692f47c00eb3",
+    "display" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c",
-    "display" : "Observation of P -TT-INR (tromboplastiiniaika, INR-tulostus) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-73ee-a4d7-58253b454ed5",
+    "display" : "Observation fP-Fe (rauta) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8",
-    "display" : "Observation of P -TT-SPA (tromboplastiiniaika, SPA-tulostus) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7da8-870e-4b353da7e2da",
+    "display" : "Observation fP-Transf (transferriini) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc",
-    "display" : "Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 1 for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7fb4-8348-1fa329fe00a0",
+    "display" : "Observation P -Ferrit (ferritiini) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
-    "display" : "Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2 for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-71a0-ba40-1f81fb78bad1",
+    "display" : "Observation P -K (kalium) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b",
-    "display" : "Observation of TrFeSat (transferriinin rautakyllästeisyys) for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-70cc-9867-f60157fbb788",
+    "display" : "Observation P -Krea (kreatiniini) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc",
-    "display" : "Observation of U -Alb (albumiini) 1 for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7dfd-bf31-38626bd5f7d1",
+    "display" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
-    "display" : "Observation of U -Alb (albumiini) 2 for Mikael"
+    "reference" : "urn:uuid:018e654c-8f20-7c79-95dc-b51611a5f993",
+    "display" : "Observation -TrFeSat (transferriinin rautakyllästeisyys) 2024-03-22T10:35:00+02:00"
   },
   {
-    "reference" : "urn:uuid:07e4f795-134d-4704-a776-ce30216d988e",
-    "display" : "Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 1 for Mikael"
+    "reference" : "urn:uuid:0193be9a-3f00-7ecb-af29-6cdafea15b93",
+    "display" : "Observation B -Hb (hemoglobiini) 2024-12-13T08:00:00+02:00"
   },
   {
-    "reference" : "urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74",
-    "display" : "Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 2 for Mikael"
+    "reference" : "urn:uuid:0193be9a-3f00-7c51-adb2-ed2bb7863bf7",
+    "display" : "Observation B -HbA1c (hemoglobiini-A1c) 2024-12-13T08:00:00+02:00"
   },
   {
-    "reference" : "urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a",
-    "display" : "Observation of U -Krea (kreatiniini) 1 for Mikael"
+    "reference" : "urn:uuid:0193be9a-3f00-77d7-84d7-4c680411de02",
+    "display" : "Observation (B -HKR (hematokriitti 2024-12-13T08:00:00+02:00"
   },
   {
-    "reference" : "urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61",
-    "display" : "Observation of U -Krea (kreatiniini) 2 for Mikael"
+    "reference" : "urn:uuid:0193be9a-3f00-7957-8cff-c33bcc791114",
+    "display" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-706a-8ab8-dd3c02a7a251",
+    "display" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7cd0-8bc5-7c0010b8cfcb",
+    "display" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-774a-9655-b8ffd02d0fd9",
+    "display" : "Observation B -Trom (trombosyytit) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7400-8b0a-f1d8972e2d4f",
+    "display" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-73ec-a10b-b90689f8eb96",
+    "display" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-717f-ba43-a0e04f0299e5",
+    "display" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-76e8-960f-14f1f75d240e",
+    "display" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7be0-bb41-6ce6540d32c6",
+    "display" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7483-b9b1-adee9794b8cf",
+    "display" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-76cd-92ae-daa06493dcf4",
+    "display" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7254-af12-5f0db4056f21",
+    "display" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-72bd-b554-c0d8e541c17b",
+    "display" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-792a-bba1-abd674597f0b",
+    "display" : "Observation P -K (kalium) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-79b1-b131-0179f150c0b2",
+    "display" : "Observation P -Kol (kokonaiskolesteroli) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7947-994c-efcd7a710478",
+    "display" : "Observation P -Kol-HDL (HDL-kolesteroli) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-738d-a813-228707b33221",
+    "display" : "Observation P -Kol-LDL (LDL-kolesteroli) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-797a-879e-9b0c538fb6ad",
+    "display" : "Observation P -Krea (kreatiniini) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7958-8606-c03ddf671604",
+    "display" : "Observation P -Na (natrium) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-7c41-b7de-164e64671731",
+    "display" : "Observation P -Trigly (triglyseridi) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193be9a-3f00-72dd-abd8-696ba4c06137",
+    "display" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-12-13T08:00:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:0193d426-4c60-7822-b660-ee6b4a6a2fbe",
+    "display" : "Observation U -Alb (albumiini) 2024-12-17T12:25:00+02:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7b17-a547-b9c59950ea5c",
+    "display" : "Observation B -Hb (hemoglobiini) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7a4d-a533-da3421147289",
+    "display" : "Observation B -HbA1c (hemoglobiini-A1c) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-711b-912e-929bbe93b3be",
+    "display" : "Observation (B -HKR (hematokriitti 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-788c-a6f0-f984e69f160d",
+    "display" : "Observation B -Trom (trombosyytit) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7b45-86a0-7f0a2132d804",
+    "display" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7643-9318-0c49c1fc2fc2",
+    "display" : "Observation P -ALAT (alaniiniaminotransferaasi) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-77af-8490-d1c57076b2f2",
+    "display" : "Observation P -K (kalium) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7674-8bae-2867c6d66d2a",
+    "display" : "Observation P -Krea (kreatiniini) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7307-9569-89c00410545d",
+    "display" : "Observation P -Na (natrium) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7973-a859-6ee3224bc72a",
+    "display" : "Observation P -TSH (tyreotropiini) 2026-05-22T14:40:00+03:00"
+  },
+  {
+    "reference" : "urn:uuid:019e4fb3-2100-7288-a931-5b5ce36fd4b6",
+    "display" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2026-05-22T14:40:00+03:00"
   }],
-  "occurredDateTime" : "2026-01-23T17:29:00+02:00",
-  "recorded" : "2026-02-13T18:41:00+02:00",
+  "occurredPeriod" : {
+    "start" : "2026-01-23T17:29:00+02:00",
+    "end" : "2026-06-12T23:29:07+03:00"
+  },
+  "recorded" : "2026-06-16T11:47:00+03:00",
   "reason" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "LABELING",
       "display" : "labeling"
     }],

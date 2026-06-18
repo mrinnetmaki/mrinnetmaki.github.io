@@ -8,7 +8,7 @@
 
 Profiles: [IPA-Condition](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-condition.html) version: 1.1.0, [IPA-problem-list-item](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-problem-list-item.html) version: 1.1.0, [Condition (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Condition-uv-ips.html), [Condition - Obligations (EPS)](https://build.fhir.org/ig/hl7-eu/eps/StructureDefinition-condition-obl-eu-eps.html)
 
-Security Labels: [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html), [patient asserted (Details: v3 Code System ObservationValue code PATAST = 'patient asserted')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
+Security Labels: [patient reported (Details: ObservationValue code PATRPT = 'patient reported')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [patient asserted (Details: ObservationValue code PATAST = 'patient asserted')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html)
 
 **clinicalStatus**: Active
 

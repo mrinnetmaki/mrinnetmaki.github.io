@@ -56,21 +56,25 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "ICOL",
       "display" : "information collection"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IDSCL",
       "display" : "information disclosure"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "INFA",
       "display" : "information access"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IRDSCL",
       "display" : "information redisclosure"
     }],
@@ -135,37 +139,31 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
     }],
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "TREAT",
       "display" : "treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "COC",
       "display" : "coordination of care"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "ETREAT",
       "display" : "Emergency Treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "BTG",
       "display" : "break the glass"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "ERTREAT",
       "display" : "emergency room treatment"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HOPERAT",
       "display" : "healthcare operations"
     },
@@ -177,13 +175,11 @@ I want my data to be used for my treatment. Please use it! I'm fine with AI and 
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HTEST",
       "display" : "test health data"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "PATRQT",
       "display" : "patient requested"
     }]

@@ -11,7 +11,7 @@
   "name" : "MikaelsIPS",
   "title" : "International Patient Summary for Mikael Rinnetmäki",
   "status" : "active",
-  "date" : "2026-05-30T12:56:35+02:00",
+  "date" : "2026-06-18T12:06:18+03:00",
   "publisher" : "Mikael Rinnetmäki",
   "contact" : [{
     "name" : "Mikael Rinnetmäki",
@@ -36,7 +36,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -104,17 +104,6 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "auto-oid-root"
-      },
-      {
-        "url" : "value",
-        "valueString" : "1.2.246.537.6.990.18.5.777"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -416,17 +405,6 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "auto-oid-root"
-      },
-      {
-        "url" : "value",
-        "valueString" : "1.2.246.537.6.990.18.5.777"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1479,10 +1457,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/125cef80-fe5c-40db-976f-c6d51e099519"
+        "reference" : "Observation/018c7c6b-f8a0-7194-bb46-f0a27d26da58"
       },
-      "name" : "Observation-b-erybla-1",
-      "description" : "Observation of B -EryBla (erytroblastit) for Mikael",
+      "name" : "Observation-lab-b-erybla-1",
+      "description" : "Observation B -EryBla (erytroblastit) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1491,10 +1469,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/3db4dd0f-789d-492e-baa8-74b3994e89e9"
+        "reference" : "Observation/018e654c-8f20-797a-a70b-6a23f345b001"
       },
-      "name" : "Observation-b-eryt-1",
-      "description" : "Observation of B -Erytrosyytit for Mikael",
+      "name" : "Observation-lab-b-erybla-2",
+      "description" : "Observation B -EryBla (erytroblastit) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1503,10 +1481,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/c00df5d3-5bf4-4093-9a1b-b877ff75a1d3"
+        "reference" : "Observation/0193be9a-3f00-757f-a3a6-5eb604ffeb84"
       },
-      "name" : "Observation-f-calpro-1",
-      "description" : "Observation of F -Calpro (kalprotektiini) for Mikael",
+      "name" : "Observation-lab-b-erybla-3",
+      "description" : "Observation B -EryBla (erytroblastit) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1515,10 +1493,70 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4"
+        "reference" : "Observation/019e4fb3-2100-7366-bab7-c2686628dc4d"
+      },
+      "name" : "Observation-lab-b-erybla-4",
+      "description" : "Observation B -EryBla (erytroblastit) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7796-b426-c19acbf2add4"
+      },
+      "name" : "Observation-lab-b-eryt-1",
+      "description" : "Observation B -Eryt (punasolut) 2023-12-18T12:15:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018e654c-8f20-717d-a8b4-f39565617bc8"
+      },
+      "name" : "Observation-lab-b-eryt-2",
+      "description" : "Observation B -Eryt (punasolut) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7c32-aa58-759cb2ba5074"
+      },
+      "name" : "Observation-lab-b-eryt-3",
+      "description" : "Observation B -Eryt (punasolut) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-74c1-8755-b3ad81105830"
+      },
+      "name" : "Observation-lab-b-eryt-4",
+      "description" : "Observation B -Eryt (punasolut) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7168-90eb-61f12e9e2f50"
       },
       "name" : "Observation-lab-b-hb-1",
-      "description" : "Observation of B -Hb (hemoglobiini) for Mikael",
+      "description" : "Observation B -Hb (hemoglobiini) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1527,10 +1565,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6"
+        "reference" : "Observation/018e654c-8f20-7e66-8528-ab9c6a1ff612"
+      },
+      "name" : "Observation-lab-b-hb-2",
+      "description" : "Observation B -Hb (hemoglobiini) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7ecb-af29-6cdafea15b93"
+      },
+      "name" : "Observation-lab-b-hb-3",
+      "description" : "Observation B -Hb (hemoglobiini) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7b17-a547-b9c59950ea5c"
+      },
+      "name" : "Observation-lab-b-hb-4",
+      "description" : "Observation B -Hb (hemoglobiini) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7574-8c1b-3b489673e3ac"
       },
       "name" : "Observation-lab-b-hba1c-1",
-      "description" : "Observation of B -HbA1c (hemoglobiini-A1c) for Mikael",
+      "description" : "Observation B -HbA1c (hemoglobiini-A1c) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1539,10 +1613,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2"
+        "reference" : "Observation/018e654c-8f20-7775-9275-f74e5f706fab"
+      },
+      "name" : "Observation-lab-b-hba1c-2",
+      "description" : "Observation B -HbA1c (hemoglobiini-A1c) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7c51-adb2-ed2bb7863bf7"
+      },
+      "name" : "Observation-lab-b-hba1c-3",
+      "description" : "Observation B -HbA1c (hemoglobiini-A1c) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7a4d-a533-da3421147289"
+      },
+      "name" : "Observation-lab-b-hba1c-4",
+      "description" : "Observation B -HbA1c (hemoglobiini-A1c) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7503-8440-72e15df80781"
       },
       "name" : "Observation-lab-b-hkr-1",
-      "description" : "Observation of B -HKR (hematokriitti) for Mikael",
+      "description" : "Observation (B -HKR (hematokriitti 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1551,10 +1661,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8"
+        "reference" : "Observation/018e654c-8f20-776b-b370-875cc4a39a7d"
+      },
+      "name" : "Observation-lab-b-hkr-2",
+      "description" : "Observation (B -HKR (hematokriitti 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-77d7-84d7-4c680411de02"
+      },
+      "name" : "Observation-lab-b-hkr-3",
+      "description" : "Observation (B -HKR (hematokriitti 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-711b-912e-929bbe93b3be"
+      },
+      "name" : "Observation-lab-b-hkr-4",
+      "description" : "Observation (B -HKR (hematokriitti 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7b9b-a172-de3a6d5dea73"
       },
       "name" : "Observation-lab-b-leuk-1",
-      "description" : "Observation of B -Leuk (leukosyytit eli valkosolut) for Mikael",
+      "description" : "Observation B -Leuk (valkosolut) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1563,10 +1709,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4"
+        "reference" : "Observation/0193be9a-3f00-7957-8cff-c33bcc791114"
+      },
+      "name" : "Observation-lab-b-leuk-2",
+      "description" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-706a-8ab8-dd3c02a7a251"
+      },
+      "name" : "Observation-lab-b-leuk-3",
+      "description" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7cd0-8bc5-7c0010b8cfcb"
+      },
+      "name" : "Observation-lab-b-leuk-4",
+      "description" : "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7b20-8370-784f0396c477"
       },
       "name" : "Observation-lab-b-trom-1",
-      "description" : "Observation of B -Trom (verihiutaleet) for Mikael",
+      "description" : "Observation B -Trom (trombosyytit) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1575,10 +1757,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f"
+        "reference" : "Observation/018e654c-8f20-712f-9512-dd27ddc42661"
+      },
+      "name" : "Observation-lab-b-trom-2",
+      "description" : "Observation B -Trom (trombosyytit) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-774a-9655-b8ffd02d0fd9"
+      },
+      "name" : "Observation-lab-b-trom-3",
+      "description" : "Observation B -Trom (trombosyytit) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-788c-a6f0-f984e69f160d"
+      },
+      "name" : "Observation-lab-b-trom-4",
+      "description" : "Observation B -Trom (trombosyytit) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7c6b-f8a0-7338-9a33-d671f24ea40a"
       },
       "name" : "Observation-lab-e-mch-1",
-      "description" : "Observation of E -MCH (hemoglobiini, keskimassa) for Mikael",
+      "description" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1587,10 +1805,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b"
+        "reference" : "Observation/018e654c-8f20-76b8-8f3c-692f47c00eb3"
+      },
+      "name" : "Observation-lab-e-mch-2",
+      "description" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7400-8b0a-f1d8972e2d4f"
+      },
+      "name" : "Observation-lab-e-mch-3",
+      "description" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7b45-86a0-7f0a2132d804"
+      },
+      "name" : "Observation-lab-e-mch-4",
+      "description" : "Observation E -MCH (punasolujen hemoglobiinin määrä) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-73ec-a10b-b90689f8eb96"
       },
       "name" : "Observation-lab-e-mcv-1",
-      "description" : "Observation of E -MCV (keskimääräinen punasolun tilavuus) for Mikael",
+      "description" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1599,10 +1853,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        "reference" : "Observation/0193be9a-3f00-717f-ba43-a0e04f0299e5"
+      },
+      "name" : "Observation-lab-e-mcv-2",
+      "description" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-76e8-960f-14f1f75d240e"
+      },
+      "name" : "Observation-lab-e-mcv-3",
+      "description" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7be0-bb41-6ce6540d32c6"
+      },
+      "name" : "Observation-lab-e-mcv-4",
+      "description" : "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7483-b9b1-adee9794b8cf"
       },
       "name" : "Observation-lab-e-rdw-1",
-      "description" : "Observation of E -RDW (punasolujen kokojakauma) for Mikael",
+      "description" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1611,10 +1901,58 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d"
+        "reference" : "Observation/0193be9a-3f00-76cd-92ae-daa06493dcf4"
+      },
+      "name" : "Observation-lab-e-rdw-2",
+      "description" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-7254-af12-5f0db4056f21"
+      },
+      "name" : "Observation-lab-e-rdw-3",
+      "description" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-72bd-b554-c0d8e541c17b"
+      },
+      "name" : "Observation-lab-e-rdw-4",
+      "description" : "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193d381-80e0-7ef5-ba77-7878540b897e"
+      },
+      "name" : "Observation-lab-f-calpro-1",
+      "description" : "Observation F -Calpro (ulosteen kalprotektiini) 2024-12-17T10:25:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018e654c-8f20-73ee-a4d7-58253b454ed5"
       },
       "name" : "Observation-lab-fp-fe-1",
-      "description" : "Observation of fP-Fe (rauta) for Mikael",
+      "description" : "Observation fP-Fe (rauta) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1623,10 +1961,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b"
+        "reference" : "Observation/018e654c-8f20-7da8-870e-4b353da7e2da"
       },
       "name" : "Observation-lab-fp-transf-1",
-      "description" : "Observation of fP-Transf (transferriini) for Mikael",
+      "description" : "Observation fP-Transf (transferriini) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1635,10 +1973,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d"
+        "reference" : "Observation/019e4fb3-2100-7643-9318-0c49c1fc2fc2"
+      },
+      "name" : "Observation-lab-p-alat-1",
+      "description" : "Observation P -ALAT (alaniiniaminotransferaasi) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0187c31e-fa40-78e8-9e1a-5a73c2107ab7"
       },
       "name" : "Observation-lab-p-at3-1",
-      "description" : "Observation of P -AT3 (antitrombiini III) for Mikael",
+      "description" : "Observation P -AT3 (antitrombiini III) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1647,10 +1997,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d"
+        "reference" : "Observation/0187c31e-fa40-78af-b514-14dcb1304c76"
       },
       "name" : "Observation-lab-p-b2gpabg-1",
-      "description" : "Observation of P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) for Mikael",
+      "description" : "Observation P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1659,10 +2009,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f"
+        "reference" : "Observation/0187c31e-fa40-79b0-bf17-2541c3e7a20e"
       },
       "name" : "Observation-lab-p-b2gpabm-1",
-      "description" : "Observation of P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) for Mikael",
+      "description" : "Observation P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1671,10 +2021,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1"
+        "reference" : "Observation/018e654c-8f20-7fb4-8348-1fa329fe00a0"
       },
       "name" : "Observation-lab-p-ferrit-1",
-      "description" : "Observation of P -Ferrit (ferritiini) for Mikael",
+      "description" : "Observation P -Ferrit (ferritiini) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1683,10 +2033,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a"
+        "reference" : "Observation/018c7c6b-f8a0-7b15-b731-cadbd01e578e"
       },
       "name" : "Observation-lab-p-k-1",
-      "description" : "Observation of P -K (kalium) for Mikael",
+      "description" : "Observation P -K (kalium) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1695,10 +2045,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d"
+        "reference" : "Observation/018e654c-8f20-71a0-ba40-1f81fb78bad1"
+      },
+      "name" : "Observation-lab-p-k-2",
+      "description" : "Observation P -K (kalium) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-792a-bba1-abd674597f0b"
+      },
+      "name" : "Observation-lab-p-k-3",
+      "description" : "Observation P -K (kalium) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-77af-8490-d1c57076b2f2"
+      },
+      "name" : "Observation-lab-p-k-4",
+      "description" : "Observation P -K (kalium) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0187c31e-fa40-7e89-84a8-22f094e6b741"
       },
       "name" : "Observation-lab-p-kardabg-1",
-      "description" : "Observation of P -KardAbG (kardiolipiini, IgG-vasta-aineet) for Mikael",
+      "description" : "Observation P -KardAbG (kardiolipiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1707,10 +2093,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b"
+        "reference" : "Observation/0187c31e-fa40-753c-85d5-be8d1517bdf5"
       },
       "name" : "Observation-lab-p-kardabm-1",
-      "description" : "Observation of P -KardAbM (kardiolipiini, IgM-vasta-aineet) for Mikael",
+      "description" : "Observation P -KardAbM (kardiolipiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1719,10 +2105,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b"
+        "reference" : "Observation/0193be9a-3f00-79b1-b131-0179f150c0b2"
       },
       "name" : "Observation-lab-p-kol-1",
-      "description" : "Observation of P -Kol (kokonaiskolesteroli) for Mikael",
+      "description" : "Observation P -Kol (kokonaiskolesteroli) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1731,10 +2117,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c"
+        "reference" : "Observation/0193be9a-3f00-7947-994c-efcd7a710478"
       },
       "name" : "Observation-lab-p-kol-hdl-1",
-      "description" : "Observation of P -Kol-HDL (HDL-kolesteroli) for Mikael",
+      "description" : "Observation P -Kol-HDL (HDL-kolesteroli) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1743,10 +2129,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e"
+        "reference" : "Observation/0193be9a-3f00-738d-a813-228707b33221"
       },
       "name" : "Observation-lab-p-kol-ldl-1",
-      "description" : "Observation of P -Kol-LDL (LDL-kolesteroli) for Mikael",
+      "description" : "Observation P -Kol-LDL (LDL-kolesteroli) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1755,10 +2141,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6"
+        "reference" : "Observation/018c7c6b-f8a0-7fe0-a8e3-3d8bed13c6fe"
       },
       "name" : "Observation-lab-p-krea-1",
-      "description" : "Observation of P -Krea (kreatiniini) for Mikael",
+      "description" : "Observation P -Krea (kreatiniini) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1767,10 +2153,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b"
+        "reference" : "Observation/018e654c-8f20-70cc-9867-f60157fbb788"
+      },
+      "name" : "Observation-lab-p-krea-2",
+      "description" : "Observation P -Krea (kreatiniini) 2024-03-22T10:35:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0193be9a-3f00-797a-879e-9b0c538fb6ad"
+      },
+      "name" : "Observation-lab-p-krea-3",
+      "description" : "Observation P -Krea (kreatiniini) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7674-8bae-2867c6d66d2a"
+      },
+      "name" : "Observation-lab-p-krea-4",
+      "description" : "Observation P -Krea (kreatiniini) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0187c31e-fa40-7709-9007-9af23bfe9a4b"
       },
       "name" : "Observation-lab-p-luakptt-1",
-      "description" : "Observation of P -LuakPTT (lupusantikoagulantti, PTT) for Mikael",
+      "description" : "Observation P -LuakPTT (lupusantikoagulantti, PTT) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1779,10 +2201,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5"
+        "reference" : "Observation/0187c31e-fa40-7f17-963f-789803935a78"
       },
       "name" : "Observation-lab-p-luakrvv-1",
-      "description" : "Observation of P -LuakRVV (lupusantikoagulantti, dRVVT) for Mikael",
+      "description" : "Observation P -LuakRVV (lupusantikoagulantti, dRVVT) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1791,10 +2213,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2"
+        "reference" : "Observation/018c7c6b-f8a0-7a8e-ba89-b07dc2bfc222"
       },
       "name" : "Observation-lab-p-na-1",
-      "description" : "Observation of P -Na (natrium) for Mikael",
+      "description" : "Observation P -Na (natrium) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1803,10 +2225,34 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0"
+        "reference" : "Observation/0193be9a-3f00-7958-8606-c03ddf671604"
+      },
+      "name" : "Observation-lab-p-na-2",
+      "description" : "Observation P -Na (natrium) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7307-9569-89c00410545d"
+      },
+      "name" : "Observation-lab-p-na-3",
+      "description" : "Observation P -Na (natrium) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0187c31e-fa40-7240-997e-a3c84607400d"
       },
       "name" : "Observation-lab-p-pc-1",
-      "description" : "Observation of P -PC (proteiini C) for Mikael",
+      "description" : "Observation P -PC (proteiini C) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1815,10 +2261,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e"
+        "reference" : "Observation/0187c31e-fa40-7fe2-a9d9-6e2ed30928ae"
       },
       "name" : "Observation-lab-p-ps-agv-1",
-      "description" : "Observation of P -PS-AgV (proteiini S, antigeeni, vapaa) for Mikael",
+      "description" : "Observation P -PS-AgV (proteiini S, antigeeni, vapaa) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1827,10 +2273,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d"
+        "reference" : "Observation/0187c31e-fa40-73ca-984c-c0010d804a1b"
       },
       "name" : "Observation-lab-p-traika-1",
-      "description" : "Observation of P -TrAika (trombiiniaika) for Mikael",
+      "description" : "Observation P -Trombai (trombiiniaika) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1839,10 +2285,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e"
+        "reference" : "Observation/0193be9a-3f00-7c41-b7de-164e64671731"
       },
       "name" : "Observation-lab-p-trigly-1",
-      "description" : "Observation of P -Trigly (triglyseridi) for Mikael",
+      "description" : "Observation P -Trigly (triglyseridi) 2024-12-13T08:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1851,10 +2297,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c"
+        "reference" : "Observation/019e4fb3-2100-7973-a859-6ee3224bc72a"
+      },
+      "name" : "Observation-lab-p-tsh-1",
+      "description" : "Observation P -TSH (tyreotropiini) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/0187c31e-fa40-7fd5-b524-b1532b2bde54"
       },
       "name" : "Observation-lab-p-tt-inr-1",
-      "description" : "Observation of P -TT-INR (tromboplastiiniaika, INR-tulostus) for Mikael",
+      "description" : "Observation P -TT-INR (tromboplastiiniaika, INR-tulostus) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1863,10 +2321,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8"
+        "reference" : "Observation/0187c31e-fa40-7520-a5be-6c6a5148b4f8"
       },
       "name" : "Observation-lab-p-tt-spa-1",
-      "description" : "Observation of P -TT-SPA (tromboplastiiniaika, SPA-tulostus) for Mikael",
+      "description" : "Observation P -TT-SPA (tromboplastiiniaika) 2023-04-27T17:30:00+03:00",
       "exampleBoolean" : true
     },
     {
@@ -1875,10 +2333,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc"
+        "reference" : "Observation/018c7c6b-f8a0-7137-a5cb-5b5e37b5b4a6"
       },
       "name" : "Observation-lab-pt-gfrepi-1",
-      "description" : "Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 1 for Mikael",
+      "description" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2023-12-18T12:15:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1887,10 +2345,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c"
+        "reference" : "Observation/018e654c-8f20-7dfd-bf31-38626bd5f7d1"
       },
       "name" : "Observation-lab-pt-gfrepi-2",
-      "description" : "Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2 for Mikael",
+      "description" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1899,10 +2357,46 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b"
+        "reference" : "Observation/0193be9a-3f00-72dd-abd8-696ba4c06137"
+      },
+      "name" : "Observation-lab-pt-gfrepi-3",
+      "description" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-12-13T08:00:00+02:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7288-a931-5b5ce36fd4b6"
+      },
+      "name" : "Observation-lab-pt-gfrepi-4",
+      "description" : "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/019e4fb3-2100-7add-bf63-941525b5e5bb"
+      },
+      "name" : "Observation-lab-s-ttgaba-1",
+      "description" : "Observation S -tTGAbA (kudostransglutaminaasi, IgA-vasta-aineet) 2026-05-22T14:40:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018e654c-8f20-7c79-95dc-b51611a5f993"
       },
       "name" : "Observation-lab-trfesat-1",
-      "description" : "Observation of TrFeSat (transferriinin rautakyllästeisyys) for Mikael",
+      "description" : "Observation -TrFeSat (transferriinin rautakyllästeisyys) 2024-03-22T10:35:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1911,10 +2405,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc"
+        "reference" : "Observation/018c7b14-a600-7ff4-a3e6-b46d9011297f"
       },
       "name" : "Observation-lab-u-alb-1",
-      "description" : "Observation of U -Alb (albumiini) 1 for Mikael",
+      "description" : "Observation U -Alb (albumiini) 2023-12-18T06:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1923,10 +2417,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"
+        "reference" : "Observation/0193d426-4c60-7822-b660-ee6b4a6a2fbe"
       },
       "name" : "Observation-lab-u-alb-2",
-      "description" : "Observation of U -Alb (albumiini) 2 for Mikael",
+      "description" : "Observation U -Alb (albumiini) 2024-12-17T12:25:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1935,10 +2429,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/07e4f795-134d-4704-a776-ce30216d988e"
+        "reference" : "Observation/018c7b14-a600-7b97-afa6-aee27e433410"
       },
       "name" : "Observation-lab-u-albkre-1",
-      "description" : "Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 1 for Mikael",
+      "description" : "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2023-12-18T06:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1947,10 +2441,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/04d80b58-af0f-40d1-8cca-2a416bebbc74"
+        "reference" : "Observation/0193d426-4c60-78b5-9bf2-13f983f2276c"
       },
       "name" : "Observation-lab-u-albkre-2",
-      "description" : "Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 2 for Mikael",
+      "description" : "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2024-12-17T12:25:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1959,10 +2453,22 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/4384b8a1-0a26-405a-9519-08035d9ab72a"
+        "reference" : "Observation/019e6ce2-bf60-7859-be9f-f9bc4d4453e2"
+      },
+      "name" : "Observation-lab-u-albkre-3",
+      "description" : "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2026-05-28T07:41:00+03:00",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/018c7b14-a600-7bbe-b4d0-01cb664cf716"
       },
       "name" : "Observation-lab-u-krea-1",
-      "description" : "Observation of U -Krea (kreatiniini) 1 for Mikael",
+      "description" : "Observation U -Krea (kreatiniini) 2023-12-18T06:00:00+02:00",
       "exampleBoolean" : true
     },
     {
@@ -1971,10 +2477,10 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/26868547-dc76-45a1-9f6e-3ce6fe2d4e61"
+        "reference" : "Observation/0193d426-4c60-7e92-b330-7bec2807317f"
       },
       "name" : "Observation-lab-u-krea-2",
-      "description" : "Observation of U -Krea (kreatiniini) 2 for Mikael",
+      "description" : "Observation U -Krea (kreatiniini) 2024-12-17T12:25:00+02:00",
       "exampleBoolean" : true
     },
     {

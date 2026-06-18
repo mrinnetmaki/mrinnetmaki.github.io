@@ -11,26 +11,13 @@
   fhir:id [ fhir:v "1f5bd080-2962-4a52-ae9f-d2209abef49b"] ; # 
   fhir:meta [
      fhir:security ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "PATRPT" ] ;
        fhir:display [ fhir:v "patient reported" ]
      ] [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
-       ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "PATAST" ] ;
        fhir:display [ fhir:v "patient asserted" ]
-     ] [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationValue>
-       ] ;
-       fhir:code [ fhir:v "AIAST" ] ;
-       fhir:display [ fhir:v "Artificial Intelligence asserted" ]
      ] )
   ] ; # 
   fhir:language [ fhir:v "en"] ; # 
@@ -39,409 +26,440 @@
      fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">I have crafted this summary myself by hand, utilizing data from various sources.</div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:target ( [
-     fhir:l <urn:uuid:c69a5242-339d-4101-adc7-96728f2f517f> ;
      fhir:reference [ fhir:v "urn:uuid:c69a5242-339d-4101-adc7-96728f2f517f" ] ;
      fhir:display [ fhir:v "The IPS composition in this patient summary Bundle" ]
   ] [
-     fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
      fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
      fhir:display [ fhir:v "Mikael Rinnetmäki, the patient" ]
   ] [
-     fhir:l <urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7> ;
      fhir:reference [ fhir:v "urn:uuid:1558c456-efa1-4b3d-abe2-1522c6048bc7" ] ;
      fhir:display [ fhir:v "Type 1 diabetes" ]
   ] [
-     fhir:l <urn:uuid:c279fd61-c4da-406b-a14b-b6166b956f83> ;
      fhir:reference [ fhir:v "urn:uuid:c279fd61-c4da-406b-a14b-b6166b956f83" ] ;
      fhir:display [ fhir:v "Diabetes related hypercholesterolemia" ]
   ] [
-     fhir:l <urn:uuid:8cb43587-94e6-4520-8b71-bbdab015ce0a> ;
      fhir:reference [ fhir:v "urn:uuid:8cb43587-94e6-4520-8b71-bbdab015ce0a" ] ;
      fhir:display [ fhir:v "Diabetes related retinopathy" ]
   ] [
-     fhir:l <urn:uuid:e7ba84d4-87f4-4170-805b-c2c516c4fcab> ;
      fhir:reference [ fhir:v "urn:uuid:e7ba84d4-87f4-4170-805b-c2c516c4fcab" ] ;
      fhir:display [ fhir:v "No known medication allergies" ]
   ] [
-     fhir:l <urn:uuid:6728beb7-b028-4976-9ea8-ccc29336756f> ;
      fhir:reference [ fhir:v "urn:uuid:6728beb7-b028-4976-9ea8-ccc29336756f" ] ;
      fhir:display [ fhir:v "Mild allergy to nuts" ]
   ] [
-     fhir:l <urn:uuid:61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef> ;
      fhir:reference [ fhir:v "urn:uuid:61bea1b2-13a3-4e5f-9d2d-1d5a02bd0eef" ] ;
      fhir:display [ fhir:v "Mild allergy to apple" ]
   ] [
-     fhir:l <urn:uuid:cdbc0f23-524a-423b-9114-ee0f06a815b3> ;
      fhir:reference [ fhir:v "urn:uuid:cdbc0f23-524a-423b-9114-ee0f06a815b3" ] ;
      fhir:display [ fhir:v "Mild allergy to birch pollen" ]
   ] [
-     fhir:l <urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd> ;
      fhir:reference [ fhir:v "urn:uuid:847b849a-eb83-4387-b60b-46eb8d39ebfd" ] ;
      fhir:display [ fhir:v "Insulin NovoRapid 100 units/ml, 50-100 iU/d" ]
   ] [
-     fhir:l <urn:uuid:bb2d0be6-24fd-4e1f-8fa4-10e058ed2775> ;
      fhir:reference [ fhir:v "urn:uuid:bb2d0be6-24fd-4e1f-8fa4-10e058ed2775" ] ;
      fhir:display [ fhir:v "Insulin NovoRapid 100 units/ml. My prescription is for 50 - 100 iU/d. I usually consume 40 to 70 iU per day." ]
   ] [
-     fhir:l <urn:uuid:83e47f0e-cfb3-4ada-9bdb-7ad7223e0260> ;
      fhir:reference [ fhir:v "urn:uuid:83e47f0e-cfb3-4ada-9bdb-7ad7223e0260" ] ;
      fhir:display [ fhir:v "Rosuvastatin 10 mg" ]
   ] [
-     fhir:l <urn:uuid:f3f4ff44-62be-440c-9e79-1a5de2d64016> ;
      fhir:reference [ fhir:v "urn:uuid:f3f4ff44-62be-440c-9e79-1a5de2d64016" ] ;
      fhir:display [ fhir:v "Rosuvastatin 10 mg. Started with 5mg in 2022, dose set to 10mg late 2024." ]
   ] [
-     fhir:l <urn:uuid:58b57392-03fb-4a5f-90b9-117f82754431> ;
      fhir:reference [ fhir:v "urn:uuid:58b57392-03fb-4a5f-90b9-117f82754431" ] ;
      fhir:display [ fhir:v "Ezetimibe 10 mg" ]
   ] [
-     fhir:l <urn:uuid:17725642-fd58-4f71-a9e6-1dee30e048bf> ;
      fhir:reference [ fhir:v "urn:uuid:17725642-fd58-4f71-a9e6-1dee30e048bf" ] ;
      fhir:display [ fhir:v "Ezetimibe 10 mg. I know I should be taking both rosuvastatin and ezetimibe in the evening, but I take them in the morning, because that's when I remember to take them. My doctor knows this, and approves." ]
   ] [
-     fhir:l <urn:uuid:5a3c0871-af41-4f63-9615-d98308d9e794> ;
      fhir:reference [ fhir:v "urn:uuid:5a3c0871-af41-4f63-9615-d98308d9e794" ] ;
      fhir:display [ fhir:v "Tetanus vaccine booster" ]
   ] [
-     fhir:l <urn:uuid:244fb199-b9b2-49ef-85cd-09e5cdbc83af> ;
      fhir:reference [ fhir:v "urn:uuid:244fb199-b9b2-49ef-85cd-09e5cdbc83af" ] ;
      fhir:display [ fhir:v "Havrix for hepatitis A (1/2)" ]
   ] [
-     fhir:l <urn:uuid:97345cda-49d9-453c-8c9c-01edc6607cc7> ;
      fhir:reference [ fhir:v "urn:uuid:97345cda-49d9-453c-8c9c-01edc6607cc7" ] ;
      fhir:display [ fhir:v "Havrix for hepatitis A (2/2)" ]
   ] [
-     fhir:l <urn:uuid:6cfe08b7-55a1-40d9-9010-484f59b13ff2> ;
      fhir:reference [ fhir:v "urn:uuid:6cfe08b7-55a1-40d9-9010-484f59b13ff2" ] ;
      fhir:display [ fhir:v "Stamaril vaccine for yellow fever" ]
   ] [
-     fhir:l <urn:uuid:cf4545bb-604d-45de-a7da-95baf181286b> ;
      fhir:reference [ fhir:v "urn:uuid:cf4545bb-604d-45de-a7da-95baf181286b" ] ;
      fhir:display [ fhir:v "MeningoVac A+C meningococcal vaccine" ]
   ] [
-     fhir:l <urn:uuid:a0ca2399-1f86-487b-ad6c-3e64081ae945> ;
      fhir:reference [ fhir:v "urn:uuid:a0ca2399-1f86-487b-ad6c-3e64081ae945" ] ;
      fhir:display [ fhir:v "Engerix-B for hepatitis B (1/3)" ]
   ] [
-     fhir:l <urn:uuid:d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2> ;
      fhir:reference [ fhir:v "urn:uuid:d33a6a70-9c27-4b4b-a3bb-731fc2e43fb2" ] ;
      fhir:display [ fhir:v "Engerix-B for hepatitis B (2/3)" ]
   ] [
-     fhir:l <urn:uuid:f871751d-14fe-4672-bc2f-6a6e83e6ac73> ;
      fhir:reference [ fhir:v "urn:uuid:f871751d-14fe-4672-bc2f-6a6e83e6ac73" ] ;
      fhir:display [ fhir:v "Engerix-B for hepatitis B (3/3)" ]
   ] [
-     fhir:l <urn:uuid:f1649cba-fde7-4d54-8fcd-37b6240017ac> ;
      fhir:reference [ fhir:v "urn:uuid:f1649cba-fde7-4d54-8fcd-37b6240017ac" ] ;
      fhir:display [ fhir:v "Imovax Polio vaccine" ]
   ] [
-     fhir:l <urn:uuid:6b8e54e6-6023-4911-9a43-91b73066dc08> ;
      fhir:reference [ fhir:v "urn:uuid:6b8e54e6-6023-4911-9a43-91b73066dc08" ] ;
      fhir:display [ fhir:v "Typherix typhoid fever vaccine" ]
   ] [
-     fhir:l <urn:uuid:cae0ed26-c654-403c-8c85-ff4432949786> ;
      fhir:reference [ fhir:v "urn:uuid:cae0ed26-c654-403c-8c85-ff4432949786" ] ;
      fhir:display [ fhir:v "Vaxigrip vaccine for influenza" ]
   ] [
-     fhir:l <urn:uuid:bd632ca0-6661-4b9d-bbf6-7ffd3154e700> ;
      fhir:reference [ fhir:v "urn:uuid:bd632ca0-6661-4b9d-bbf6-7ffd3154e700" ] ;
      fhir:display [ fhir:v "Imovax dT Adult for tetanus" ]
   ] [
-     fhir:l <urn:uuid:b54184da-87e6-4c0f-a85a-9546a5cc9783> ;
      fhir:reference [ fhir:v "urn:uuid:b54184da-87e6-4c0f-a85a-9546a5cc9783" ] ;
      fhir:display [ fhir:v "Vaxigrip vaccine for influenza" ]
   ] [
-     fhir:l <urn:uuid:04dfd1be-9483-485d-8030-a9ce3a264363> ;
      fhir:reference [ fhir:v "urn:uuid:04dfd1be-9483-485d-8030-a9ce3a264363" ] ;
      fhir:display [ fhir:v "VaxigripTetra vaccine for influenza" ]
   ] [
-     fhir:l <urn:uuid:d9828658-c9dd-478c-8573-c514cd834f5f> ;
      fhir:reference [ fhir:v "urn:uuid:d9828658-c9dd-478c-8573-c514cd834f5f" ] ;
      fhir:display [ fhir:v "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine" ]
   ] [
-     fhir:l <urn:uuid:f3fff46d-7755-4af3-a334-a3d3899d8a58> ;
      fhir:reference [ fhir:v "urn:uuid:f3fff46d-7755-4af3-a334-a3d3899d8a58" ] ;
      fhir:display [ fhir:v "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine" ]
   ] [
-     fhir:l <urn:uuid:aac217a5-cd2f-4217-b5ff-c55e9f7c3378> ;
      fhir:reference [ fhir:v "urn:uuid:aac217a5-cd2f-4217-b5ff-c55e9f7c3378" ] ;
      fhir:display [ fhir:v "Moderna Spikevax covid-19 mRNA vaccine" ]
   ] [
-     fhir:l <urn:uuid:5906618a-e76b-44b5-b670-7a0820075bae> ;
      fhir:reference [ fhir:v "urn:uuid:5906618a-e76b-44b5-b670-7a0820075bae" ] ;
      fhir:display [ fhir:v "VaxigripTetra vaccine for influenza" ]
   ] [
-     fhir:l <urn:uuid:9c0744c0-9b0a-4796-b653-452a0098625f> ;
      fhir:reference [ fhir:v "urn:uuid:9c0744c0-9b0a-4796-b653-452a0098625f" ] ;
      fhir:display [ fhir:v "Pfizer-BioNTech Comirnaty covid-19 mRNA vaccine" ]
   ] [
-     fhir:l <urn:uuid:bfe1d5a4-be0e-403a-a27c-16ef74aca3b3> ;
      fhir:reference [ fhir:v "urn:uuid:bfe1d5a4-be0e-403a-a27c-16ef74aca3b3" ] ;
      fhir:display [ fhir:v "VaxigripTetra vaccine for influenza" ]
   ] [
-     fhir:l <urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f> ;
-     fhir:reference [ fhir:v "urn:uuid:2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f" ] ;
-     fhir:display [ fhir:v "2024-12-17 Albumin [Mass] in 24 hour Urine 4 mg/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-78e8-9e1a-5a73c2107ab7" ] ;
+     fhir:display [ fhir:v "Observation P -AT3 (antitrombiini III) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74> ;
-     fhir:reference [ fhir:v "urn:uuid:04d80b58-af0f-40d1-8cca-2a416bebbc74" ] ;
-     fhir:display [ fhir:v "2024-12-17 Albumin/Creatinine [Ratio] in Urin 0.2 mg/mmol" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-78af-b514-14dcb1304c76" ] ;
+     fhir:display [ fhir:v "Observation P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a> ;
-     fhir:reference [ fhir:v "urn:uuid:4384b8a1-0a26-405a-9519-08035d9ab72a" ] ;
-     fhir:display [ fhir:v "2024-12-17 Creatinine [Mass/volume] in Urine" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-79b0-bf17-2541c3e7a20e" ] ;
+     fhir:display [ fhir:v "Observation P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:c00df5d3-5bf4-4093-9a1b-b877ff75a1d3> ;
-     fhir:reference [ fhir:v "urn:uuid:c00df5d3-5bf4-4093-9a1b-b877ff75a1d3" ] ;
-     fhir:display [ fhir:v "2024-12-17 Calprotectin [Mass/mass] in Stool < 100 ug/g." ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7e89-84a8-22f094e6b741" ] ;
+     fhir:display [ fhir:v "Observation P -KardAbG (kardiolipiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:125cef80-fe5c-40db-976f-c6d51e099519> ;
-     fhir:reference [ fhir:v "urn:uuid:125cef80-fe5c-40db-976f-c6d51e099519" ] ;
-     fhir:display [ fhir:v "2024-12-13 Normoblasts [#/volume] in Blood 0.00/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-753c-85d5-be8d1517bdf5" ] ;
+     fhir:display [ fhir:v "Observation P -KardAbM (kardiolipiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:3db4dd0f-789d-492e-baa8-74b3994e89e9> ;
-     fhir:reference [ fhir:v "urn:uuid:3db4dd0f-789d-492e-baa8-74b3994e89e9" ] ;
-     fhir:display [ fhir:v "2024-12-13 Erythrocytes [#/volume] in Blood 5.2x10E12/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7709-9007-9af23bfe9a4b" ] ;
+     fhir:display [ fhir:v "Observation P -LuakPTT (lupusantikoagulantti, PTT) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4> ;
-     fhir:reference [ fhir:v "urn:uuid:88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4" ] ;
-     fhir:display [ fhir:v "2024-12-13 Hemoglobin [Mass/volume] in Blood 156 g/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7f17-963f-789803935a78" ] ;
+     fhir:display [ fhir:v "Observation P -LuakRVV (lupusantikoagulantti, dRVVT) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6> ;
-     fhir:reference [ fhir:v "urn:uuid:1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6" ] ;
-     fhir:display [ fhir:v "2024-12-13 Hemoglobin A1c [Percent] - NGSP 49 mmol/mol" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7240-997e-a3c84607400d" ] ;
+     fhir:display [ fhir:v "Observation P -PC (proteiini C) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2> ;
-     fhir:reference [ fhir:v "urn:uuid:c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2" ] ;
-     fhir:display [ fhir:v "2024-12-13 Hematocrit [Ratio] of Blood 0.47 Osuus" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7fe2-a9d9-6e2ed30928ae" ] ;
+     fhir:display [ fhir:v "Observation P -PS-AgV (proteiini S, antigeeni, vapaa) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8> ;
-     fhir:reference [ fhir:v "urn:uuid:f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8" ] ;
-     fhir:display [ fhir:v "2024-12-13 White Blood Cell Count 4.9 x10E9/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-73ca-984c-c0010d804a1b" ] ;
+     fhir:display [ fhir:v "Observation P -Trombai (trombiiniaika) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4> ;
-     fhir:reference [ fhir:v "urn:uuid:a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4" ] ;
-     fhir:display [ fhir:v "2024-12-13 Platelets [#/volume] in Blood by Automated count 182 x10E9/l" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7fd5-b524-b1532b2bde54" ] ;
+     fhir:display [ fhir:v "Observation P -TT-INR (tromboplastiiniaika, INR-tulostus) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f> ;
-     fhir:reference [ fhir:v "urn:uuid:5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f" ] ;
-     fhir:display [ fhir:v "2024-12-13 Corpuscular hemoglobin [Entitic mass] 30 pg" ]
+     fhir:reference [ fhir:v "urn:uuid:0187c31e-fa40-7520-a5be-6c6a5148b4f8" ] ;
+     fhir:display [ fhir:v "Observation P -TT-SPA (tromboplastiiniaika) 2023-04-27T17:30:00+03:00" ]
   ] [
-     fhir:l <urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b> ;
-     fhir:reference [ fhir:v "urn:uuid:e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b" ] ;
-     fhir:display [ fhir:v "2024-12-13 Erythrocyte mean corpuscular volume [fL] 91 fl" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7b14-a600-7ff4-a3e6-b46d9011297f" ] ;
+     fhir:display [ fhir:v "Observation U -Alb (albumiini) 2023-12-18T06:00:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d> ;
-     fhir:reference [ fhir:v "urn:uuid:1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d" ] ;
-     fhir:display [ fhir:v "2024-12-13 Red Cell Distribution Width [Ratio] 12 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7b14-a600-7b97-afa6-aee27e433410" ] ;
+     fhir:display [ fhir:v "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2023-12-18T06:00:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a> ;
-     fhir:reference [ fhir:v "urn:uuid:7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a" ] ;
-     fhir:display [ fhir:v "2024-12-13 Potassium [Moles/volume] in Serum or Plasma 4.1 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7b14-a600-7bbe-b4d0-01cb664cf716" ] ;
+     fhir:display [ fhir:v "Observation U -Krea (kreatiniini) 2023-12-18T06:00:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b> ;
-     fhir:reference [ fhir:v "urn:uuid:3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b" ] ;
-     fhir:display [ fhir:v "2024-12-13 Cholesterol [Mass/volume] in Serum or Plasma 3 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7194-bb46-f0a27d26da58" ] ;
+     fhir:display [ fhir:v "Observation B -EryBla (erytroblastit) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c> ;
-     fhir:reference [ fhir:v "urn:uuid:9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c" ] ;
-     fhir:display [ fhir:v "2024-12-13 Cholesterol in HDL [Mass/volume] in Serum or Plasma 1.28 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7796-b426-c19acbf2add4" ] ;
+     fhir:display [ fhir:v "Observation B -Eryt (punasolut) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e> ;
-     fhir:reference [ fhir:v "urn:uuid:5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e" ] ;
-     fhir:display [ fhir:v "2024-12-13 Cholesterol in LDL [Mass/volume] in Serum or Plasma 1.3 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7168-90eb-61f12e9e2f50" ] ;
+     fhir:display [ fhir:v "Observation B -Hb (hemoglobiini) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6> ;
-     fhir:reference [ fhir:v "urn:uuid:1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6" ] ;
-     fhir:display [ fhir:v "2024-12-13 Creatinine [Mass/volume] in Serum or Plasma 79 umol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7574-8c1b-3b489673e3ac" ] ;
+     fhir:display [ fhir:v "Observation B -HbA1c (hemoglobiini-A1c) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2> ;
-     fhir:reference [ fhir:v "urn:uuid:d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2" ] ;
-     fhir:display [ fhir:v "2024-12-13 Sodium [Moles/volume] in Serum or Plasma 140 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7503-8440-72e15df80781" ] ;
+     fhir:display [ fhir:v "Observation (B -HKR (hematokriitti 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e> ;
-     fhir:reference [ fhir:v "urn:uuid:b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e" ] ;
-     fhir:display [ fhir:v "2024-12-13 Triglyceride [Mass/volume] in Serum or Plasma 0.88 mmol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7b9b-a172-de3a6d5dea73" ] ;
+     fhir:display [ fhir:v "Observation B -Leuk (valkosolut) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c> ;
-     fhir:reference [ fhir:v "urn:uuid:6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c" ] ;
-     fhir:display [ fhir:v "2024-12-13 Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Time] 101 ml/min/A-" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7b20-8370-784f0396c477" ] ;
+     fhir:display [ fhir:v "Observation B -Trom (trombosyytit) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d> ;
-     fhir:reference [ fhir:v "urn:uuid:8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d" ] ;
-     fhir:display [ fhir:v "2024-03-22 Iron [Moles/volume] in Serum or Plasma 12.1 umol/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7338-9a33-d671f24ea40a" ] ;
+     fhir:display [ fhir:v "Observation E -MCH (punasolujen hemoglobiinin määrä) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b> ;
-     fhir:reference [ fhir:v "urn:uuid:0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b" ] ;
-     fhir:display [ fhir:v "2024-03-22 Transferrin [Mass/volume] in Serum or Plasma 2.5 g/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7b15-b731-cadbd01e578e" ] ;
+     fhir:display [ fhir:v "Observation P -K (kalium) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1> ;
-     fhir:reference [ fhir:v "urn:uuid:c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1" ] ;
-     fhir:display [ fhir:v "2024-03-22 Ferritin [Mass/volume] in Serum or Plasma 82 ug/l" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7fe0-a8e3-3d8bed13c6fe" ] ;
+     fhir:display [ fhir:v "Observation P -Krea (kreatiniini) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b> ;
-     fhir:reference [ fhir:v "urn:uuid:2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b" ] ;
-     fhir:display [ fhir:v "2024-03-22 Iron saturation [Ratio] 20 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7a8e-ba89-b07dc2bfc222" ] ;
+     fhir:display [ fhir:v "Observation P -Na (natrium) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d> ;
-     fhir:reference [ fhir:v "urn:uuid:4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d" ] ;
-     fhir:display [ fhir:v "2023-04-27 Antithrombin [Percent] - Functional 96 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018c7c6b-f8a0-7137-a5cb-5b5e37b5b4a6" ] ;
+     fhir:display [ fhir:v "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2023-12-18T12:15:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61> ;
-     fhir:reference [ fhir:v "urn:uuid:26868547-dc76-45a1-9f6e-3ce6fe2d4e61" ] ;
-     fhir:display [ fhir:v "2023-12-18 Creatinine [Mass/volume] in Urine" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-797a-a70b-6a23f345b001" ] ;
+     fhir:display [ fhir:v "Observation B -EryBla (erytroblastit) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:07e4f795-134d-4704-a776-ce30216d988e> ;
-     fhir:reference [ fhir:v "urn:uuid:07e4f795-134d-4704-a776-ce30216d988e" ] ;
-     fhir:display [ fhir:v "2023-12-18 Albumin/Creatinine [Ratio] in Urine" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-717d-a8b4-f39565617bc8" ] ;
+     fhir:display [ fhir:v "Observation B -Eryt (punasolut) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc> ;
-     fhir:reference [ fhir:v "urn:uuid:9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc" ] ;
-     fhir:display [ fhir:v "2023-12-18 Albumin [Mass/volume] in Urine" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7e66-8528-ab9c6a1ff612" ] ;
+     fhir:display [ fhir:v "Observation B -Hb (hemoglobiini) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc> ;
-     fhir:reference [ fhir:v "urn:uuid:96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc" ] ;
-     fhir:display [ fhir:v "2023-12-13 Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (MDRD)/1.73 sq M" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7775-9275-f74e5f706fab" ] ;
+     fhir:display [ fhir:v "Observation B -HbA1c (hemoglobiini-A1c) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d> ;
-     fhir:reference [ fhir:v "urn:uuid:0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d" ] ;
-     fhir:display [ fhir:v "2023-04-27 Antibody.beta 2 glycoprotein 1 [Units/volume] in Serum or Plasma 4 U/ml" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-776b-b370-875cc4a39a7d" ] ;
+     fhir:display [ fhir:v "Observation (B -HKR (hematokriitti 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f> ;
-     fhir:reference [ fhir:v "urn:uuid:6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f" ] ;
-     fhir:display [ fhir:v "2023-04-27 Antibody.beta 2 glycoprotein 1 [Units/volume] in Serum or Plasma 2 U/ml" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-712f-9512-dd27ddc42661" ] ;
+     fhir:display [ fhir:v "Observation B -Trom (trombosyytit) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d" ] ;
-     fhir:display [ fhir:v "2023-04-27 Antibody.cardiolipin [Units/volume] in Serum or Plasma 2 GPL" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-76b8-8f3c-692f47c00eb3" ] ;
+     fhir:display [ fhir:v "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b> ;
-     fhir:reference [ fhir:v "urn:uuid:8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b" ] ;
-     fhir:display [ fhir:v "2023-04-27 Antibody.cardiolipin [Units/volume] in Serum or Plasma 3 MPL" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-73ee-a4d7-58253b454ed5" ] ;
+     fhir:display [ fhir:v "Observation fP-Fe (rauta) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b> ;
-     fhir:reference [ fhir:v "urn:uuid:4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b" ] ;
-     fhir:display [ fhir:v "2023-04-27 Activated Partial Thromboplastin Time (aPTT) [Ratio] 1.04 Suhde" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7da8-870e-4b353da7e2da" ] ;
+     fhir:display [ fhir:v "Observation fP-Transf (transferriini) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5> ;
-     fhir:reference [ fhir:v "urn:uuid:a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5" ] ;
-     fhir:display [ fhir:v "2023-04-27 Prothrombin time [Ratio] in Plasma by Coagulation assay 0.94 Suhde" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7fb4-8348-1fa329fe00a0" ] ;
+     fhir:display [ fhir:v "Observation P -Ferrit (ferritiini) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0> ;
-     fhir:reference [ fhir:v "urn:uuid:e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0" ] ;
-     fhir:display [ fhir:v "2023-04-27 Protein C [Percent] - Functional 77 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-71a0-ba40-1f81fb78bad1" ] ;
+     fhir:display [ fhir:v "Observation P -K (kalium) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e> ;
-     fhir:reference [ fhir:v "urn:uuid:1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e" ] ;
-     fhir:display [ fhir:v "2023-04-27 Protein S antigen [Percent] 98 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-70cc-9867-f60157fbb788" ] ;
+     fhir:display [ fhir:v "Observation P -Krea (kreatiniini) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c> ;
-     fhir:reference [ fhir:v "urn:uuid:7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c" ] ;
-     fhir:display [ fhir:v "2023-04-27 INR in Plasma by Coagulation assay 1.1 inr" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7dfd-bf31-38626bd5f7d1" ] ;
+     fhir:display [ fhir:v "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8> ;
-     fhir:reference [ fhir:v "urn:uuid:d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8" ] ;
-     fhir:display [ fhir:v "2023-04-27 Prothrombin time [Percent] in Plasma by Coagulation assay 78 %" ]
+     fhir:reference [ fhir:v "urn:uuid:018e654c-8f20-7c79-95dc-b51611a5f993" ] ;
+     fhir:display [ fhir:v "Observation -TrFeSat (transferriinin rautakyllästeisyys) 2024-03-22T10:35:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d> ;
-     fhir:reference [ fhir:v "urn:uuid:9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d" ] ;
-     fhir:display [ fhir:v "2023-04-27 Prothrombin time [Seconds] in Plasma by Coagulation assay 21 s" ]
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-757f-a3a6-5eb604ffeb84" ] ;
+     fhir:display [ fhir:v "Observation B -EryBla (erytroblastit) 2024-12-13T08:00:00+02:00" ]
   ] [
-     fhir:l <urn:uuid:f134bd3a-755a-444a-9364-0e4e1cef2520> ;
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7c32-aa58-759cb2ba5074" ] ;
+     fhir:display [ fhir:v "Observation B -Eryt (punasolut) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7ecb-af29-6cdafea15b93" ] ;
+     fhir:display [ fhir:v "Observation B -Hb (hemoglobiini) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7c51-adb2-ed2bb7863bf7" ] ;
+     fhir:display [ fhir:v "Observation B -HbA1c (hemoglobiini-A1c) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-77d7-84d7-4c680411de02" ] ;
+     fhir:display [ fhir:v "Observation (B -HKR (hematokriitti 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7957-8cff-c33bcc791114" ] ;
+     fhir:display [ fhir:v "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-706a-8ab8-dd3c02a7a251" ] ;
+     fhir:display [ fhir:v "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7cd0-8bc5-7c0010b8cfcb" ] ;
+     fhir:display [ fhir:v "Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-774a-9655-b8ffd02d0fd9" ] ;
+     fhir:display [ fhir:v "Observation B -Trom (trombosyytit) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7400-8b0a-f1d8972e2d4f" ] ;
+     fhir:display [ fhir:v "Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-73ec-a10b-b90689f8eb96" ] ;
+     fhir:display [ fhir:v "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-717f-ba43-a0e04f0299e5" ] ;
+     fhir:display [ fhir:v "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-76e8-960f-14f1f75d240e" ] ;
+     fhir:display [ fhir:v "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7be0-bb41-6ce6540d32c6" ] ;
+     fhir:display [ fhir:v "Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7483-b9b1-adee9794b8cf" ] ;
+     fhir:display [ fhir:v "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-76cd-92ae-daa06493dcf4" ] ;
+     fhir:display [ fhir:v "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7254-af12-5f0db4056f21" ] ;
+     fhir:display [ fhir:v "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-72bd-b554-c0d8e541c17b" ] ;
+     fhir:display [ fhir:v "Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-792a-bba1-abd674597f0b" ] ;
+     fhir:display [ fhir:v "Observation P -K (kalium) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-79b1-b131-0179f150c0b2" ] ;
+     fhir:display [ fhir:v "Observation P -Kol (kokonaiskolesteroli) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7947-994c-efcd7a710478" ] ;
+     fhir:display [ fhir:v "Observation P -Kol-HDL (HDL-kolesteroli) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-738d-a813-228707b33221" ] ;
+     fhir:display [ fhir:v "Observation P -Kol-LDL (LDL-kolesteroli) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-797a-879e-9b0c538fb6ad" ] ;
+     fhir:display [ fhir:v "Observation P -Krea (kreatiniini) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7958-8606-c03ddf671604" ] ;
+     fhir:display [ fhir:v "Observation P -Na (natrium) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-7c41-b7de-164e64671731" ] ;
+     fhir:display [ fhir:v "Observation P -Trigly (triglyseridi) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193be9a-3f00-72dd-abd8-696ba4c06137" ] ;
+     fhir:display [ fhir:v "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-12-13T08:00:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193d381-80e0-7ef5-ba77-7878540b897e" ] ;
+     fhir:display [ fhir:v "Observation F -Calpro (ulosteen kalprotektiini) 2024-12-17T10:25:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193d426-4c60-7822-b660-ee6b4a6a2fbe" ] ;
+     fhir:display [ fhir:v "Observation U -Alb (albumiini) 2024-12-17T12:25:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193d426-4c60-78b5-9bf2-13f983f2276c" ] ;
+     fhir:display [ fhir:v "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2024-12-17T12:25:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:0193d426-4c60-7e92-b330-7bec2807317f" ] ;
+     fhir:display [ fhir:v "Observation U -Krea (kreatiniini) 2024-12-17T12:25:00+02:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7366-bab7-c2686628dc4d" ] ;
+     fhir:display [ fhir:v "Observation B -EryBla (erytroblastit) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-74c1-8755-b3ad81105830" ] ;
+     fhir:display [ fhir:v "Observation B -Eryt (punasolut) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7b17-a547-b9c59950ea5c" ] ;
+     fhir:display [ fhir:v "Observation B -Hb (hemoglobiini) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7a4d-a533-da3421147289" ] ;
+     fhir:display [ fhir:v "Observation B -HbA1c (hemoglobiini-A1c) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-711b-912e-929bbe93b3be" ] ;
+     fhir:display [ fhir:v "Observation (B -HKR (hematokriitti 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-788c-a6f0-f984e69f160d" ] ;
+     fhir:display [ fhir:v "Observation B -Trom (trombosyytit) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7b45-86a0-7f0a2132d804" ] ;
+     fhir:display [ fhir:v "Observation E -MCH (punasolujen hemoglobiinin määrä) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7643-9318-0c49c1fc2fc2" ] ;
+     fhir:display [ fhir:v "Observation P -ALAT (alaniiniaminotransferaasi) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-77af-8490-d1c57076b2f2" ] ;
+     fhir:display [ fhir:v "Observation P -K (kalium) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7674-8bae-2867c6d66d2a" ] ;
+     fhir:display [ fhir:v "Observation P -Krea (kreatiniini) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7307-9569-89c00410545d" ] ;
+     fhir:display [ fhir:v "Observation P -Na (natrium) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7973-a859-6ee3224bc72a" ] ;
+     fhir:display [ fhir:v "Observation P -TSH (tyreotropiini) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7288-a931-5b5ce36fd4b6" ] ;
+     fhir:display [ fhir:v "Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e4fb3-2100-7add-bf63-941525b5e5bb" ] ;
+     fhir:display [ fhir:v "Observation S -tTGAbA (kudostransglutaminaasi, IgA-vasta-aineet) 2026-05-22T14:40:00+03:00" ]
+  ] [
+     fhir:reference [ fhir:v "urn:uuid:019e6ce2-bf60-7859-be9f-f9bc4d4453e2" ] ;
+     fhir:display [ fhir:v "Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2026-05-28T07:41:00+03:00" ]
+  ] [
      fhir:reference [ fhir:v "urn:uuid:f134bd3a-755a-444a-9364-0e4e1cef2520" ] ;
      fhir:display [ fhir:v "Surgical operation to fix a fraccture of the left ring finger" ]
   ] [
-     fhir:l <urn:uuid:905180fb-dc21-4b81-95d8-e2918657ce22> ;
      fhir:reference [ fhir:v "urn:uuid:905180fb-dc21-4b81-95d8-e2918657ce22" ] ;
      fhir:display [ fhir:v "Use of the mylife Loop automated insulin delivery system since October 6, 2023" ]
   ] [
-     fhir:l <urn:uuid:96001cc6-0b17-434e-8405-ed37dfddc76a> ;
      fhir:reference [ fhir:v "urn:uuid:96001cc6-0b17-434e-8405-ed37dfddc76a" ] ;
      fhir:display [ fhir:v "Use of the mylife YpsoPump insulin pump since October 6, 2023" ]
   ] [
-     fhir:l <urn:uuid:2ba85ad7-9e3e-4468-a10f-7c7d13114f0f> ;
      fhir:reference [ fhir:v "urn:uuid:2ba85ad7-9e3e-4468-a10f-7c7d13114f0f" ] ;
      fhir:display [ fhir:v "Use of the CamAPS FX hybrid closed loop insulin delivery system algorithm since October 6, 2023" ]
   ] [
-     fhir:l <urn:uuid:85861b49-a76c-4ecf-a4db-8e9e67b72068> ;
      fhir:reference [ fhir:v "urn:uuid:85861b49-a76c-4ecf-a4db-8e9e67b72068" ] ;
      fhir:display [ fhir:v "Use of the Dexcom G6 continuous glucose monitoring (CGM) system since October 6, 2023 until November 30, 2024" ]
   ] [
-     fhir:l <urn:uuid:25ba5f1a-90b3-49a8-a251-ac402bb4ccc8> ;
      fhir:reference [ fhir:v "urn:uuid:25ba5f1a-90b3-49a8-a251-ac402bb4ccc8" ] ;
      fhir:display [ fhir:v "Use of the Abbott Freestyle Libre 3 continuous glucose monitoring (CGM) system since November 30, 2024" ]
   ] [
-     fhir:l <urn:uuid:8d139b91-6567-4372-9329-0a2faf7cae99> ;
      fhir:reference [ fhir:v "urn:uuid:8d139b91-6567-4372-9329-0a2faf7cae99" ] ;
      fhir:display [ fhir:v "Advance directives for treatment" ]
   ] [
-     fhir:l <urn:uuid:fc6ca80d-ce07-47d9-a1c0-49e955ae166b> ;
      fhir:reference [ fhir:v "urn:uuid:fc6ca80d-ce07-47d9-a1c0-49e955ae166b" ] ;
      fhir:display [ fhir:v "Deny the use of my data for marketing" ]
   ] [
-     fhir:l <urn:uuid:c67f1ac1-5013-47dc-88ad-73d8eca510b0> ;
      fhir:reference [ fhir:v "urn:uuid:c67f1ac1-5013-47dc-88ad-73d8eca510b0" ] ;
      fhir:display [ fhir:v "Deny the use of my re-identifiable data for machine learning training" ]
   ] [
-     fhir:l <urn:uuid:0b8b4bfe-12e8-4dcc-9299-27fd76e464ce> ;
      fhir:reference [ fhir:v "urn:uuid:0b8b4bfe-12e8-4dcc-9299-27fd76e464ce" ] ;
      fhir:display [ fhir:v "Consent for the use of my data in healthcare" ]
   ] [
-     fhir:l <urn:uuid:e7fd44af-ae28-4994-a04f-37d8e52864a1> ;
      fhir:reference [ fhir:v "urn:uuid:e7fd44af-ae28-4994-a04f-37d8e52864a1" ] ;
      fhir:display [ fhir:v "Consent for the use of my de-identified data for research" ]
   ] [
-     fhir:l <urn:uuid:1e591fa2-f118-4ef4-9103-9b9fe5d3da75> ;
      fhir:reference [ fhir:v "urn:uuid:1e591fa2-f118-4ef4-9103-9b9fe5d3da75" ] ;
      fhir:display [ fhir:v "2024-11-03 Fractured left collarbone" ]
   ] [
-     fhir:l <urn:uuid:2c4dc13c-2927-4cd7-b86e-1a3b89493d2b> ;
      fhir:reference [ fhir:v "urn:uuid:2c4dc13c-2927-4cd7-b86e-1a3b89493d2b" ] ;
      fhir:display [ fhir:v "2022-10-23Pulmonary embolism" ]
   ] [
-     fhir:l <urn:uuid:22e07a7b-4d9b-406d-93bc-dc60de933f1f> ;
      fhir:reference [ fhir:v "urn:uuid:22e07a7b-4d9b-406d-93bc-dc60de933f1f" ] ;
      fhir:display [ fhir:v "2020-08-20 Problems with shoulder mobility" ]
   ] [
-     fhir:l <urn:uuid:ead8fa45-4c6b-47b5-876b-6c01090d2c49> ;
      fhir:reference [ fhir:v "urn:uuid:ead8fa45-4c6b-47b5-876b-6c01090d2c49" ] ;
      fhir:display [ fhir:v "2017-11-20 Fractured left ring finger" ]
   ] [
-     fhir:l <urn:uuid:14534413-2ea5-4988-9f2a-a7f6c6059353> ;
      fhir:reference [ fhir:v "urn:uuid:14534413-2ea5-4988-9f2a-a7f6c6059353" ] ;
      fhir:display [ fhir:v "2016-06-14 Disputed diagnosis of disease in larynx" ]
   ] [
-     fhir:l <urn:uuid:af227524-ca64-46ed-8aad-c17f1a712af5> ;
      fhir:reference [ fhir:v "urn:uuid:af227524-ca64-46ed-8aad-c17f1a712af5" ] ;
      fhir:display [ fhir:v "2016-05-13 Myopia" ]
   ] [
-     fhir:l <urn:uuid:d621ec37-44d1-455a-9f95-b62ee1e6f7f1> ;
      fhir:reference [ fhir:v "urn:uuid:d621ec37-44d1-455a-9f95-b62ee1e6f7f1" ] ;
      fhir:display [ fhir:v "2016-05-06 Dysphonia due to vocal cord problems" ]
   ] [
-     fhir:l <urn:uuid:ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328> ;
      fhir:reference [ fhir:v "urn:uuid:ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328" ] ;
      fhir:display [ fhir:v "Never smoker" ]
   ] [
-     fhir:l <urn:uuid:432d2590-6b3a-4e3f-b38c-6a0cc8dc9243> ;
      fhir:reference [ fhir:v "urn:uuid:432d2590-6b3a-4e3f-b38c-6a0cc8dc9243" ] ;
      fhir:display [ fhir:v "Drink about once per month, one to three doses per time" ]
   ] [
-     fhir:l <urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd> ;
-     fhir:reference [ fhir:v "urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd" ] ;
-     fhir:display [ fhir:v "Blood pressure 2026-01-04 168/88 mmHg" ]
-  ] [
-     fhir:l <urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce> ;
      fhir:reference [ fhir:v "urn:uuid:87fd93df-3a9e-433a-a824-97702a294dce" ] ;
-     fhir:display [ fhir:v "Blood pressure 2025-10-24 150/76 mmHg" ]
+     fhir:display [ fhir:v "Blood pressure at clinic 2026-01-04 168/88 mmHg" ]
   ] [
-     fhir:l <urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9> ;
+     fhir:reference [ fhir:v "urn:uuid:55e62594-fc71-4437-ad8c-13acaf51d2cd" ] ;
+     fhir:display [ fhir:v "Blood pressure at clinic 2025-10-24 150/76 mmHg" ]
+  ] [
      fhir:reference [ fhir:v "urn:uuid:8b3f6d5f-a6bc-47c4-9e9f-e664c81ef6e9" ] ;
-     fhir:display [ fhir:v "Blood pressure 2026-01-04 116/66 mmHg" ]
+     fhir:display [ fhir:v "Blood pressure, self-measured, 2026-01-04 116/66 mmHg" ]
   ] [
-     fhir:l <urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a> ;
      fhir:reference [ fhir:v "urn:uuid:b06784f5-9e17-41b1-8ab0-09d8eb824f9a" ] ;
-     fhir:display [ fhir:v "Blood pressure 2026-01-04 118/68 mmHg" ]
+     fhir:display [ fhir:v "Blood pressure, self-measured, 2026-01-04 114/61 mmHg" ]
   ] ) ; # 
   fhir:occurred [
      a fhir:Period ;
@@ -451,11 +469,7 @@
   fhir:recorded [ fhir:v "2026-05-14T10:15:00+03:00"^^xsd:dateTime] ; # 
   fhir:reason ( [
      fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
-       ] ;
-       fhir:version [ fhir:v "4.0.0" ] ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "RECORDMGT" ] ;
        fhir:display [ fhir:v "records management" ]
      ] )
@@ -463,44 +477,31 @@
   fhir:agent ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/provenance-participant-type>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "author" ] ;
          fhir:display [ fhir:v "Author" ]
        ] )
      ] ;
      fhir:role ( [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ParticipationType>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "AUT" ] ;
          fhir:display [ fhir:v "author (originator)" ]
        ] )
      ] [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "CLASSIFIER" ] ;
          fhir:display [ fhir:v "classifier" ]
        ] )
      ] [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/extra-security-role-type"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/extra-security-role-type>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/extra-security-role-type"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "humanuser" ] ;
          fhir:display [ fhir:v "human user" ]
        ] )
      ] ) ;
      fhir:who [
-       fhir:l <urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f> ;
        fhir:reference [ fhir:v "urn:uuid:b4ac89c5-6589-417f-beef-d3fb1ef9c70f" ] ;
        fhir:display [ fhir:v "Mikael Rinnetmäki, the patient" ]
      ]

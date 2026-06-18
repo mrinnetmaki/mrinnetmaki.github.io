@@ -56,21 +56,25 @@ I don't want my data to be used for marketing purposes.
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "ICOL",
       "display" : "information collection"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IDSCL",
       "display" : "information disclosure"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "INFA",
       "display" : "information access"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IRDSCL",
       "display" : "information redisclosure"
     }],
@@ -92,6 +96,7 @@ I don't want my data to be used for marketing purposes.
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "RSREID",
       "display" : "re-identifiable information access"
     }],
@@ -105,6 +110,7 @@ I don't want my data to be used for marketing purposes.
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "RSDID",
       "display" : "de-identified information access"
     }],
@@ -122,6 +128,7 @@ I don't want my data to be used for marketing purposes.
   "policyRule" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "GDPRCD",
       "display" : "GDPR Consent Directive"
     }],
@@ -131,7 +138,6 @@ I don't want my data to be used for marketing purposes.
     "type" : "deny",
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HMARKT",
       "display" : "healthcare marketing"
     }],

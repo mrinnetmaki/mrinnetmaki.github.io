@@ -77,48 +77,92 @@ These are example instances that show what data produced and consumed by systems
 | [ MedicationStatementRosuvastatin  ](MedicationStatement-f3f4ff44-62be-440c-9e79-1a5de2d64016.md) | I use Rosuvastatin and Ezetimibe for diabetes related hypercholesterolemia. |
 | [ Mikael  ](Patient-b4ac89c5-6589-417f-beef-d3fb1ef9c70f.md) | Mikael Rinnetmäki, the patient |
 | [ Observation-alcohol-use  ](Observation-432d2590-6b3a-4e3f-b38c-6a0cc8dc9243.md) | Observation of alcohol use for Mikael |
-| [ Observation-b-erybla-1  ](Observation-125cef80-fe5c-40db-976f-c6d51e099519.md) | Observation of B -EryBla (erytroblastit) for Mikael |
-| [ Observation-b-eryt-1  ](Observation-3db4dd0f-789d-492e-baa8-74b3994e89e9.md) | Observation of B -Erytrosyytit for Mikael |
-| [ Observation-f-calpro-1  ](Observation-c00df5d3-5bf4-4093-9a1b-b877ff75a1d3.md) | Observation of F -Calpro (kalprotektiini) for Mikael |
-| [ Observation-lab-b-hb-1  ](Observation-88f6c5a2-1b8e-42e0-b5a0-a2e5c1f7d9e4.md) | Observation of B -Hb (hemoglobiini) for Mikael |
-| [ Observation-lab-b-hba1c-1  ](Observation-1d2c3f4a-5b6e-7f8a-9b0c-d1e2f3a4b5c6.md) | Observation of B -HbA1c (hemoglobiini-A1c) for Mikael |
-| [ Observation-lab-b-hkr-1  ](Observation-c7d8e9f0-a1b2-c3d4-e5f6-a7b8c9d0e1f2.md) | Observation of B -HKR (hematokriitti) for Mikael |
-| [ Observation-lab-b-leuk-1  ](Observation-f3a4b5c6-d7e8-f9a0-b1c2-d3e4f5a6b7c8.md) | Observation of B -Leuk (leukosyytit eli valkosolut) for Mikael |
-| [ Observation-lab-b-trom-1  ](Observation-a9b0c1d2-e3f4-a5b6-c7d8-e9f0a1b2c3d4.md) | Observation of B -Trom (verihiutaleet) for Mikael |
-| [ Observation-lab-e-mch-1  ](Observation-5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f.md) | Observation of E -MCH (hemoglobiini, keskimassa) for Mikael |
-| [ Observation-lab-e-mcv-1  ](Observation-e1f2a3b4-c5d6-e7f8-9a0b-1c2d3e4f5a6b.md) | Observation of E -MCV (keskimääräinen punasolun tilavuus) for Mikael |
-| [ Observation-lab-e-rdw-1  ](Observation-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d.md) | Observation of E -RDW (punasolujen kokojakauma) for Mikael |
-| [ Observation-lab-fp-fe-1  ](Observation-8a9b0c1d-2e3f-4a5b-6c7d-8e9f0a1b2c3d.md) | Observation of fP-Fe (rauta) for Mikael |
-| [ Observation-lab-fp-transf-1  ](Observation-0e1f2a3b-4c5d-6e7f-8a9b-0c1d2e3f4a5b.md) | Observation of fP-Transf (transferriini) for Mikael |
-| [ Observation-lab-p-at3-1  ](Observation-4a5b6c7d-8e9f-0a1b-2c3d-4e5f6a7b8c9d.md) | Observation of P -AT3 (antitrombiini III) for Mikael |
-| [ Observation-lab-p-b2gpabg-1  ](Observation-0a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d.md) | Observation of P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) for Mikael |
-| [ Observation-lab-p-b2gpabm-1  ](Observation-6c7d8e9f-0a1b-2c3d-4e5f-6a7b8c9d0e1f.md) | Observation of P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) for Mikael |
-| [ Observation-lab-p-ferrit-1  ](Observation-c6d7e8f9-a0b1-c2d3-e4f5-a6b7c8d9e0f1.md) | Observation of P -Ferrit (ferritiini) for Mikael |
-| [ Observation-lab-p-k-1  ](Observation-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a.md) | Observation of P -K (kalium) for Mikael |
-| [ Observation-lab-p-kardabg-1  ](Observation-2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d.md) | Observation of P -KardAbG (kardiolipiini, IgG-vasta-aineet) for Mikael |
-| [ Observation-lab-p-kardabm-1  ](Observation-8e9f0a1b-2c3d-4e5f-6a7b-8c9d0e1f2a3b.md) | Observation of P -KardAbM (kardiolipiini, IgM-vasta-aineet) for Mikael |
-| [ Observation-lab-p-kol-1  ](Observation-3e4f5a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b.md) | Observation of P -Kol (kokonaiskolesteroli) for Mikael |
-| [ Observation-lab-p-kol-hdl-1  ](Observation-9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c.md) | Observation of P -Kol-HDL (HDL-kolesteroli) for Mikael |
-| [ Observation-lab-p-kol-ldl-1  ](Observation-5b6c7d8e-9f0a-1b2c-3d4e-5f6a7b8c9d0e.md) | Observation of P -Kol-LDL (LDL-kolesteroli) for Mikael |
-| [ Observation-lab-p-krea-1  ](Observation-1f2a3b4c-5d6e-7f8a-9b0c-d1e2f3a4b5c6.md) | Observation of P -Krea (kreatiniini) for Mikael |
-| [ Observation-lab-p-luakptt-1  ](Observation-4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b.md) | Observation of P -LuakPTT (lupusantikoagulantti, PTT) for Mikael |
-| [ Observation-lab-p-luakrvv-1  ](Observation-a0b1c2d3-e4f5-6a7b-8c9d-e0f1a2b3c4d5.md) | Observation of P -LuakRVV (lupusantikoagulantti, dRVVT) for Mikael |
-| [ Observation-lab-p-na-1  ](Observation-d7e8f9a0-b1c2-d3e4-f5a6-b7c8d9e0f1a2.md) | Observation of P -Na (natrium) for Mikael |
-| [ Observation-lab-p-pc-1  ](Observation-e5f6a7b8-c9d0-e1f2-a3b4-c5d6e7f8a9b0.md) | Observation of P -PC (proteiini C) for Mikael |
-| [ Observation-lab-p-ps-agv-1  ](Observation-1b2c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e.md) | Observation of P -PS-AgV (proteiini S, antigeeni, vapaa) for Mikael |
-| [ Observation-lab-p-traika-1  ](Observation-9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d.md) | Observation of P -TrAika (trombiiniaika) for Mikael |
-| [ Observation-lab-p-trigly-1  ](Observation-b3c4d5e6-f7a8-9b0c-1d2e-3f4a5b6c7d8e.md) | Observation of P -Trigly (triglyseridi) for Mikael |
-| [ Observation-lab-p-tt-inr-1  ](Observation-7f8a9b0c-1d2e-3f4a-5b6c-7d8e9f0a1b2c.md) | Observation of P -TT-INR (tromboplastiiniaika, INR-tulostus) for Mikael |
-| [ Observation-lab-p-tt-spa-1  ](Observation-d3e4f5a6-b7c8-d9e0-f1a2-b3c4d5e6f7a8.md) | Observation of P -TT-SPA (tromboplastiiniaika, SPA-tulostus) for Mikael |
-| [ Observation-lab-pt-gfrepi-1  ](Observation-96b4cbd4-8862-4f09-9ac8-d65f4c6e88bc.md) | Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 1 for Mikael |
-| [ Observation-lab-pt-gfrepi-2  ](Observation-6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c.md) | Observation of Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2 for Mikael |
-| [ Observation-lab-trfesat-1  ](Observation-2e3f4a5b-6c7d-8e9f-0a1b-2c3d4e5f6a7b.md) | Observation of TrFeSat (transferriinin rautakyllästeisyys) for Mikael |
-| [ Observation-lab-u-alb-1  ](Observation-9bd79ab3-7b0c-40e2-ad65-b1f7ec42b8bc.md) | Observation of U -Alb (albumiini) 1 for Mikael |
-| [ Observation-lab-u-alb-2  ](Observation-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f.md) | Observation of U -Alb (albumiini) 2 for Mikael |
-| [ Observation-lab-u-albkre-1  ](Observation-07e4f795-134d-4704-a776-ce30216d988e.md) | Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 1 for Mikael |
-| [ Observation-lab-u-albkre-2  ](Observation-04d80b58-af0f-40d1-8cca-2a416bebbc74.md) | Observation of U -Alb/Kre (albumiini-kreatiniinisuhde) 2 for Mikael |
-| [ Observation-lab-u-krea-1  ](Observation-4384b8a1-0a26-405a-9519-08035d9ab72a.md) | Observation of U -Krea (kreatiniini) 1 for Mikael |
-| [ Observation-lab-u-krea-2  ](Observation-26868547-dc76-45a1-9f6e-3ce6fe2d4e61.md) | Observation of U -Krea (kreatiniini) 2 for Mikael |
+| [ Observation-lab-b-erybla-1  ](Observation-018c7c6b-f8a0-7194-bb46-f0a27d26da58.md) | Observation B -EryBla (erytroblastit) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-erybla-2  ](Observation-018e654c-8f20-797a-a70b-6a23f345b001.md) | Observation B -EryBla (erytroblastit) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-erybla-3  ](Observation-0193be9a-3f00-757f-a3a6-5eb604ffeb84.md) | Observation B -EryBla (erytroblastit) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-erybla-4  ](Observation-019e4fb3-2100-7366-bab7-c2686628dc4d.md) | Observation B -EryBla (erytroblastit) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-b-eryt-1  ](Observation-018c7c6b-f8a0-7796-b426-c19acbf2add4.md) | Observation B -Eryt (punasolut) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-eryt-2  ](Observation-018e654c-8f20-717d-a8b4-f39565617bc8.md) | Observation B -Eryt (punasolut) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-eryt-3  ](Observation-0193be9a-3f00-7c32-aa58-759cb2ba5074.md) | Observation B -Eryt (punasolut) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-eryt-4  ](Observation-019e4fb3-2100-74c1-8755-b3ad81105830.md) | Observation B -Eryt (punasolut) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-b-hb-1  ](Observation-018c7c6b-f8a0-7168-90eb-61f12e9e2f50.md) | Observation B -Hb (hemoglobiini) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-hb-2  ](Observation-018e654c-8f20-7e66-8528-ab9c6a1ff612.md) | Observation B -Hb (hemoglobiini) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-hb-3  ](Observation-0193be9a-3f00-7ecb-af29-6cdafea15b93.md) | Observation B -Hb (hemoglobiini) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-hb-4  ](Observation-019e4fb3-2100-7b17-a547-b9c59950ea5c.md) | Observation B -Hb (hemoglobiini) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-b-hba1c-1  ](Observation-018c7c6b-f8a0-7574-8c1b-3b489673e3ac.md) | Observation B -HbA1c (hemoglobiini-A1c) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-hba1c-2  ](Observation-018e654c-8f20-7775-9275-f74e5f706fab.md) | Observation B -HbA1c (hemoglobiini-A1c) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-hba1c-3  ](Observation-0193be9a-3f00-7c51-adb2-ed2bb7863bf7.md) | Observation B -HbA1c (hemoglobiini-A1c) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-hba1c-4  ](Observation-019e4fb3-2100-7a4d-a533-da3421147289.md) | Observation B -HbA1c (hemoglobiini-A1c) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-b-hkr-1  ](Observation-018c7c6b-f8a0-7503-8440-72e15df80781.md) | Observation (B -HKR (hematokriitti 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-hkr-2  ](Observation-018e654c-8f20-776b-b370-875cc4a39a7d.md) | Observation (B -HKR (hematokriitti 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-hkr-3  ](Observation-0193be9a-3f00-77d7-84d7-4c680411de02.md) | Observation (B -HKR (hematokriitti 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-hkr-4  ](Observation-019e4fb3-2100-711b-912e-929bbe93b3be.md) | Observation (B -HKR (hematokriitti 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-b-leuk-1  ](Observation-018c7c6b-f8a0-7b9b-a172-de3a6d5dea73.md) | Observation B -Leuk (valkosolut) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-leuk-2  ](Observation-0193be9a-3f00-7957-8cff-c33bcc791114.md) | Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-leuk-3  ](Observation-0193be9a-3f00-706a-8ab8-dd3c02a7a251.md) | Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-leuk-4  ](Observation-0193be9a-3f00-7cd0-8bc5-7c0010b8cfcb.md) | Observation B -Leuk (valkosolut) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-trom-1  ](Observation-018c7c6b-f8a0-7b20-8370-784f0396c477.md) | Observation B -Trom (trombosyytit) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-b-trom-2  ](Observation-018e654c-8f20-712f-9512-dd27ddc42661.md) | Observation B -Trom (trombosyytit) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-b-trom-3  ](Observation-0193be9a-3f00-774a-9655-b8ffd02d0fd9.md) | Observation B -Trom (trombosyytit) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-b-trom-4  ](Observation-019e4fb3-2100-788c-a6f0-f984e69f160d.md) | Observation B -Trom (trombosyytit) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-e-mch-1  ](Observation-018c7c6b-f8a0-7338-9a33-d671f24ea40a.md) | Observation E -MCH (punasolujen hemoglobiinin määrä) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-e-mch-2  ](Observation-018e654c-8f20-76b8-8f3c-692f47c00eb3.md) | Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-e-mch-3  ](Observation-0193be9a-3f00-7400-8b0a-f1d8972e2d4f.md) | Observation E -MCH (punasolujen hemoglobiinin määrä) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-mch-4  ](Observation-019e4fb3-2100-7b45-86a0-7f0a2132d804.md) | Observation E -MCH (punasolujen hemoglobiinin määrä) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-e-mcv-1  ](Observation-0193be9a-3f00-73ec-a10b-b90689f8eb96.md) | Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-mcv-2  ](Observation-0193be9a-3f00-717f-ba43-a0e04f0299e5.md) | Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-mcv-3  ](Observation-0193be9a-3f00-76e8-960f-14f1f75d240e.md) | Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-mcv-4  ](Observation-0193be9a-3f00-7be0-bb41-6ce6540d32c6.md) | Observation E -MCV (punasolujen keskitilavuus) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-rdw-1  ](Observation-0193be9a-3f00-7483-b9b1-adee9794b8cf.md) | Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-rdw-2  ](Observation-0193be9a-3f00-76cd-92ae-daa06493dcf4.md) | Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-rdw-3  ](Observation-0193be9a-3f00-7254-af12-5f0db4056f21.md) | Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-e-rdw-4  ](Observation-0193be9a-3f00-72bd-b554-c0d8e541c17b.md) | Observation E -RDW (punasolujen kokojakauma) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-f-calpro-1  ](Observation-0193d381-80e0-7ef5-ba77-7878540b897e.md) | Observation F -Calpro (ulosteen kalprotektiini) 2024-12-17T10:25:00+02:00 |
+| [ Observation-lab-fp-fe-1  ](Observation-018e654c-8f20-73ee-a4d7-58253b454ed5.md) | Observation fP-Fe (rauta) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-fp-transf-1  ](Observation-018e654c-8f20-7da8-870e-4b353da7e2da.md) | Observation fP-Transf (transferriini) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-p-alat-1  ](Observation-019e4fb3-2100-7643-9318-0c49c1fc2fc2.md) | Observation P -ALAT (alaniiniaminotransferaasi) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-p-at3-1  ](Observation-0187c31e-fa40-78e8-9e1a-5a73c2107ab7.md) | Observation P -AT3 (antitrombiini III) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-b2gpabg-1  ](Observation-0187c31e-fa40-78af-b514-14dcb1304c76.md) | Observation P -B2GPAbG (beeta-2-glykoproteiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-b2gpabm-1  ](Observation-0187c31e-fa40-79b0-bf17-2541c3e7a20e.md) | Observation P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-ferrit-1  ](Observation-018e654c-8f20-7fb4-8348-1fa329fe00a0.md) | Observation P -Ferrit (ferritiini) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-p-k-1  ](Observation-018c7c6b-f8a0-7b15-b731-cadbd01e578e.md) | Observation P -K (kalium) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-p-k-2  ](Observation-018e654c-8f20-71a0-ba40-1f81fb78bad1.md) | Observation P -K (kalium) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-p-k-3  ](Observation-0193be9a-3f00-792a-bba1-abd674597f0b.md) | Observation P -K (kalium) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-k-4  ](Observation-019e4fb3-2100-77af-8490-d1c57076b2f2.md) | Observation P -K (kalium) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-p-kardabg-1  ](Observation-0187c31e-fa40-7e89-84a8-22f094e6b741.md) | Observation P -KardAbG (kardiolipiini, IgG-vasta-aineet) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-kardabm-1  ](Observation-0187c31e-fa40-753c-85d5-be8d1517bdf5.md) | Observation P -KardAbM (kardiolipiini, IgM-vasta-aineet) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-kol-1  ](Observation-0193be9a-3f00-79b1-b131-0179f150c0b2.md) | Observation P -Kol (kokonaiskolesteroli) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-kol-hdl-1  ](Observation-0193be9a-3f00-7947-994c-efcd7a710478.md) | Observation P -Kol-HDL (HDL-kolesteroli) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-kol-ldl-1  ](Observation-0193be9a-3f00-738d-a813-228707b33221.md) | Observation P -Kol-LDL (LDL-kolesteroli) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-krea-1  ](Observation-018c7c6b-f8a0-7fe0-a8e3-3d8bed13c6fe.md) | Observation P -Krea (kreatiniini) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-p-krea-2  ](Observation-018e654c-8f20-70cc-9867-f60157fbb788.md) | Observation P -Krea (kreatiniini) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-p-krea-3  ](Observation-0193be9a-3f00-797a-879e-9b0c538fb6ad.md) | Observation P -Krea (kreatiniini) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-krea-4  ](Observation-019e4fb3-2100-7674-8bae-2867c6d66d2a.md) | Observation P -Krea (kreatiniini) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-p-luakptt-1  ](Observation-0187c31e-fa40-7709-9007-9af23bfe9a4b.md) | Observation P -LuakPTT (lupusantikoagulantti, PTT) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-luakrvv-1  ](Observation-0187c31e-fa40-7f17-963f-789803935a78.md) | Observation P -LuakRVV (lupusantikoagulantti, dRVVT) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-na-1  ](Observation-018c7c6b-f8a0-7a8e-ba89-b07dc2bfc222.md) | Observation P -Na (natrium) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-p-na-2  ](Observation-0193be9a-3f00-7958-8606-c03ddf671604.md) | Observation P -Na (natrium) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-na-3  ](Observation-019e4fb3-2100-7307-9569-89c00410545d.md) | Observation P -Na (natrium) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-p-pc-1  ](Observation-0187c31e-fa40-7240-997e-a3c84607400d.md) | Observation P -PC (proteiini C) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-ps-agv-1  ](Observation-0187c31e-fa40-7fe2-a9d9-6e2ed30928ae.md) | Observation P -PS-AgV (proteiini S, antigeeni, vapaa) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-traika-1  ](Observation-0187c31e-fa40-73ca-984c-c0010d804a1b.md) | Observation P -Trombai (trombiiniaika) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-trigly-1  ](Observation-0193be9a-3f00-7c41-b7de-164e64671731.md) | Observation P -Trigly (triglyseridi) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-p-tsh-1  ](Observation-019e4fb3-2100-7973-a859-6ee3224bc72a.md) | Observation P -TSH (tyreotropiini) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-p-tt-inr-1  ](Observation-0187c31e-fa40-7fd5-b524-b1532b2bde54.md) | Observation P -TT-INR (tromboplastiiniaika, INR-tulostus) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-p-tt-spa-1  ](Observation-0187c31e-fa40-7520-a5be-6c6a5148b4f8.md) | Observation P -TT-SPA (tromboplastiiniaika) 2023-04-27T17:30:00+03:00 |
+| [ Observation-lab-pt-gfrepi-1  ](Observation-018c7c6b-f8a0-7137-a5cb-5b5e37b5b4a6.md) | Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2023-12-18T12:15:00+02:00 |
+| [ Observation-lab-pt-gfrepi-2  ](Observation-018e654c-8f20-7dfd-bf31-38626bd5f7d1.md) | Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-pt-gfrepi-3  ](Observation-0193be9a-3f00-72dd-abd8-696ba4c06137.md) | Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2024-12-13T08:00:00+02:00 |
+| [ Observation-lab-pt-gfrepi-4  ](Observation-019e4fb3-2100-7288-a931-5b5ce36fd4b6.md) | Observation Pt-GFReEPI (glomerulussuodosnopeus, estimoitu) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-s-ttgaba-1  ](Observation-019e4fb3-2100-7add-bf63-941525b5e5bb.md) | Observation S -tTGAbA (kudostransglutaminaasi, IgA-vasta-aineet) 2026-05-22T14:40:00+03:00 |
+| [ Observation-lab-trfesat-1  ](Observation-018e654c-8f20-7c79-95dc-b51611a5f993.md) | Observation -TrFeSat (transferriinin rautakyllästeisyys) 2024-03-22T10:35:00+02:00 |
+| [ Observation-lab-u-alb-1  ](Observation-018c7b14-a600-7ff4-a3e6-b46d9011297f.md) | Observation U -Alb (albumiini) 2023-12-18T06:00:00+02:00 |
+| [ Observation-lab-u-alb-2  ](Observation-0193d426-4c60-7822-b660-ee6b4a6a2fbe.md) | Observation U -Alb (albumiini) 2024-12-17T12:25:00+02:00 |
+| [ Observation-lab-u-albkre-1  ](Observation-018c7b14-a600-7b97-afa6-aee27e433410.md) | Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2023-12-18T06:00:00+02:00 |
+| [ Observation-lab-u-albkre-2  ](Observation-0193d426-4c60-78b5-9bf2-13f983f2276c.md) | Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2024-12-17T12:25:00+02:00 |
+| [ Observation-lab-u-albkre-3  ](Observation-019e6ce2-bf60-7859-be9f-f9bc4d4453e2.md) | Observation U -AlbKre (albumiinin ja kreatiniinin suhde) 2026-05-28T07:41:00+03:00 |
+| [ Observation-lab-u-krea-1  ](Observation-018c7b14-a600-7bbe-b4d0-01cb664cf716.md) | Observation U -Krea (kreatiniini) 2023-12-18T06:00:00+02:00 |
+| [ Observation-lab-u-krea-2  ](Observation-0193d426-4c60-7e92-b330-7bec2807317f.md) | Observation U -Krea (kreatiniini) 2024-12-17T12:25:00+02:00 |
 | [ Observation-tobacco-use  ](Observation-ec8d3ccb-d68c-433f-8db7-5bf1fcaf0328.md) | Observation of tobacco use for Mikael |
 | [ Observation-vitals-bloodpressure-1  ](Observation-87fd93df-3a9e-433a-a824-97702a294dce.md) | Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (1/2) |
 | [ Observation-vitals-bloodpressure-2  ](Observation-55e62594-fc71-4437-ad8c-13acaf51d2cd.md) | Observation of blood pressure for Mikael, performed at a clinic 2025-10-24 (2/2) |

@@ -8,7 +8,7 @@
 
 Profiles: [Observation Blood Pressure Profile](http://hl7.org/fhir/R4/bp.html), [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Vital Signs Profile](http://hl7.org/fhir/R4/vitalsigns.html)
 
-Security Label: [patient reported (Details: v3 Code System ObservationValue code PATRPT = 'patient reported')](http://hl7.org/fhir/R4/v3/ObservationValue/cs.html)
+Security Label: [patient reported (Details: ObservationValue code PATRPT = 'patient reported')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html)
 
 **status**: Final
 

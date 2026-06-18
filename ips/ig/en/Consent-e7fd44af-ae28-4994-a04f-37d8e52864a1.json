@@ -51,21 +51,25 @@
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "ICOL",
       "display" : "information collection"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IDSCL",
       "display" : "information disclosure"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "INFA",
       "display" : "information access"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "IRDSCL",
       "display" : "information redisclosure"
     }],
@@ -87,6 +91,7 @@
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "RESEARCH",
       "display" : "research information access"
     }],
@@ -100,6 +105,7 @@
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "10.0.0",
       "code" : "RSDID",
       "display" : "de-identified information access"
     }],
@@ -156,19 +162,16 @@
     }],
     "purpose" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HOPERAT",
       "display" : "healthcare operations"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HTEST",
       "display" : "test health data"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "TRAIN",
       "display" : "training"
     },
@@ -180,13 +183,11 @@
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "HRESCH",
       "display" : "healthcare research"
     },
     {
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "4.0.0",
       "code" : "PUBHLTH",
       "display" : "public health"
     }]

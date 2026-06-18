@@ -1,0 +1,31 @@
+#  - International Patient Summary for Mikael Rinnetmäki v0.4.0
+
+## : 
+
+Profiles: [IPA-Observation](http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-observation.html) version: 1.1.0, [Observation Results - Laboratory/Pathology (IPS)](http://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html), [Observation: Medical Test Result (EU core)](http://hl7.eu/fhir/base/2.0.0/StructureDefinition-medicalTestResult-eu-core.html)
+
+Security Labels: [device reported (Details: ObservationValue code DEVRPT = 'device reported')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [patient reported (Details: ObservationValue code PATRPT = 'patient reported')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [syntactic transform (Details: ObservationValue code SYNTAC = 'syntactic transform')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [mapped (Details: ObservationValue code MAPPED = 'mapped')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [patient asserted (Details: ObservationValue code PATAST = 'patient asserted')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html), [Artificial Intelligence asserted (Details: ObservationValue code AIAST = 'Artificial Intelligence asserted')](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationValue.html)
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: P -B2GPAbM (beeta-2-glykoproteiini, IgM-vasta-aineet)
+
+**subject**: [Mikael Rinnetmäki](Bundle-IpsBundle.md#urn-uuid-b4ac89c5-6589-417f-beef-d3fb1ef9c70f)
+
+**effective**: 2023-04-27 17:30:00+0300
+
+**performer**: Fimlab
+
+**value**: <2 U/ml (Details: UCUM codeU/mL = 'U/mL')
+
+**interpretation**: Normal
+
+### ReferenceRanges
+
+| | | |
+| :--- | :--- | :--- |
+| - | **High** | **Text** |
+| * | 7 | -7 U/ml |
+

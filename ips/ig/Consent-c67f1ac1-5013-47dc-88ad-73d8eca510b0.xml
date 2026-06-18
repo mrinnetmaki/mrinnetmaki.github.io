@@ -45,21 +45,25 @@
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="ICOL"/>
       <display value="information collection"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="IDSCL"/>
       <display value="information disclosure"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="INFA"/>
       <display value="information access"/>
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="IRDSCL"/>
       <display value="information redisclosure"/>
     </coding>
@@ -81,6 +85,7 @@
     </coding>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <version value="10.0.0"/>
       <code value="RSREID"/>
       <display value="re-identifiable information access"/>
     </coding>
